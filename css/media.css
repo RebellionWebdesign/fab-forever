@@ -1,0 +1,75 @@
+/*MEDIA QUERIES FOR XXS DEVICES (<320px)*/
+@media screen and (max-width:320px) {
+    .headerbar {
+        padding: 0.5rem 4rem 0.5rem 4rem;
+        height: auto;
+        flex-direction: column;
+        background: rgb(105,32,221);
+        background: linear-gradient(0deg, rgba(105,32,221,1) 55%, rgba(255,255,255,1) 55%);
+    }
+
+    .headerbar__nav ul {
+        font-size: 1.2rem;
+    }
+
+    .headerbar a {
+        font-size: 1.2rem;
+        color: white;
+    }
+
+}
+
+/*MEDIA QUERIES FOR XS DEVICES (<576px)*/
+@media screen and (max-width:576px) {
+    .headerbar {
+        padding: 1.5rem 3rem 1.5rem 3rem;
+        height: auto;
+        flex-direction: column;
+        background: rgb(105,32,221);
+        background: linear-gradient(0deg, rgba(105,32,221,1) 60%, rgba(255,255,255,1) 60%);
+    }
+
+    .headerbar__nav ul{
+        display: flex;
+        margin-right: -2rem;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        font-size: 1.6rem;
+    }
+
+    .headerbar__nav a:hover {
+        height: 100%;
+        color: white;
+    }
+
+    .headerbar__nav a:active {
+        height: 100%;
+        color: white;
+        text-decoration: underline white 3px;
+    }
+
+    .headerbar a {
+        padding-right: 2rem;
+        color: white;
+    }
+}
+
+/*MEDIA QUERIES FOR MD DEVICES (<768px)*/
+@media screen and (max-width:768px) {
+    .headerbar {
+        padding: 0.5rem 2rem 0.5rem 2rem;
+    }
+}
+/*MEDIA QUERIES FOR L DEVICES (<992px)*/
+@media screen and (max-width:992px) {
+    .headerbar {
+        padding: 0.5rem 2rem 0.5rem 2rem;
+    }
+}
+
+/*MEDIA QUERIES FOR XL DEVICES (<1200px)*/
+@media screen and (max-width:1200px) {
+    .headerbar {
+        padding: 0.5rem 2rem 0.5rem 2rem;
+    }
+}
