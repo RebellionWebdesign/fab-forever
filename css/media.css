@@ -1,75 +1,114 @@
 /*MEDIA QUERIES FOR XXS DEVICES (<320px)*/
 @media screen and (max-width:320px) {
     .headerbar {
-        padding: 0.5rem 4rem 0.5rem 4rem;
-        height: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .headerbar__logo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .headerbar__mobile {
+        width: 3.5rem;
+        height: 2.5rem;
+        padding-left: 13rem;
+    }
+
+    .headerbar__logo > img {
+        width: 15rem;
+    }
+
+    .headerbar__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        background: rgb(105,32,221);
-        background: linear-gradient(0deg, rgba(105,32,221,1) 55%, rgba(255,255,255,1) 55%);
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45vw;
+        height: 100vh;
+        background: rgb(14,110,218);
+        background: linear-gradient(330deg, rgba(14,110,218,1) 0%, rgba(105,32,221,1) 100%);
+        transition: right 1s;
+        transition-timing-function: ease-in-out;
     }
 
     .headerbar__nav ul {
-        font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-right: -3rem;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+}
+
+    .headerbar__nav a {
+        color: white;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
-    .headerbar a {
-        font-size: 1.2rem;
+    .headerbar__nav a:active {
         color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    .headerbar__nav a:hover {
+        color: white;
+    }
+
+    .headerbar__nav a:visited {
+        color: rgba(255, 255, 255, 0.50);
+    }
+
+    .headerbar__mobile--close {
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+        top: -15rem;
+        left: -5rem;
+    }
+
+    .closed {
+        right: -45vw;
+    }
+
+    .open {
+        right: 0;
     }
 
 }
 
 /*MEDIA QUERIES FOR XS DEVICES (<576px)*/
 @media screen and (max-width:576px) {
-    .headerbar {
-        padding: 1.5rem 3rem 1.5rem 3rem;
-        height: auto;
-        flex-direction: column;
-        background: rgb(105,32,221);
-        background: linear-gradient(0deg, rgba(105,32,221,1) 60%, rgba(255,255,255,1) 60%);
-    }
-
-    .headerbar__nav ul{
-        display: flex;
-        margin-right: -2rem;
-        padding-top: 1rem;
-        padding-bottom: 0.5rem;
-        font-size: 1.6rem;
-    }
-
-    .headerbar__nav a:hover {
-        height: 100%;
-        color: white;
-    }
-
-    .headerbar__nav a:active {
-        height: 100%;
-        color: white;
-        text-decoration: underline white 3px;
-    }
-
-    .headerbar a {
-        padding-right: 2rem;
-        color: white;
-    }
+    
 }
 
 /*MEDIA QUERIES FOR MD DEVICES (<768px)*/
 @media screen and (max-width:768px) {
-    .headerbar {
-        padding: 0.5rem 2rem 0.5rem 2rem;
-    }
+   
 }
 /*MEDIA QUERIES FOR L DEVICES (<992px)*/
-@media screen and (max-width:992px) {
-    .headerbar {
-        padding: 0.5rem 2rem 0.5rem 2rem;
+@media screen and (min-width:992px) {
+
+    .headerbar__mobile {
+        display: none;
     }
+
+    .headerbar__mobile--close {
+        display: none;
+    }
+ 
 }
 
 /*MEDIA QUERIES FOR XL DEVICES (<1200px)*/
 @media screen and (max-width:1200px) {
-    .headerbar {
-        padding: 0.5rem 2rem 0.5rem 2rem;
-    }
+   
 }

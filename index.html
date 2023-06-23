@@ -12,13 +12,11 @@
     <nav class="headerbar">
         <div class="headerbar__logo">
             <img src="/img/fab-forever-logo.svg">
-            <a href="#" class="headerbar__mobile">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
+            <img class="headerbar__mobile" src="/img/bars-solid.svg">
         </div>
-        <div class="headerbar__nav">
+        <!--DESKTOP MENU START-->
+        <div class="headerbar__nav closed">
+            <img class="headerbar__mobile--close" src="/img/xmark-solid.svg">
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">BASICS</a></li>
@@ -27,7 +25,9 @@
                 <li><a href="#">HELP</a></li>
             </ul>
         </div>
+        <!--DESKTOP MENU END-->
     </nav>
     <!--HEADER END-->
+    <script src="/js/mobile-menu.js"></script>
 </body>
 </html>
