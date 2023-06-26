@@ -1,25 +1,28 @@
 /*MEDIA QUERIES FOR XXS DEVICES (<320px)*/
 @media screen and (max-width:320px) {
+
     .headerbar {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding: 1rem 1rem 1rem 1rem;
+        display: block;
     }
 
-    .headerbar__logo {
+    .headerbar__images {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
     }
 
     .headerbar__mobile {
         width: 3.5rem;
         height: 2.5rem;
-        padding-left: 13rem;
+        align-self: center;
     }
 
-    .headerbar__logo > img {
+    .headerbar__logo {
         width: 15rem;
+        align-self: center;
     }
 
     .headerbar__nav {
@@ -32,20 +35,20 @@
         right: 0;
         width: 45vw;
         height: 100vh;
-        background: rgb(14,110,218);
-        background: linear-gradient(330deg, rgba(14,110,218,1) 0%, rgba(105,32,221,1) 100%);
+        background: rgb(14, 110, 218);
+        background: linear-gradient(330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 100%);
         transition: right 1s;
         transition-timing-function: ease-in-out;
     }
 
     .headerbar__nav ul {
-    margin: 0;
-    padding: 0;
-    display: block;
-    margin-right: -3rem;
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-}
+        margin: 0;
+        padding-top: 0;
+        display: block;
+        margin-right: -3rem;
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+    }
 
     .headerbar__nav a {
         color: white;
@@ -72,8 +75,8 @@
         width: 2rem;
         height: 2rem;
         position: relative;
-        top: -15rem;
-        left: -5rem;
+        border: 1px solid white;
+        border-radius: 100%;
     }
 
     .closed {
@@ -88,27 +91,278 @@
 
 /*MEDIA QUERIES FOR XS DEVICES (<576px)*/
 @media screen and (max-width:576px) {
-    
+
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .headerbar {
+        padding: 1rem 1rem 1rem 1rem;
+        display: block;
+    }
+
+    .headerbar__images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerbar__mobile {
+        width: 3.5rem;
+        height: 2.5rem;
+        align-self: center;
+    }
+
+    .headerbar__logo {
+        width: 15rem;
+        align-self: center;
+    }
+
+    .headerbar__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45vw;
+        height: 100vh;
+        background: rgb(14, 110, 218);
+        background: linear-gradient(330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 100%);
+        transition: right 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .headerbar__nav ul {
+        margin: 0;
+        padding-top: 0;
+        display: block;
+        margin-right: -3rem;
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+    }
+
+    .headerbar__nav a {
+        color: white;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .headerbar__nav a:active {
+        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    .headerbar__nav a:hover {
+        color: white;
+    }
+
+    .headerbar__nav a:visited {
+        color: rgba(255, 255, 255, 0.50);
+    }
+
+    .headerbar__mobile--close {
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+        border: 1px solid white;
+        border-radius: 100%;
+    }
+
+    .closed {
+        right: -45vw;
+    }
+
+    .open {
+        right: 0;
+    }
+
 }
 
 /*MEDIA QUERIES FOR MD DEVICES (<768px)*/
 @media screen and (max-width:768px) {
-   
-}
-/*MEDIA QUERIES FOR L DEVICES (<992px)*/
-@media screen and (min-width:992px) {
+
+    .headerbar {
+        padding: 1rem 1rem 1rem 1rem;
+        display: block;
+    }
+
+    .headerbar__images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
 
     .headerbar__mobile {
-        display: none;
+        width: 3.5rem;
+        height: 2.5rem;
+        align-self: center;
+    }
+
+    .headerbar__logo {
+        width: 15rem;
+        align-self: center;
+    }
+
+    .headerbar__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45vw;
+        height: 100vh;
+        background: rgb(14, 110, 218);
+        background: linear-gradient(330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 100%);
+        transition: right 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .headerbar__nav ul {
+        margin: 0;
+        padding-top: 0;
+        display: block;
+        margin-right: -3rem;
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+    }
+
+    .headerbar__nav a {
+        color: white;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .headerbar__nav a:active {
+        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    .headerbar__nav a:hover {
+        color: white;
+    }
+
+    .headerbar__nav a:visited {
+        color: rgba(255, 255, 255, 0.50);
     }
 
     .headerbar__mobile--close {
-        display: none;
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+        border: 1px solid white;
+        border-radius: 100%;
     }
- 
+
+    .closed {
+        right: -45vw;
+    }
+
+    .open {
+        right: 0;
+    }
+
 }
 
-/*MEDIA QUERIES FOR XL DEVICES (<1200px)*/
-@media screen and (max-width:1200px) {
-   
+/*MEDIA QUERIES FOR L DEVICES (<992px)*/
+@media screen and (min-width:992px) {
+
+    .headerbar {
+        padding: 1rem 1rem 1rem 1rem;
+        display: block;
+    }
+
+    .headerbar__images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerbar__mobile {
+        width: 3.5rem;
+        height: 2.5rem;
+        align-self: center;
+    }
+
+    .headerbar__logo {
+        width: 15rem;
+        align-self: center;
+    }
+
+    .headerbar__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45vw;
+        height: 100vh;
+        background: rgb(14, 110, 218);
+        background: linear-gradient(330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 100%);
+        transition: right 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .headerbar__nav ul {
+        margin: 0;
+        padding-top: 0;
+        display: block;
+        margin-right: -3rem;
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+    }
+
+    .headerbar__nav a {
+        color: white;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .headerbar__nav a:active {
+        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    .headerbar__nav a:hover {
+        color: white;
+    }
+
+    .headerbar__nav a:visited {
+        color: rgba(255, 255, 255, 0.50);
+    }
+
+    .headerbar__mobile--close {
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+        border: 1px solid white;
+        border-radius: 100%;
+    }
+
+    .closed {
+        right: -45vw;
+    }
+
+    .open {
+        right: 0;
+    }
+
 }
