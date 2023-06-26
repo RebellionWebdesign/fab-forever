@@ -2,8 +2,9 @@
 
 [![stability-wip](https://img.shields.io/badge/STABILITY-WIP-red.svg)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#work-in-progress) ![license](https://img.shields.io/badge/GPL-CC--BY--NC--SA-green.svg) ![editor](https://img.shields.io/badge/VSCODE-blue.svg) ![lang](https://img.shields.io/badge/CSS3-blue.svg) ![lang](https://img.shields.io/badge/HTML5-orange.svg) ![lang](https://img.shields.io/badge/JS-yellow.svg)
 
+Fab Forever is a website aimed at persons interested in 3D Printing technology. By browsing the site visitors can learn about the basics of 3D printing covering printers, materials, models and first troubleshooting techniques.
 
-
+# USER STORIES  
 
 
 
