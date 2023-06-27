@@ -71,7 +71,7 @@ body {
     width: 100vw;
     height: 100vh;
     background: rgb(14, 110, 218);
-    background: linear-gradient(-330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 100%);
+    background: linear-gradient(-330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 70%);
 }
 
 .hero__mask {
@@ -121,7 +121,7 @@ body {
     width: 14.5rem;
     height: 3.9rem;
     margin-top: 3rem;
-    background-color: #9B00FF;
+    background-color: #BC00FF;
     color: white;
     border: none;
     border-radius: 5px;
@@ -154,7 +154,7 @@ body {
     flex-direction: column;
     justify-content: center;
     background: rgb(14, 110, 218);
-    background: linear-gradient(330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 100%);
+    background: linear-gradient(330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 70%);
 }
 
 .top-divider {
@@ -228,7 +228,7 @@ h2 span {
     flex-direction: column;
     justify-content: center;
     background: rgb(14, 110, 218);
-    background: linear-gradient(330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 100%);
+    background: linear-gradient(-330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 70%);
 }
 
 .knowledge--top-divider {

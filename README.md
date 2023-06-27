@@ -6,7 +6,15 @@ Fab Forever is a website aimed at persons interested in 3D Printing technology. 
 
 # USER STORIES  
 
+### FIRST TIME VISITOR GOALS (US1-PP1):
+    - I am a first time visitor. I want to be able to navigate the website easily with optical markers for where I have already been.
+    - As a first time visitor I want to be able to understand the main purpose of the website.
+    - As a first time visitor I need social proof as a means to decide if I can trust this site.
 
+# TOOLS USED
+
+## PREVIS
+The previs (eg hifi wireframes) was made using affinity designer. There is also a pdf in the docs folder to provide a viewable document if you dont have it. However, you can get a license or a trial [here](https://affinity.serif.com/en/designer/).
 
 # ACKNOWLEDGEMENTS
 
@@ -18,13 +26,32 @@ The JavaScript code for the responsive menu was changed and built upon to suit t
 ## Keeping the mobile browser from scrolling horizontal
 The extra HTML declarations to do this was taken from the following source:
 
-[Klaas van der Weij](https://stackoverflow.com/questions/4192277/disable-horizontal-scroll-on-mobile-web) - It is the second answer with 57 points.
+[Klaas van der Weij](https://stackoverflow.com/a/16981485)
 
 ## IMAGES
-The vector image in the hero section is a licensed asset from:
+The 3D Printer vector image in the hero section is a licensed asset from:
 
-[Envato Elements](https://elements.envato.com/de/isometric-3d-printer-vector-illustration-C74XDF5)
+[Naulicrea on Envato Elements](https://elements.envato.com/en/isometric-3d-printer-vector-illustration-C74XDF5)
 
-This must change later to avoid licensing problems.
+==The license is in the /docs/licenses folder==
 
+The faces of the testimonials are taken from Unsplash and have an attribution license:
 
+[Sporlab on Unsplash](https://unsplash.com/de/fotos/d1dIYUnjL2Y)
+
+[Shot by Cerqueira on Unsplash](https://unsplash.com/en/fotos/CWy7qOyv9ME)
+
+[Farhad Eidi on Unsplash](https://unsplash.com/en/fotos/yfefPhTFWU8)
+
+You can have a look at the license [here](https://unsplash.com/en/lizenz)
+
+## FONTS  
+Fonts are hosted within the website to account for the GDPR laws in germany. However,
+the fonts used are Poppins and Montserrat. Two popular fonts provided by google. The CSS and the
+fonts come from here:
+
+[POPPINS - google webfont helper by Mario Ranftl](https://gwfh.mranftl.com/fonts/poppins?subsets=latinelements.envato.com/de/isometric-3d-printer-vector-illustration-C74XDF5)
+
+[MONTSERRAT - google webfont helper by Mario Ranftl](https://gwfh.mranftl.com/fonts/montserrat?subsets=latin)
+
+The fonts are released under the [SIL Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
