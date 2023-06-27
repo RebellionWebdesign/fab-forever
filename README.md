@@ -55,7 +55,7 @@ The 3D Printer vector image in the hero section is a licensed asset from:
 
 [Naulicrea on Envato Elements](https://elements.envato.com/de/isometric-3d-printer-vector-illustration-C74XDF5)
 
-==The license is in the /docs/licenses folder==
+The license is in the /docs/licenses folder
 
 The faces of the testimonials are taken from Unsplash and have an attribution license:
 
@@ -66,6 +66,14 @@ The faces of the testimonials are taken from Unsplash and have an attribution li
 [Farhad Eidi on Unsplash](https://unsplash.com/de/fotos/yfefPhTFWU8)
 
 You can have a look at the license [here](https://unsplash.com/de/lizenz)
+
+The social icons are from [FontAwesome](https://fontawesome.com/) in the free version, specifically these:
+
+[Instagram](https://fontawesome.com/search?q=instagram&o=r)
+
+[Facebook](https://fontawesome.com/search?q=facebook&o=r)
+
+[Twitter](https://fontawesome.com/search?q=twitter&o=r)
 
 ## FONTS  
 Fonts are hosted within the website to account for the GDPR laws in germany. However,
