@@ -1,17 +1,185 @@
+/*The * selects all available elements to set them to the sizing mode*/
 * {
     box-sizing: border-box;
 }
-
+/*This sets the root font size (font size of the html element) to 62.5% or 10 pixels.
+It makes calculating sizes based on rem easier*/
 :root {
     font-size: 62.5%;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-size: 1.6rem;
+html {
+    height: 100%;
 }
+
+body {
+    margin: 0; /*To get a real full site experience we delete all the paddings and margins fom the body*/
+    padding: 0;
+    overflow-x: hidden; /* In addition to that we disable horizontal scrolling for when we hide elements outside of the viewport */
+    font-size: 1.6rem; /*Here we set the font size back to 1.6rem or 16 pixels which is the standard for webfonts*/
+    height: 100%;
+}
+
+/*The following declarations define how elements which share the same styling are styled.*/
+
+/*SECTION STYLINGS START*/
+/*Sections are the main parent for containers, padding is omitted because we want shape dividers.
+Class naming follows this convention .section-lengthX-heightY*/
+
+/*Creates a section which fills the complete viewport in both directions (x and y)*/
+.section-100-100 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.section-100-100--space {
+    justify-content: space-between;
+    flex-direction: column;
+}
+/*Creates a section wwhich fills the complete viewport in x and 50% in y*/
+.section-100-50 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+}
+/*Creates a section wwhich fills the complete viewport in x and 25% in y*/
+.section-100-25 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 25vh;
+}
+
+/*SECTION STYLINGS END*/
+
+/*CONTAINER STYLING START*/
+/*Containers are the parent element for content elements.
+Class naming follows this convention .container-lengthX-divisions*/
+
+/*Creates a full container in 1200px width (content width) which grows in height utomatically depending on the content*/
+.container-100-1 {
+    flex-direction: row;
+    align-items: center;
+    width: 62.5%;
+}
+
+/*Creates a half container in 600px width (content width) which grows in height utomatically depending on the content*/
+.container-50-2 {
+    width: 50%;
+    height: auto;
+}
+/*Creates a one third container in 400px width (content width) which grows in height utomatically depending on the content*/
+.container-30-3 {
+    width: 33.3%;
+}
+
+/*Creates a quarter container in 300px width (content width) which grows in height utomatically depending on the content*/
+.container-25-4 {
+    width: 25%;
+}
+
+/*CONTAINER STYLING END*/
+
+/*HEADINGS STYLING START*/
+/*Headings should be always the same for consistency in design. For visual hierarchy the fonts shrink by 15px*/
+
+h1 {
+    font-family: montserrat, sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+h2 {
+    font-family: montserrat, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+h3 {
+    font-family: montserrat, sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+p {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.text--white {
+    color: white;
+}
+/*HEADINGS STYLING END*/
+
+/*SPAN STYLINGS START*/
+/*Spans are used to style text within an element differently from the rest.
+In this case the first word needs to be extra bold*/
+
+.strong-font {
+    font-weight: 800;    
+}
+
+/*SPAN STYLINGS END*/
+
+/*POSITIONAL AND ZINDEX STYLINGS START*/
+.position--rel {
+    position: relative;
+}
+
+.position--abs  {
+    position: absolute;
+}
+
+.position--z {
+    z-index: 1;
+}
+/*POSITIONAL STYLINGS END*/
+
+/*MARGIN STYLES START*/
+
+.margin--top {
+    margin-top: 3rem;
+}
+
+.margin-top--mobile {
+    margin-top: 3.5rem;
+}
+
+/*MARGIN STYLES END*/
+
+/*FLEX AND GRID CLASSES START*/
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+/*FLEX AND GRID CLASSES END*/
+
+/*SHADOWS STYLINGS START*/
+/*We can also make a utility class of box and text shadows so we can easily add and remove them via a class*/
+
+.box-shadow{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.text-shadow{
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+/*SHADOWS STYLINGS END*/
 
 /*HEADER START*/
 .headerbar {
@@ -67,190 +235,81 @@ body {
 /*HEADER END*/
 
 /*HERO SECTION START*/
-.hero {
-    width: 100vw;
-    height: 100vh;
-    background: rgb(14, 110, 218);
-    background: linear-gradient(-330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 70%);
+.section-100-100--bg-gradient {
+    background: rgb(14,110,218);
+    background:
+    linear-gradient(33deg, rgba(255,255,255,1) 65%, rgba(105,32,221,0) 65%),
+    linear-gradient(43deg, rgba(14,110,218,1) 0%, rgba(105,32,221,1) 70%);
 }
 
-.hero__mask {
-    width: 100%;
-    height: 100%;
-    background-image: url("/img/hero-section-clip-shape.svg");
-    background-position: center center;
-    padding: 9.5rem 36rem 9.5rem 36rem;
-}
-
-.hero__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-}
-
-.hero__container--left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-}
-
-.headline {
-    font-family: montserrat, sans-serif;
-    font-weight: 400;
-    font-size: 5rem;
-    line-height: 1;
-}
-
-.headline span {
-    font-weight: 800;
-}
-
-.hero__container--left p {
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1;
-    margin-top: -3rem;
-}
-
-.hero__container--left button {
-    width: 14.5rem;
-    height: 3.9rem;
-    margin-top: 3rem;
-    background-color: #BC00FF;
+.cta {
+    width: 145px;
+    height: 40px;
+    background-color: #9B00FF;
     color: white;
     border: none;
     border-radius: 5px;
+    margin-top: 3rem;
+}
+
+.cta--text {
+    -webkit-font-smoothing: antialiased;
     font-family: montserrat, sans-serif;
-    font-weight: 600;
     font-size: 1.6rem;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-    transition: 1s;
-    transition-timing-function: ease-in-out;
+    font-weight: 600;
+}
+/*ABOUT SECTION START*/
+.section-100-100--gradient {
+    background: rgb(14,110,218);
+    background: linear-gradient(-43deg, rgba(14,110,218,1) 0%, rgba(105,32,221,1) 70%);
 }
 
-.hero__container--left button:hover {
-    transform: scale(1.05);
+.shape-divider--top {
+    background-repeat: no-repeat;
 }
 
-.hero__container--right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-}
-/*HERO SECTION END*/
-
-/*RESOURCES START*/
-.resources {
-    padding: 0rem 36rem 0rem 36rem;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: rgb(14, 110, 218);
-    background: linear-gradient(330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 70%);
-}
-
-.top-divider {
-    position: absolute;
-    left: 0;
-    top: 947px;
-}
-
-.bottom-divider {
-    position: absolute;
-    top: 1724px;
-    left: 0;
-}
-
-.resources__container--left {
-    width: 50%;
-}
-
-h2 {
-    font-family: montserrat, sans-serif;
-    font-weight: 400;
-    font-size: 3.9rem;
-    color: white;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-}
-
-h2 span {
-    font-weight: 800;
-}
-
-.resources__container--left p {
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    color: white;
-}
-/*RESOURCES END*/
-
-/*TESTIMONIAL START*/
-.testimonial {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100vw;
-    height: 25vh;
-    padding: 1rem 36rem 1rem 36rem;
-}
-
-.testimonial__container--left {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.testimonial__container--left h2 {
-    color: black;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-}
-
-.testimonial__container--right {
-    width: 50%;
-}
-/*TESTIMONIAL END*/
-
-/*KNOWLEDGE START*/
-.knowledge {
-    padding: 0rem 36rem 0rem 36rem;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: rgb(14, 110, 218);
-    background: linear-gradient(-330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 70%);
-}
-
-.knowledge--top-divider {
-    position: absolute;
-    left: 0;
-    top: 2130px;
+.shape-divider--bottom {
+    background-repeat: no-repeat;
+    margin-bottom: -4px;
     transform: scaleX(-1);
 }
 
-.knowledge--bottom-divider {
-    position: absolute;
-    top: 2907px;
-    left: 0;
+.position-abs__center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.knowledge__container--left {
-    width: 50%;
+.grid-card {
+    width: 21rem;
+    height: 21rem;
+    
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
 }
 
-.knowledge__container--left p {
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    color: white;
+.grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 70px;
+    text-align: center;
+    place-items: end;
 }
-/*KNOWLEDGE END*/
+
+.grid-card__background--basics {
+    background-image: url("/assets/img/fab-forever-cards-basics.webp");
+}
+
+.grid-card__background--models {
+    background-image: url("/assets/img/fab-forever-cards-models.webp");
+}
+
+.grid-card__background--help {
+    background-image: url("/assets/img/fab-forever-cards-help.webp");
+}
+
+.grid-card__background--materials {
+    background-image: url("/assets/img/fab-forever-cards-materials.webp");
+}

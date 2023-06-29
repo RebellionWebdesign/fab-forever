@@ -38,6 +38,9 @@ The code was written in VSCODE using the following extensions:
 - HTML CSS Support for Intellisense id and class completion - [HTML CSS SUPPORT](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
 - Auto Rename Tag for easy automated tag changing - [AUTO RENAME TAG](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 
+## EXTERNAL TOOLS  
+Gradients were made with [this tool](https://cssgradient.io/) 
+
 # ACKNOWLEDGEMENTS
 
 ## RESPONSIVE NAVIGATION  
