@@ -2,8 +2,10 @@
 The elements declared here are gener*/
 
 /*SETS BOX SIZING TO BORDER BOX FOR ALL ELEMENTS*/
-* {
+*, *::before, *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /*FOR EASIER REM CALCULATIONS WE SET THE ROOT FONT SIZE TO 10PX*/
