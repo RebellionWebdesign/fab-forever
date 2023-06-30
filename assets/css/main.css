@@ -9,9 +9,6 @@ The elements declared here are gener*/
 }
 
 /*FOR EASIER REM CALCULATIONS WE SET THE HTML FONT SIZE TO 10PX*/
-:root {
-    --font-size__main: 62.5%;
-}
 
 /*BODY STYLES*/
 body {
