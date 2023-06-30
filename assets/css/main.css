@@ -10,7 +10,7 @@ The elements declared here are gener*/
 
 /*FOR EASIER REM CALCULATIONS WE SET THE ROOT FONT SIZE TO 10PX*/
 :root {
-    font-size: 62.5%;
+    --font-size__main: 62.5%;
 }
 
 /*BODY STYLES*/
