@@ -9,6 +9,9 @@ The elements declared here are gener*/
 }
 
 /*FOR EASIER REM CALCULATIONS WE SET THE HTML FONT SIZE TO 10PX*/
+html {
+    scroll-behavior: smooth;
+}
 
 /*BODY STYLES*/
 body {
@@ -20,10 +23,6 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 /*SECTION STYLES*/
