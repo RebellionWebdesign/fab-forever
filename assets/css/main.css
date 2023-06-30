@@ -8,7 +8,7 @@ The elements declared here are gener*/
     padding: 0;
 }
 
-/*FOR EASIER REM CALCULATIONS WE SET THE ROOT FONT SIZE TO 10PX*/
+/*FOR EASIER REM CALCULATIONS WE SET THE HTML FONT SIZE TO 10PX*/
 :root {
     --font-size__main: 62.5%;
 }
