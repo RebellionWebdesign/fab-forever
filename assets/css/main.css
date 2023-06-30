@@ -18,6 +18,10 @@ body {
     overflow-x: hidden; /*disables horizontal scrolling - we need to hide stuff outside the viewport*/
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*SECTION STYLES*/
 /*this generates a full width and height section*/
 .section-full {         
