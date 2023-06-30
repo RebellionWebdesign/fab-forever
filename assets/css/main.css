@@ -20,6 +20,7 @@ body {
     margin: 0;          /*removes all margin from the body*/
     padding: 0;         /*removes all padding from the body*/
     overflow-x: hidden; /*disables horizontal scrolling - we need to hide stuff outside the viewport*/
+    width: 100%;
 }
 
 html {
