@@ -11,6 +11,7 @@ The elements declared here are gener*/
 /*FOR EASIER REM CALCULATIONS WE SET THE HTML FONT SIZE TO 10PX*/
 html {
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 /*BODY STYLES*/
