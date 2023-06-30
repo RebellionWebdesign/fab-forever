@@ -17,7 +17,7 @@ html {
 /*BODY STYLES*/
 body {
 
-    font-size: var(--font-size__main);
+    font-size: 1.6rem;
     margin: 0;          /*removes all margin from the body*/
     padding: 0;         /*removes all padding from the body*/
     overflow-x: hidden; /*disables horizontal scrolling - we need to hide stuff outside the viewport*/
