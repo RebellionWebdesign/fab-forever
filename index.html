@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive-header.css">
 </head>
 
 <body>
@@ -31,16 +32,16 @@
     <!--RESPONSIVE HEADER END-->
 
     <!--HERO SECTION START-->
-    <section class="section-100-100 section-100-100--bg-gradient flex">
-        <div class="container-100-1 flex">
-            <div class="container-50-2">
-                <h1 class="text-shadow"><span class="strong-font">NEW</span> to 3D Printing?</h1>
+    <section class="section-full background-mask flex flex-center">
+        <div class="container container-xs flex flex-center-y flex-column-xs">
+            <div class="column-2 column-2-xs">
+                <h1><span>NEW</span> to 3D Printing?</h1>
                 <p>Bring your ideas to life with our comprehensive roundup!</p>
-                <button class="cta box-shadow cta--text">
+                <button>
                     GET STARTED!
                 </button>
             </div>
-            <div class="container-50-2">
+            <div class="column-2 column-2-xs">
                 <img src="/assets/img/hero-section-3d-printer-illustration.svg">
             </div>
         </div>
@@ -48,41 +49,55 @@
     <!--HERO SECTION END-->
 
     <!--ABOUT SECTION START-->
-    <section class="section-100-100 section-100-100--gradient section-100-100--space position--rel section-100-100--mobile">
-        <div class="shape-divider--top">
-            <img src="/assets/img/shape-divider-top.svg">
-        </div>
-        <div class="container-100-1 position--abs position-abs__center container-100-1--mobile flex">
-            <div class="container-50-2">
-                <h2 class="text-shadow text--white margin-top--mobile"><span class="strong-font">3D</span>Printing resources for you!</h2>
-                <p class="text--white margin--top">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                </p>
-            </div>
-            <div class="container-50-2 grid grid-container">
-                <div class="grid-card grid-card__background--basics box-shadow strong-font"><h3>BASICS</h3></div>
-                <div class="grid-card grid-card__background--models box-shadow strong-font"><h3>MODELS</h3></div>
-                <div class="grid-card grid-card__background--help box-shadow strong-font"><h3>HELP</h3></div>
-                <div class="grid-card grid-card__background--materials box-shadow strong-font"><h3>MATERIALS</h3></div>
-            </div>
-        </div>
-        <div class="shape-divider--bottom">
-            <img src="/assets/img/shape-divider-bottom.svg">
-        </div>
+    <section class="section-full background-reverse divider-space">
+
     </section>
     <!--ABOUT SECTION END-->
 
     <!--TESTIMONIAL SECTION START-->
-    <section class="section-100-25">
-        <div class="container-100-1 flex">
-            <div class="container-50-2">
-                <h2 class="text-shadow"><span class="strong-font">TESTI</span>MONIAL</h2>
+    <section class="section-half flex flex-center">
+        <div class="container container-xs flex-center">
+            <div class="column-2 column-2-xs">
+                <h2 class="text-shadow"><span>TESTI</span>MONIAL</h2>
             </div>
-            <div class="container-50-2"></div>
+            <div class="column-2 column-2-xs flex-center box-shadow rounded testimonial-card">
+                <img src="/assets/img/testimonial-slider-asian-dude.webp">
+                <div>
+                    <p class="testimonial-text">"Jeez. This got me up and running for a course!"</p>
+                    <p><i>Kaneda Yamagata - CTO MeshBash</i></p>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
     <!--TESTIMONIAL SECTION END-->
 
-       <script src="/js/mobile-menu.js"></script>
+    <!--CONTACT SECTION START-->
+    <section class="section-full background flex flex-center flex-column ">
+
+
+    </section>
+    <!--CONTACT SECTION END-->
+
+    <!--FOOTER START-->
+    <footer class="flex flex-center">
+        <div class="container container-xs flex flex-center">
+            <div class="column-2 column-2-xs">
+                <img class="footer-logo" src="assets/img/fab-forever-logo.svg">
+                <p>An educational static website project</p>
+            </div>
+            <div class="column-2 column-2-xs flex">
+                <div class="social">
+                    <img class="social-icon" src="assets/img/instagram.svg">
+                    <img class="social-icon" src="assets/img/square-facebook.svg">
+                    <img class="social-icon" src="assets/img/square-twitter.svg">
+                    <img class="social-icon" src="assets/img/slack.svg">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--FOOTER END-->
+    <script src="/js/mobile-menu.js" defer></script>
 </body>
 
 </html>

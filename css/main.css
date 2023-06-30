@@ -1,99 +1,61 @@
-/*The * selects all available elements to set them to the sizing mode*/
+/*In this section of the css file we define all classes we only want to write once (DRY)
+The elements declared here are gener*/
+
+/*SETS BOX SIZING TO BORDER BOX FOR ALL ELEMENTS*/
 * {
     box-sizing: border-box;
 }
-/*This sets the root font size (font size of the html element) to 62.5% or 10 pixels.
-It makes calculating sizes based on rem easier*/
+
+/*FOR EASIER REM CALCULATIONS WE SET THE ROOT FONT SIZE TO 10PX*/
 :root {
     font-size: 62.5%;
 }
 
-html {
-    height: 100%;
-}
-
+/*BODY STYLES*/
 body {
-    margin: 0; /*To get a real full site experience we delete all the paddings and margins fom the body*/
-    padding: 0;
-    overflow-x: hidden; /* In addition to that we disable horizontal scrolling for when we hide elements outside of the viewport */
-    font-size: 1.6rem; /*Here we set the font size back to 1.6rem or 16 pixels which is the standard for webfonts*/
-    height: 100%;
+    margin: 0;          /*removes all margin from the body*/
+    padding: 0;         /*removes all padding from the body*/
+    overflow-x: hidden; /*disables horizontal scrolling - we need to hide stuff outside the viewport*/
 }
 
-/*The following declarations define how elements which share the same styling are styled.*/
-
-/*SECTION STYLINGS START*/
-/*Sections are the main parent for containers, padding is omitted because we want shape dividers.
-Class naming follows this convention .section-lengthX-heightY*/
-
-/*Creates a section which fills the complete viewport in both directions (x and y)*/
-.section-100-100 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*SECTION STYLES*/
+/*this generates a full width and height section*/
+.section-full {         
     width: 100vw;
     height: 100vh;
 }
 
-.section-100-100--space {
-    justify-content: space-between;
-    flex-direction: column;
-}
-/*Creates a section wwhich fills the complete viewport in x and 50% in y*/
-.section-100-50 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*this generates a full width and half height section*/
+.section-half {         
     width: 100vw;
     height: 50vh;
 }
-/*Creates a section wwhich fills the complete viewport in x and 25% in y*/
-.section-100-25 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 25vh;
-}
 
-/*SECTION STYLINGS END*/
-
-/*CONTAINER STYLING START*/
-/*Containers are the parent element for content elements.
-Class naming follows this convention .container-lengthX-divisions*/
-
-/*Creates a full container in 1200px width (content width) which grows in height utomatically depending on the content*/
-.container-100-1 {
-    flex-direction: row;
-    align-items: center;
+/*CONTAINER STYLES*/
+.container {
     width: 62.5%;
-}
-
-/*Creates a half container in 600px width (content width) which grows in height utomatically depending on the content*/
-.container-50-2 {
-    width: 50%;
     height: auto;
 }
-/*Creates a one third container in 400px width (content width) which grows in height utomatically depending on the content*/
-.container-30-3 {
-    width: 33.3%;
+
+/*COLUMN STYLES*/
+
+/*we can put columns into containers, this generates a column half the width of its parent*/
+.column-2 {             
+    width: 50%;
 }
 
-/*Creates a quarter container in 300px width (content width) which grows in height utomatically depending on the content*/
-.container-25-4 {
+/*we can put columns into containers, this generates a column quarter the width of its parent*/
+.column-4 {             
+    height: auto;
     width: 25%;
 }
 
-/*CONTAINER STYLING END*/
-
-/*HEADINGS STYLING START*/
-/*Headings should be always the same for consistency in design. For visual hierarchy the fonts shrink by 15px*/
-
+/*GENERAL TEXT STYLES (HEADINGS, PARAGRAPHS AND SPANS)*/
 h1 {
     font-family: montserrat, sans-serif;
     font-size: 5rem;
     font-weight: 400;
-    margin: 0;
+    margin: 0 0 0 -2px;
 }
 
 h2 {
@@ -111,191 +73,132 @@ h3 {
 
 p {
     font-family: poppins, sans-serif;
+    font-size: 1.6rem;
     font-weight: 400;
     margin: 0;
 }
 
-.text--white {
-    color: white;
-}
-/*HEADINGS STYLING END*/
-
-/*SPAN STYLINGS START*/
-/*Spans are used to style text within an element differently from the rest.
-In this case the first word needs to be extra bold*/
-
-.strong-font {
+/*some text parts need to be very bold, so we set them here*/
+span {         
     font-weight: 800;    
 }
 
-/*SPAN STYLINGS END*/
-
-/*POSITIONAL AND ZINDEX STYLINGS START*/
-.position--rel {
-    position: relative;
-}
-
-.position--abs  {
-    position: absolute;
-}
-
-.position--z {
-    z-index: 1;
-}
-/*POSITIONAL STYLINGS END*/
-
-/*MARGIN STYLES START*/
-
-.margin--top {
-    margin-top: 3rem;
-}
-
-.margin-top--mobile {
-    margin-top: 3.5rem;
-}
-
-/*MARGIN STYLES END*/
-
-/*FLEX AND GRID CLASSES START*/
-
-.flex {
-    display: flex;
-}
-
-.grid {
-    display: grid;
-}
-
-/*FLEX AND GRID CLASSES END*/
-
-/*SHADOWS STYLINGS START*/
-/*We can also make a utility class of box and text shadows so we can easily add and remove them via a class*/
-
-.box-shadow{
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+/*the default text color is black, but we also need some white text on the page*/
+.text-white {          
+    color: white;
 }
 
 .text-shadow{
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
 }
 
-/*SHADOWS STYLINGS END*/
+.text-center {
+    text-align: center;
+}
 
-/*HEADER START*/
-.headerbar {
+/*WE WANT DO ECIDE EASILY WHETHER TO USE FLEX OR GRID ON AN ELEMENT*/
+.flex {
     display: flex;
-    justify-content: space-between;
+}
+
+.flex-center {
+    justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 6vh;
-    padding: 1rem 36rem 1rem 36rem;
-    background-color: white;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.20);
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
-.headerbar__images {
-    width: 20rem;
+.flex-center-x {
+    justify-content: center;
 }
 
-.headerbar__nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    margin-right: -3rem;
-    font-family: poppins, sans-serif;
-    font-weight: 400;
+.flex-center-y {
+    align-items: center;
 }
 
-.headerbar li {
-    list-style: none;
+.flex-column {
+    flex-direction: column;
 }
 
-.headerbar a {
-    text-decoration: none;
-    display: block;
-    padding-right: 3rem;
-    color: black;
+.flex-row {
+    flex-direction: row;
 }
 
-.headerbar a:hover {
-    color: #6920DD;
+.grid {
+    display: grid;
 }
 
-.headerbar a:active {
-    color: #6920DD;
+/*BOXES SOMETIMES NEED SOME SHADOW AND ROUND BORDERS TOO*/
+.box-shadow{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
 }
 
-.headerbar a:visited {
-    color: rgb(71, 71, 71);
-}
-/*HEADER END*/
-
-/*HERO SECTION START*/
-.section-100-100--bg-gradient {
-    background: rgb(14,110,218);
-    background:
-    linear-gradient(33deg, rgba(255,255,255,1) 65%, rgba(105,32,221,0) 65%),
-    linear-gradient(43deg, rgba(14,110,218,1) 0%, rgba(105,32,221,1) 70%);
+.rounded {
+    border-radius: 0.5rem;
 }
 
-.cta {
-    width: 145px;
-    height: 40px;
+/*BUTTONS CAN ALSO LOOK NICE*/
+button {
+    width: 14.5rem;
+    height: 4rem;
+    border: none;
+    border-radius: 0.5rem;
     background-color: #9B00FF;
     color: white;
-    border: none;
-    border-radius: 5px;
     margin-top: 3rem;
-}
-
-.cta--text {
-    -webkit-font-smoothing: antialiased;
     font-family: montserrat, sans-serif;
     font-size: 1.6rem;
     font-weight: 600;
 }
-/*ABOUT SECTION START*/
-.section-100-100--gradient {
-    background: rgb(14,110,218);
-    background: linear-gradient(-43deg, rgba(14,110,218,1) 0%, rgba(105,32,221,1) 70%);
+
+/*BACKGROUND GRADIENTS*/
+.background {
+    background: rgb(17,0,255);
+    background: linear-gradient(43deg, rgba(17,0,255,1) 0%, rgba(188,0,255,1) 95%);
 }
 
-.shape-divider--top {
-    background-repeat: no-repeat;
+.background-reverse {
+    background: rgb(188,0,255);
+    background: linear-gradient(43deg, rgba(188,0,255,1) 0%, rgba(17,0,255,1) 95%);
 }
 
-.shape-divider--bottom {
-    background-repeat: no-repeat;
-    margin-bottom: -4px;
+.background-mask {
+    background: rgb(255,255,255);
+    background: 
+    linear-gradient(30deg, rgba(255,255,255,1) 65%, rgba(17,0,255,0) 65%),
+    linear-gradient(43deg, rgba(17,0,255,1) 0%, rgba(188,0,255,1) 95%);
+}
+
+/*SOMETIMES WE NEED TO SPACE OR POSITION THINGS DIFFERENTLY*/
+.divider-space {
+    justify-content: space-between;
+}
+
+/*OR WE NEED TO FLIP STUFF AROUND*/
+.flip-x {
     transform: scaleX(-1);
 }
 
-.position-abs__center {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/*SHAPE DIVIDERS ARE A THING, SO WE NEED TO INTEGRATE THEM*/
+.divider-bottom {
+    margin-bottom: -2px;
+}
+
+/*IN THIS SECTION WE STYLE ELEMENTS WHICH NEED CUSTOM STYLING*/
+
+/*Here we style the clickboxes with grid*/
+.grid-container {
+    place-items: end;
+    width: 50%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 35px;
+    grid-row-gap: 35px;
 }
 
 .grid-card {
-    width: 21rem;
-    height: 21rem;
-    
-    border-radius: 5px 5px 5px 5px;
-    overflow: hidden;
-    background-position: center center;
-    background-size: cover;
-}
-
-.grid-container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 70px;
     text-align: center;
-    place-items: end;
+    padding: 2rem;
+    width: 210px;
+    height: 210px;
 }
 
 .grid-card__background--basics {
@@ -312,4 +215,82 @@ In this case the first word needs to be extra bold*/
 
 .grid-card__background--materials {
     background-image: url("/assets/img/fab-forever-cards-materials.webp");
+}
+
+/*Here we style the testimonial with flex*/
+.testimonial-card {
+    padding: 2rem;
+    width: 70%;
+}
+
+.testimonial-card img {
+    border: 1rem solid #9B00FF;
+    border-radius: 50%;
+}
+
+.testimonial-card p {
+    padding-left: 3rem;
+}
+
+.testimonial-text {
+    font-size: 1.8rem;
+}
+
+.contact .column-2 p {
+    margin-top: 2rem;
+}
+
+/*Here we style the contact form with flex*/
+label {
+    vertical-align: top;
+}
+
+.form-wrapper {
+    width: 76.2%;
+    height: 150%;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.form-wrapper h3 {
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    height: 4rem;
+    padding-left: 2rem;
+    border-radius: 2rem;
+    border: 1px solid rgb(150, 150, 150);
+}
+
+textarea {
+    width: 100%;
+    height: 25rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    border-radius: 2rem;
+    border: 1px solid rgb(150, 150, 150);;
+}
+
+/*FOOTER STYLINGS*/
+footer {
+    width: 100vw;
+    height: 8vh;
+}
+
+.footer-logo {
+    width: 20rem;
+}
+
+.social {
+    margin-left: auto;
+}
+
+.social-icon {
+    width: 2.5rem;
+    height: 100%;
+    margin-left: 2rem;
 }

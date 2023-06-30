@@ -1,0 +1,436 @@
+/*Styles for the headerbar are applied here for a better overview in the CSS files*/
+
+/*HEADER START*/
+.headerbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 6vh;
+    padding: 1rem 36rem 1rem 36rem;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.20);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.headerbar__images {
+    width: 20rem;
+}
+
+.headerbar__nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: -3rem;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.headerbar li {
+    list-style: none;
+}
+
+.headerbar a {
+    text-decoration: none;
+    display: block;
+    padding-right: 3rem;
+    color: black;
+}
+
+.headerbar a:hover {
+    color: #6920DD;
+}
+
+.headerbar a:active {
+    color: #6920DD;
+}
+
+.headerbar a:visited {
+    color: rgb(71, 71, 71);
+}
+/*HEADER END*/
+
+/*RESPONSIVE HEADER START*/
+@media screen and (max-width:320px) {
+    /*RESPONSIVE HEADER START*/
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .headerbar {
+        padding: 1rem 1rem 1rem 1rem;
+        display: block;
+    }
+
+    .headerbar__images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerbar__mobile {
+        width: 3.5rem;
+        height: 2.5rem;
+        align-self: center;
+    }
+
+    .headerbar__logo {
+        width: 15rem;
+        align-self: center;
+    }
+
+    .headerbar__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45vw;
+        height: 100vh;
+        background: rgb(14, 110, 218);
+        background: linear-gradient(330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 100%);
+        transition: right 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .headerbar__nav ul {
+        margin: 0;
+        padding-top: 0;
+        display: block;
+        margin-right: -3rem;
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+    }
+
+    .headerbar__nav a {
+        color: white;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .headerbar__nav a:active {
+        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    .headerbar__nav a:hover {
+        color: white;
+    }
+
+    .headerbar__nav a:visited {
+        color: rgba(255, 255, 255, 0.50);
+    }
+
+    .headerbar__mobile--close {
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+        border: 1px solid white;
+        border-radius: 100%;
+    }
+
+    .closed {
+        right: -45vw;
+    }
+
+    .open {
+        right: 0;
+    }
+/*RESPONSIVE HEADER END*/
+}
+
+@media screen and (max-width:576px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .headerbar {
+        padding: 1rem 1rem 1rem 1rem;
+        display: block;
+    }
+
+    .headerbar__images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerbar__mobile {
+        width: 3.5rem;
+        height: 2.5rem;
+        align-self: center;
+    }
+
+    .headerbar__logo {
+        width: 15rem;
+        align-self: center;
+    }
+
+    .headerbar__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45vw;
+        height: 100vh;
+        background: rgb(14, 110, 218);
+        background: linear-gradient(330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 100%);
+        transition: right 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .headerbar__nav ul {
+        margin: 0;
+        padding-top: 0;
+        display: block;
+        margin-right: -3rem;
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+    }
+
+    .headerbar__nav a {
+        color: white;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .headerbar__nav a:active {
+        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    .headerbar__nav a:hover {
+        color: white;
+    }
+
+    .headerbar__nav a:visited {
+        color: rgba(255, 255, 255, 0.50);
+    }
+
+    .headerbar__mobile--close {
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+        border: 1px solid white;
+        border-radius: 100%;
+    }
+
+    .closed {
+        right: -45vw;
+    }
+
+    .open {
+        right: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .headerbar {
+        padding: 1rem 1rem 1rem 1rem;
+        display: block;
+    }
+
+    .headerbar__images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerbar__mobile {
+        width: 3.5rem;
+        height: 2.5rem;
+        align-self: center;
+    }
+
+    .headerbar__logo {
+        width: 15rem;
+        align-self: center;
+    }
+
+    .headerbar__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45vw;
+        height: 100vh;
+        background: rgb(14, 110, 218);
+        background: linear-gradient(330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 100%);
+        transition: right 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .headerbar__nav ul {
+        margin: 0;
+        padding-top: 0;
+        display: block;
+        margin-right: -3rem;
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+    }
+
+    .headerbar__nav a {
+        color: white;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .headerbar__nav a:active {
+        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    .headerbar__nav a:hover {
+        color: white;
+    }
+
+    .headerbar__nav a:visited {
+        color: rgba(255, 255, 255, 0.50);
+    }
+
+    .headerbar__mobile--close {
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+        border: 1px solid white;
+        border-radius: 100%;
+    }
+
+    .closed {
+        right: -45vw;
+    }
+
+    .open {
+        right: 0;
+    }
+}
+
+@media screen and (max-width:992px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .headerbar {
+        padding: 1rem 1rem 1rem 1rem;
+        display: block;
+    }
+
+    .headerbar__images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerbar__mobile {
+        width: 3.5rem;
+        height: 2.5rem;
+        align-self: center;
+    }
+
+    .headerbar__logo {
+        width: 15rem;
+        align-self: center;
+    }
+
+    .headerbar__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45vw;
+        height: 100vh;
+        background: rgb(14, 110, 218);
+        background: linear-gradient(330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 100%);
+        transition: right 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .headerbar__nav ul {
+        margin: 0;
+        padding-top: 0;
+        display: block;
+        margin-right: -3rem;
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+    }
+
+    .headerbar__nav a {
+        color: white;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .headerbar__nav a:active {
+        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    .headerbar__nav a:hover {
+        color: white;
+    }
+
+    .headerbar__nav a:visited {
+        color: rgba(255, 255, 255, 0.50);
+    }
+
+    .headerbar__mobile--close {
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+        border: 1px solid white;
+        border-radius: 100%;
+    }
+
+    .closed {
+        right: -45vw;
+    }
+
+    .open {
+        right: 0;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .headerbar__mobile {
+        display: none;
+    }
+    
+    .headerbar__mobile--close {
+        display: none;
+    }
+}
+/*RESPONSIVE HEADER END*/
