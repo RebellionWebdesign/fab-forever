@@ -21,6 +21,7 @@ body {
     padding: 0;         /*removes all padding from the body*/
     overflow-x: hidden; /*disables horizontal scrolling - we need to hide stuff outside the viewport*/
     width: 100%;
+    display: flex;
 }
 
 html {
