@@ -33,13 +33,13 @@ html {
 /*this generates a full width and height section*/
 .section-full {         
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /*this generates a full width and half height section*/
 .section-half {         
     width: 100vw;
-    height: 50vh;
+    min-height: 50vh;
 }
 
 /*CONTAINER STYLES*/
