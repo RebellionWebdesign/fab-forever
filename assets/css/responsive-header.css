@@ -18,6 +18,7 @@
 
 .headerbar__images {
     width: 20rem;
+    align-items: center;
 }
 
 .headerbar__nav ul {
