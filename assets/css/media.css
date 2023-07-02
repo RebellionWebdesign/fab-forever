@@ -1,5 +1,5 @@
 /*MEDIA QUERIES FOR XS SCREENS AS A MEANS OF A WORST CASE*/
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 375px) {
 
     /*HERO SECTION STYLES FOR XS*/ 
     h1 {
