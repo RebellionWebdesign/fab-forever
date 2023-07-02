@@ -137,3 +137,51 @@
         margin: 0;
     }
 }
+
+/*MEDIA QUERIES FOR M SCREENS*/
+@media only screen and (max-width: 768px) {
+    /*HERO SECTION STYLES FOR M*/ 
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.6rem
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .container-xs {
+        width: 87.5%;
+        height: auto;
+    }
+
+    .column-2-xs {
+        width: 100%;
+        text-align: center;
+    }
+
+    .column-2-xs > img {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    .flex-column-xs {
+        flex-direction: column-reverse;
+    }
+
+    .flex-row-xs {
+        flex-direction: row;
+    }
+
+    .align-start-xs {
+        align-items: start;
+    }
+}
