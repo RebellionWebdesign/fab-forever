@@ -68,3 +68,71 @@
     }
 
 }
+
+@media only screen and (min-width: 576px) {
+    /*HERO SECTION STYLES FOR S*/ 
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.6rem
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .container-xs {
+        width: 87.5%;
+        height: auto;
+    }
+
+    .column-2-xs {
+        width: 100%;
+        text-align: center;
+    }
+
+    .column-2-xs > img {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    .flex-column-xs {
+        flex-direction: column-reverse;
+    }
+
+    .flex-row-xs {
+        flex-direction: row;
+    }
+
+    .align-start-xs {
+        align-items: start;
+    }
+
+    /*TESTIMONIAL SECTION STYLES FOR XS*/
+
+    .testimonial-text {
+        font-size: 1.3rem;   
+    }
+
+    .testimonial-card  img {
+        width: 50%;
+    }
+
+    .testimonial-card p {
+        padding-left: 0;
+        padding-bottom: 0.5rem;
+    }
+
+    /*FOOTER SECTION STYLES FOR XS*/
+    .footer-logo {
+        width: 15rem;
+        margin: 0;
+    }
+}
