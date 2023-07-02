@@ -149,14 +149,19 @@ span {
 }
 
 /*BUTTONS CAN ALSO LOOK NICE*/
-button {
+.button-wrapper {
+    margin-top: 3rem;
+}
+
+.button {
     width: 14.5rem;
     height: 4rem;
+    padding: 12px 16px;
+    text-decoration: none;
     border: none;
     border-radius: 0.5rem;
     background-color: #9B00FF;
     color: white;
-    margin-top: 3rem;
     font-family: montserrat, sans-serif;
     font-size: 1.6rem;
     font-weight: 600;
