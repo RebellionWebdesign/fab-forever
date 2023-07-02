@@ -52,6 +52,10 @@
 .headerbar a:visited {
     color: rgb(71, 71, 71);
 }
+
+.headerbar a:visited:hover {
+    color: #6920DD;
+}
 /*HEADER END*/
 
 /*RESPONSIVE HEADER START*/
