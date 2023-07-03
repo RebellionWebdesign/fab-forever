@@ -102,13 +102,7 @@
     }
 
     /*FOOTER SECTION STYLES FOR XS*/
-    .footer-logo {
-        display: none;
-    }
 
-    .footer-text {
-        display: none;
-    }
 
     .container-xs--100 {
         width: 100%;
@@ -117,7 +111,7 @@
     .hide {
         display: none;
     }
-
+    
 }
 
 /*MEDIA QUERIES FOR S SCREENS*/
