@@ -262,6 +262,11 @@ span {
     margin-top: 2rem;
 }
 
+/*The contact section needs to be bigger*/
+.contact-section {
+    height: 180vh;
+}
+
 /*Here we style the contact form with flex*/
 label {
     vertical-align: top;
