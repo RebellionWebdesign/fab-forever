@@ -265,6 +265,10 @@ span {
 /*Here we style the contact form with flex*/
 label {
     vertical-align: top;
+    padding-left: 2rem;
+    font-family: montserrat, sans-serif;
+    font-size: 1.2rem;
+    color: rgb(187, 187, 187);
 }
 
 .form-wrapper {
@@ -296,7 +300,6 @@ textarea {
     padding-top: 2em;
     border-radius: 2rem;
     border: 1px solid rgb(150, 150, 150);
-    ;
 }
 
 /*FOOTER STYLINGS*/
