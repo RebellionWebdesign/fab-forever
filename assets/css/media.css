@@ -1,3 +1,8 @@
+/*MEDIA QUERIES FOR XL SCREENS*/
+@media screen and (max-width: 1200px) {
+    
+}
+
 /*MEDIA QUERIES FOR L SCREENS*/
 @media screen and (max-width: 992px) {
     /*HERO SECTION STYLES FOR XS*/ 
