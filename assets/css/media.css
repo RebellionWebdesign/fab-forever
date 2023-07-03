@@ -110,6 +110,10 @@
         display: none;
     }
 
+    .container-2-xs--100 {
+        width: 100%;
+    }
+
 }
 
 /*MEDIA QUERIES FOR S SCREENS*/
