@@ -58,6 +58,14 @@ The elements declared here are gener*/
 .headerbar a:visited:hover {
     color: #6920DD;
 }
+
+.headerbar__mobile {
+    display: none;
+}
+
+.headerbar__mobile--close {
+    display: none;
+}
 /*HEADER END*/
 
 /*SETS BOX SIZING TO BORDER BOX FOR ALL ELEMENTS*/
