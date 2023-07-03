@@ -17,15 +17,13 @@ The website has images which are released under different licenses than the CC l
 # USER STORIES  
 
 ### FIRST TIME VISITOR GOALS (US1-PP1):
-- I am a first time visitor. I want to be able to navigate the website easily with optical markers for where I have already been.
+- I am a first time visitor. I want to be able to navigate the website easily.
 - As a first time visitor I want to be able to understand the main purpose of the website.
-- As a first time visitor I need social proof as a means to decide if I can trust this site.
+- As a first time visitor I need social proof so I can decide if I can trust this site.
 
 ### RETURNING VISITOR GOALS (US2-PP1):
-- I am a returning visitor and I like the site. I want to know if there are any changes to the content by signing up to a newsletter.
-- As a returning visitor I want to make contact to the site owner to ask different things.
-- As a returning visitor I want to be able to share the website to my peers so they also can benefit from it.
-- As a returning visitor I want to be able to skip the landing page and go directly to the content.
+- As a returning visitor I want to make contact to the site owner so I can ask different things.
+- As a returning visitor I want to be able to follow the website through social media.
 
 # TOOLS USED
 
