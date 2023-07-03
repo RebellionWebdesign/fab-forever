@@ -43,6 +43,10 @@
         justify-content: center;
     }
 
+    .flex-order {
+        order: 0;
+    }
+
     .flex-row-xs {
         flex-direction: row;
     }
