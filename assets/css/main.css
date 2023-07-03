@@ -1,6 +1,65 @@
 /*In this section of the css file we define all classes we only want to write once (DRY)
 The elements declared here are gener*/
 
+/*HEADER START*/
+.headerbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 6vh;
+    padding: 1rem 36rem 1rem 36rem;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.20);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.headerbar__images {
+    width: 20rem;
+    align-items: center;
+}
+
+.headerbar__nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: -3rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.headerbar li {
+    list-style: none;
+}
+
+.headerbar a {
+    text-decoration: none;
+    display: block;
+    padding-right: 3rem;
+    color: black;
+}
+
+.headerbar a:hover {
+    color: #6920DD;
+}
+
+.headerbar a:active {
+    color: #6920DD;
+}
+
+.headerbar a:visited {
+    color: rgb(71, 71, 71);
+}
+
+.headerbar a:visited:hover {
+    color: #6920DD;
+}
+/*HEADER END*/
+
 /*SETS BOX SIZING TO BORDER BOX FOR ALL ELEMENTS*/
 *,
 *::before,
