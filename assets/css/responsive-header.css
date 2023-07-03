@@ -60,7 +60,7 @@
 /*HEADER END*/
 
 /*RESPONSIVE HEADER START*/
-@media screen and (max-width:320px) {
+@media screen and (max-width:375px) {
     /*RESPONSIVE HEADER START*/
     body {
         overflow-x: hidden;
