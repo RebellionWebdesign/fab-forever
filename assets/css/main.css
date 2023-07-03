@@ -307,7 +307,14 @@ input[type=email] {
     border: 1px solid rgb(150, 150, 150);
 }
 
+.legal-text {
+    margin-bottom: 1rem;
+}
 
+.newsletter {
+    padding-left: 0;
+    color: black;
+}
 
 /*FOOTER STYLINGS*/
 footer {
