@@ -114,6 +114,10 @@ span {
     display: flex;
 }
 
+.flex-end {
+    justify-content: end;
+}
+
 .flex-center {
     justify-content: center;
     align-items: center;
