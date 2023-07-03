@@ -106,6 +106,10 @@
         display: none;
     }
 
+    .footer-text {
+        display: none;
+    }
+
 }
 
 /*MEDIA QUERIES FOR S SCREENS*/
