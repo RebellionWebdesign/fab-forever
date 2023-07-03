@@ -114,6 +114,10 @@
         width: 100%;
     }
 
+    .hide {
+        display: none;
+    }
+
 }
 
 /*MEDIA QUERIES FOR S SCREENS*/
