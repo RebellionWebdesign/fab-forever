@@ -282,7 +282,7 @@ label {
 
 .form-wrapper {
     width: 76.2%;
-    height: 150%;
+    height: auto;
     padding: 2em;
     background-color: white;
     border-radius: 1rem;
