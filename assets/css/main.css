@@ -280,6 +280,10 @@ label {
     color: red;
 }
 
+.column-2 > p {
+    margin-top: 1.5rem;
+}
+
 .form-wrapper {
     width: 76.2%;
     height: auto;
