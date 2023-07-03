@@ -1,3 +1,354 @@
+/*MEDIA QUERIES FOR L SCREENS*/
+@media screen and (max-width: 992px) {
+    /*HERO SECTION STYLES FOR XS*/ 
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.3rem
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .container-mobile {
+        width: 87.5%;
+        height: auto;
+    }
+
+    .column-2-mobile {
+        width: 100%;
+        text-align: center;
+    }
+
+    .column-2-mobile > img {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    .flex-column-mobile {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .align-center-mobile {
+        justify-content: center;
+    }
+
+    .flex-order {
+        order: 1;
+    }
+
+    .flex-row-mobile {
+        flex-direction: row;
+    }
+
+    .align-start-mobile {
+        align-items: start;
+    }
+
+    
+
+    /*ABOUT SECTION STYLES FOR XS*/
+    .grid-container-mobile {
+        place-items: center;
+        width: 100%;
+        padding: 3em 0em;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 35px;
+        grid-row-gap: 35px;
+    }
+    
+
+    /*TESTIMONIAL SECTION STYLES FOR XS*/
+
+    .testimonial-text {
+        font-size: 1.3rem; 
+    }
+
+    .testimonial-card {
+        margin-top: 3em;
+    }
+
+    .testimonial-card  img {
+        width: 50%;
+    }
+
+    .testimonial-card p {
+        padding-left: 0;
+        padding-bottom: 0.5rem;
+    }
+
+    /*CONTACT SECTION STYLES FOR XS*/
+    .form-wrapper {
+        width: 100%;
+    }
+
+    .column-2__text {
+        margin-bottom: 3em;
+    }
+
+    label {
+        padding: 0;
+    }
+
+    /*FOOTER SECTION STYLES FOR XS*/
+
+    .container-mobile--100 {
+        width: 100%;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .social {
+        margin: 0 auto;
+    }
+}
+
+/*MEDIA QUERIES FOR M SCREENS*/
+@media only screen and (max-width: 768px) {
+    /*HERO SECTION STYLES FOR XS*/ 
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.3rem
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .container-mobile {
+        width: 87.5%;
+        height: auto;
+    }
+
+    .column-2-mobile {
+        width: 100%;
+        text-align: center;
+    }
+
+    .column-2-mobile > img {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    .flex-column-mobile {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .align-center-mobile {
+        justify-content: center;
+    }
+
+    .flex-order {
+        order: 1;
+    }
+
+    .flex-row-mobile {
+        flex-direction: row;
+    }
+
+    .align-start-mobile {
+        align-items: start;
+    }
+
+    
+
+    /*ABOUT SECTION STYLES FOR XS*/
+    .grid-container-mobile {
+        place-items: center;
+        width: 100%;
+        padding: 3em 0em;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 35px;
+        grid-row-gap: 35px;
+    }
+    
+
+    /*TESTIMONIAL SECTION STYLES FOR XS*/
+
+    .testimonial-text {
+        font-size: 1.3rem; 
+    }
+
+    .testimonial-card {
+        margin-top: 3em;
+    }
+
+    .testimonial-card  img {
+        width: 50%;
+    }
+
+    .testimonial-card p {
+        padding-left: 0;
+        padding-bottom: 0.5rem;
+    }
+
+    /*CONTACT SECTION STYLES FOR XS*/
+    .form-wrapper {
+        width: 100%;
+    }
+
+    .column-2__text {
+        margin-bottom: 3em;
+    }
+
+    label {
+        padding: 0;
+    }
+
+    /*FOOTER SECTION STYLES FOR XS*/
+
+    .container-mobile--100 {
+        width: 100%;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .social {
+        margin: 0 auto;
+    }
+}
+
+/*MEDIA QUERIES FOR S SCREENS*/
+@media only screen and (max-width: 576px) {
+    /*HERO SECTION STYLES FOR XS*/ 
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.3rem
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .container-mobile {
+        width: 87.5%;
+        height: auto;
+    }
+
+    .column-2-mobile {
+        width: 100%;
+        text-align: center;
+    }
+
+    .column-2-mobile > img {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    .flex-column-mobile {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .align-center-mobile {
+        justify-content: center;
+    }
+
+    .flex-order {
+        order: 1;
+    }
+
+    .flex-row-mobile {
+        flex-direction: row;
+    }
+
+    .align-start-mobile {
+        align-items: start;
+    }
+
+    
+
+    /*ABOUT SECTION STYLES FOR XS*/
+    .grid-container-mobile {
+        place-items: center;
+        width: 100%;
+        padding: 3em 0em;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 35px;
+        grid-row-gap: 35px;
+    }
+    
+
+    /*TESTIMONIAL SECTION STYLES FOR XS*/
+
+    .testimonial-text {
+        font-size: 1.3rem; 
+    }
+
+    .testimonial-card {
+        margin-top: 3em;
+    }
+
+    .testimonial-card  img {
+        width: 50%;
+    }
+
+    .testimonial-card p {
+        padding-left: 0;
+        padding-bottom: 0.5rem;
+    }
+
+    /*CONTACT SECTION STYLES FOR XS*/
+    .form-wrapper {
+        width: 100%;
+    }
+
+    .column-2__text {
+        margin-bottom: 3em;
+    }
+
+    label {
+        padding: 0;
+    }
+
+    /*FOOTER SECTION STYLES FOR XS*/
+
+    .container-mobile--100 {
+        width: 100%;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .social {
+        margin: 0 auto;
+    }
+}
+
 /*MEDIA QUERIES FOR XS SCREENS*/
 @media only screen and (max-width: 375px) {
 
@@ -117,353 +468,7 @@
     
 }
 
-/*MEDIA QUERIES FOR S SCREENS*/
-@media only screen and (max-width: 576px) {
-        /*HERO SECTION STYLES FOR XS*/ 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-    
-        p {
-            font-size: 1.3rem
-        }
-    
-        h2 {
-            font-size: 2rem;
-        }
-    
-        h3 {
-            font-size: 1.8rem;
-        }
-    
-        .container-mobile {
-            width: 87.5%;
-            height: auto;
-        }
-    
-        .column-2-mobile {
-            width: 100%;
-            text-align: center;
-        }
-    
-        .column-2-mobile > img {
-            width: 80%;
-            margin-bottom: 3rem;
-        }
-    
-        .flex-column-mobile {
-            flex-direction: column-reverse;
-            width: 100%;
-        }
-    
-        .align-center-mobile {
-            justify-content: center;
-        }
-    
-        .flex-order {
-            order: 1;
-        }
-    
-        .flex-row-mobile {
-            flex-direction: row;
-        }
-    
-        .align-start-mobile {
-            align-items: start;
-        }
-    
-        
-    
-        /*ABOUT SECTION STYLES FOR XS*/
-        .grid-container-mobile {
-            place-items: center;
-            width: 100%;
-            padding: 3em 0em;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(4, 1fr);
-            grid-column-gap: 35px;
-            grid-row-gap: 35px;
-        }
-        
-    
-        /*TESTIMONIAL SECTION STYLES FOR XS*/
-    
-        .testimonial-text {
-            font-size: 1.3rem; 
-        }
-    
-        .testimonial-card {
-            margin-top: 3em;
-        }
-    
-        .testimonial-card  img {
-            width: 50%;
-        }
-    
-        .testimonial-card p {
-            padding-left: 0;
-            padding-bottom: 0.5rem;
-        }
-    
-        /*CONTACT SECTION STYLES FOR XS*/
-        .form-wrapper {
-            width: 100%;
-        }
-    
-        .column-2__text {
-            margin-bottom: 3em;
-        }
-    
-        label {
-            padding: 0;
-        }
-    
-        /*FOOTER SECTION STYLES FOR XS*/
-    
-        .container-mobile--100 {
-            width: 100%;
-        }
-    
-        .hide {
-            display: none;
-        }
-    
-        .social {
-            margin: 0 auto;
-        }
-}
 
-/*MEDIA QUERIES FOR M SCREENS*/
-@media only screen and (max-width: 768px) {
-        /*HERO SECTION STYLES FOR XS*/ 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-    
-        p {
-            font-size: 1.3rem
-        }
-    
-        h2 {
-            font-size: 2rem;
-        }
-    
-        h3 {
-            font-size: 1.8rem;
-        }
-    
-        .container-mobile {
-            width: 87.5%;
-            height: auto;
-        }
-    
-        .column-2-mobile {
-            width: 100%;
-            text-align: center;
-        }
-    
-        .column-2-mobile > img {
-            width: 80%;
-            margin-bottom: 3rem;
-        }
-    
-        .flex-column-mobile {
-            flex-direction: column-reverse;
-            width: 100%;
-        }
-    
-        .align-center-mobile {
-            justify-content: center;
-        }
-    
-        .flex-order {
-            order: 1;
-        }
-    
-        .flex-row-mobile {
-            flex-direction: row;
-        }
-    
-        .align-start-mobile {
-            align-items: start;
-        }
-    
-        
-    
-        /*ABOUT SECTION STYLES FOR XS*/
-        .grid-container-mobile {
-            place-items: center;
-            width: 100%;
-            padding: 3em 0em;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(4, 1fr);
-            grid-column-gap: 35px;
-            grid-row-gap: 35px;
-        }
-        
-    
-        /*TESTIMONIAL SECTION STYLES FOR XS*/
-    
-        .testimonial-text {
-            font-size: 1.3rem; 
-        }
-    
-        .testimonial-card {
-            margin-top: 3em;
-        }
-    
-        .testimonial-card  img {
-            width: 50%;
-        }
-    
-        .testimonial-card p {
-            padding-left: 0;
-            padding-bottom: 0.5rem;
-        }
-    
-        /*CONTACT SECTION STYLES FOR XS*/
-        .form-wrapper {
-            width: 100%;
-        }
-    
-        .column-2__text {
-            margin-bottom: 3em;
-        }
-    
-        label {
-            padding: 0;
-        }
-    
-        /*FOOTER SECTION STYLES FOR XS*/
-    
-        .container-mobile--100 {
-            width: 100%;
-        }
-    
-        .hide {
-            display: none;
-        }
-    
-        .social {
-            margin: 0 auto;
-        }
-}
 
-/*MEDIA QUERIES FOR L SCREENS*/
-@media screen and (max-width: 992px) {
-        /*HERO SECTION STYLES FOR XS*/ 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-    
-        p {
-            font-size: 1.3rem
-        }
-    
-        h2 {
-            font-size: 2rem;
-        }
-    
-        h3 {
-            font-size: 1.8rem;
-        }
-    
-        .container-mobile {
-            width: 87.5%;
-            height: auto;
-        }
-    
-        .column-2-mobile {
-            width: 100%;
-            text-align: center;
-        }
-    
-        .column-2-mobile > img {
-            width: 80%;
-            margin-bottom: 3rem;
-        }
-    
-        .flex-column-mobile {
-            flex-direction: column-reverse;
-            width: 100%;
-        }
-    
-        .align-center-mobile {
-            justify-content: center;
-        }
-    
-        .flex-order {
-            order: 1;
-        }
-    
-        .flex-row-mobile {
-            flex-direction: row;
-        }
-    
-        .align-start-mobile {
-            align-items: start;
-        }
-    
-        
-    
-        /*ABOUT SECTION STYLES FOR XS*/
-        .grid-container-mobile {
-            place-items: center;
-            width: 100%;
-            padding: 3em 0em;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(4, 1fr);
-            grid-column-gap: 35px;
-            grid-row-gap: 35px;
-        }
-        
-    
-        /*TESTIMONIAL SECTION STYLES FOR XS*/
-    
-        .testimonial-text {
-            font-size: 1.3rem; 
-        }
-    
-        .testimonial-card {
-            margin-top: 3em;
-        }
-    
-        .testimonial-card  img {
-            width: 50%;
-        }
-    
-        .testimonial-card p {
-            padding-left: 0;
-            padding-bottom: 0.5rem;
-        }
-    
-        /*CONTACT SECTION STYLES FOR XS*/
-        .form-wrapper {
-            width: 100%;
-        }
-    
-        .column-2__text {
-            margin-bottom: 3em;
-        }
-    
-        label {
-            padding: 0;
-        }
-    
-        /*FOOTER SECTION STYLES FOR XS*/
-    
-        .container-mobile--100 {
-            width: 100%;
-        }
-    
-        .hide {
-            display: none;
-        }
-    
-        .social {
-            margin: 0 auto;
-        }
-}
+
+
