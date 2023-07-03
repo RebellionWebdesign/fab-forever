@@ -103,8 +103,7 @@
 
     /*FOOTER SECTION STYLES FOR XS*/
     .footer-logo {
-        width: 15rem;
-        margin: 0;
+        display: none;
     }
 
 }
