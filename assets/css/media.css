@@ -39,6 +39,10 @@
         width: 100%;
     }
 
+    .align-center-xs {
+        justify-content: center;
+    }
+
     .flex-row-xs {
         flex-direction: row;
     }
@@ -46,6 +50,8 @@
     .align-start-xs {
         align-items: start;
     }
+
+    
 
     /*ABOUT SECTION STYLES FOR XS*/
     .grid-container-xs {
