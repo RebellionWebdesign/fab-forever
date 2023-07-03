@@ -36,6 +36,7 @@
 
     .flex-column-xs {
         flex-direction: column-reverse;
+        width: 100%;
     }
 
     .flex-row-xs {
