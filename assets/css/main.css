@@ -291,19 +291,19 @@ span {
 }
 
 .grid-card__background--basics {
-    background-image: url("/assets/img/fab-forever-cards-basics.webp");
+    background-image: url("../assets/img/fab-forever-cards-basics.webp");
 }
 
 .grid-card__background--models {
-    background-image: url("/assets/img/fab-forever-cards-models.webp");
+    background-image: url("../assets/img/fab-forever-cards-models.webp");
 }
 
 .grid-card__background--help {
-    background-image: url("/assets/img/fab-forever-cards-help.webp");
+    background-image: url("../assets/img/fab-forever-cards-help.webp");
 }
 
 .grid-card__background--materials {
-    background-image: url("/assets/img/fab-forever-cards-materials.webp");
+    background-image: url("../assets/img/fab-forever-cards-materials.webp");
 }
 
 /*Here we style the testimonial with flex*/
