@@ -72,7 +72,11 @@
     /*TESTIMONIAL SECTION STYLES FOR XS*/
 
     .testimonial-text {
-        font-size: 1.3rem;   
+        font-size: 1.3rem; 
+    }
+
+    .testimonial-card {
+        margin-top: 3em;
     }
 
     .testimonial-card  img {
