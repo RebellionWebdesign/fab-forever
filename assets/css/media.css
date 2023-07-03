@@ -103,13 +103,16 @@
 
     /*FOOTER SECTION STYLES FOR XS*/
 
-
     .container-xs--100 {
         width: 100%;
     }
 
     .hide {
         display: none;
+    }
+
+    .social {
+        margin: 0 auto;
     }
     
 }
