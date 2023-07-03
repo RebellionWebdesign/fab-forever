@@ -1,11 +1,15 @@
 /*MEDIA QUERIES FOR XXL SCREENS*/
-@media screen and (max-width: 1400px) {
-
+@media screen and (min-width: 1400px) {
+    .headerbar {
+        padding: 1em 20rem;
+    }
 }
 
 /*MEDIA QUERIES FOR XL SCREENS*/
-@media screen and (max-width: 1200px) {
-
+@media screen and (min-width: 1200px) {
+    .headerbar {
+        padding: 1em 20rem;
+    }
 }
 
 /*MEDIA QUERIES FOR L SCREENS*/
@@ -82,7 +86,12 @@
         color: rgba(255, 255, 255, 0.50);
     }
 
+    .headerbar__mobile {
+        display: flex;
+    }
+
     .headerbar__mobile--close {
+        display: flex;
         width: 2rem;
         height: 2rem;
         position: relative;
@@ -287,7 +296,12 @@
         color: rgba(255, 255, 255, 0.50);
     }
 
+    .headerbar__mobile {
+        display: flex;
+    }
+
     .headerbar__mobile--close {
+        display: flex;
         width: 2rem;
         height: 2rem;
         position: relative;
