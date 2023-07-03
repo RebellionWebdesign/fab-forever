@@ -88,6 +88,19 @@
         padding-bottom: 0.5rem;
     }
 
+    /*CONTACT SECTION STYLES FOR XS*/
+    .form-wrapper {
+        width: 100%;
+    }
+
+    .column-2__text {
+        margin-bottom: 3em;
+    }
+
+    label {
+        padding: 0;
+    }
+
     /*FOOTER SECTION STYLES FOR XS*/
     .footer-logo {
         width: 15rem;
