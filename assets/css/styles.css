@@ -215,6 +215,13 @@ span {
     transform: scaleX(-1);
 }
 
+/*The bottom divider for the contact section doesnt go all the way down, so we need to set a
+negative margin*/
+.divider-bottom {
+    margin-bottom: -4px;
+}
+
+
 /* UTILITY CLASSES FOR USE WITH GRID
 actually only this one together with the styles for the grid cards and their container/wrapper*/
 .grid {
