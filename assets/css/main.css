@@ -292,8 +292,8 @@ span {
 
 .grid-card__background--basics {
     background-image: 
-    url("/img/fab-forever-cards-basics.webp"),
-    url("/img/fab-forever-cards-basics.png");
+    url("assets/img/fab-forever-cards-basics.webp"),
+    url("assets/img/fab-forever-cards-basics.png");
 }
 
 .grid-card__background--models {
