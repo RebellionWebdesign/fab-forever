@@ -304,14 +304,14 @@ span {
 
 .grid-card__background--help {
     background-image: 
-    url("assets/img/fab-forever-cards-help.webp"),
-    url("assets/img/fab-forever-cards-help.png");
+    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-help.webp"),
+    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-help.png");
 }
 
 .grid-card__background--materials {
     background-image: 
-    url("assets/img/fab-forever-cards-materials.webp"),
-    url("assets/img/fab-forever-cards-materials.png");
+    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-materials.webp"),
+    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-materials.png");
 }
 
 /*Here we style the testimonial with flex*/
