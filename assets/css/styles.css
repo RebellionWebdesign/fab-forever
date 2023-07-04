@@ -218,7 +218,7 @@ span {
 /*The bottom divider for the contact section doesnt go all the way down, so we need to set a
 negative margin*/
 .divider-bottom {
-    margin-bottom: -4px;
+    margin-bottom: -2px;
 }
 
 
