@@ -1,0 +1,1428 @@
+/*In this CSS file are all the styles for the website FABFOREVER.
+The method used here is the top-down method which goes through the styles
+from the parents to the children in this manner: 
+[ROOT -> HTML -> BODY -> SECTION -> CONTAINER -> COLUMN -> HEADING -> TEXT -> BUTTON, IMAGE ETC.]*/
+
+/*The following sets all elements in the DOM to have no padding, no margin and the box-sizing.
+This includes the ::before and ::after pseudo-elements*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*CSSRoots is used for declaring the website colors as global variables.
+Declare them once and then use the variable name as value within the CSS.*/
+:root {
+    --color-primary: #BC00FF;
+    --color-secondary: #1100FF;
+    --color-accent: #CF49FF;
+    --color-dark: #000000;
+    --color-light: #ffffff;
+    --color-shadow: rgba(0, 0, 0, 0.25);
+}
+
+/*Here we set the HTML scroll behaviour to smooth scroll and the font size to 62.5% = 10px,
+this allows for easier calculations regarding the font size, paddings and margins*/
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+/*For the body we need to set the font size back to the default 16px - its the standard ssetting after all.
+But we can still calculate all other values based on the 62.5% we set earlier.*/
+body {
+    font-size: 1.6rem;
+    overflow-x: hidden; /*disables horizontal scrolling*/
+    display: flex;
+    flex-direction: column;
+}
+
+/*Global styles for elements that are the same over the complete website.
+Elements are: Sections, Containers, Columns, Rows, Headings and Text*/
+
+/*SECTION STYLES*/
+
+/*Creates a section which fills the complete viewport in x and y*/
+.section-full {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+/*Creates a section which fills the complete width in x and half width y*/
+.section-half {
+    width: 100vw;
+    min-height: 50vh;
+}
+
+/*SECTION BACKGROUNDS - Some of them are also used on links (styled as buttons) and buttons
+but primrily they belong to sections.*/
+
+.background {
+    background: var(--color-secondary);
+    background: linear-gradient(43deg, var(--color-secondary) 0%, var(--color-primary) 95%);
+}
+
+.background-reverse {
+    background: var(--color-primary);
+    background: linear-gradient(43deg, var(--color-primary) 0%, var(--color-secondary) 95%);
+}
+
+.background-mask {
+    background: var(--color-light);
+    background:
+        linear-gradient(30deg, var(--color-light) 65%, rgba(17, 0, 255, 0) 65%),
+        linear-gradient(43deg, var(--color-secondary) 0%, var(--color-primary) 95%);
+}
+
+/*CONTAINER STYLES*/
+
+/*Creates a container element which is 1200px wide (1920px * 0.625 = 1200px)*/
+.container {
+    width: 62.5%;
+}
+
+/*COLUMN STYLES*/
+
+/*This generates a column half the width of its parent (usually the container)*/
+.column-2 {
+    width: 50%;
+}
+
+/*This generates a column quarter the width of its parent*/
+.column-4 {
+    width: 25%;
+}
+
+/*HEADING STYLES*/
+h1 {
+    font-family: montserrat, sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: montserrat, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: montserrat, sans-serif;
+    font-size: 2rem;
+}
+
+/*TEXT STYLES*/
+p {
+    font-family: Poppins, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+/*some text parts need to be very bold, so we set them here*/
+span {
+    font-weight: 800;
+}
+
+/*the default text color is black, but we also need some white text on the page*/
+.text-white {
+    color: var(--color-light);
+}
+
+.text-shadow {
+    text-shadow: 3px 3px 5px var(--color-shadow);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*BUTTON STYLES AND STYLES FOR LINKS (<a>-tags) WHICH ARE STYLED AS BUTTONS*/
+.button-wrapper {
+    margin-top: 3rem;
+}
+
+.button {
+    width: 14.5rem;
+    height: 4rem;
+    padding: 12px 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    font-family: montserrat, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+/*UTILITY CLASSES FOR USE PRIMARILY WITH FLEXBOX*/
+.flex {
+    display: flex;
+}
+
+.flex-start {
+    justify-content: start;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-end {
+    justify-content: end;
+}
+
+.flex-center--x {
+    justify-content: center;
+}
+
+.flex-center--y {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-column--reverse {
+    flex-direction: column-reverse;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+/*BOX SHADOWS AND CORNERS - they can go on any container, image or column elements*/
+.box-shadow {
+    box-shadow: 3px 3px 5px var(--color-shadow);
+}
+
+.rounded {
+    border-radius: 0.5rem;
+}
+
+/*GENERAL UTILITIES*/
+/*This flips a given image in the x axis (like in mirror)*/
+.flip-x {
+    transform: scaleX(-1);
+}
+
+/* UTILITY CLASSES FOR USE WITH GRID
+actually only this one together with the styles for the grid cards and their container/wrapper*/
+.grid {
+    display: grid;
+}
+
+/*LOCAL STYLES FOR ELEMENTS WHICH NEED CUSTOM STYLING*/
+/*Styles for the header*/
+.headerbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 6vh;
+    padding: 1rem 36rem 1rem 36rem;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.20);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.headerbar__images {
+    width: 20rem;
+    align-items: center;
+}
+
+.headerbar__nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: -3rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.headerbar li {
+    list-style: none;
+}
+
+.headerbar a {
+    text-decoration: none;
+    display: block;
+    padding-right: 3rem;
+    color: black;
+}
+
+.headerbar a:hover {
+    color: #6920DD;
+}
+
+.headerbar a:active {
+    color: #6920DD;
+}
+
+.headerbar a:visited {
+    color: rgb(71, 71, 71);
+}
+
+.headerbar a:visited:hover {
+    color: #6920DD;
+}
+
+.headerbar__mobile {
+    display: none;
+}
+
+.headerbar__mobile--close {
+    display: none;
+}
+
+/*Styles for the about section´s grid cards*/
+.grid-container {
+    place-items: end;
+    width: 50%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 35px;
+    grid-row-gap: 35px;
+}
+
+.grid-card {
+    text-align: center;
+    padding: 2em;
+    width: 210px;
+    height: 210px;
+}
+
+/*This represents the background images for the grid cards. The primary format used here is webp which is lightweight
+and therfore very good for imaging on the web. Since not all browsers support it fully (check here: https://caniuse.com/webp)
+we need a fallback which is the eact same image but in png format.*/
+.grid-card__background--basics {
+    background-image: 
+    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-basics.webp"),
+    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-basics.png");
+}
+
+.grid-card__background--models {
+    background-image: 
+    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-models.webp"),
+    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-models.png");
+}
+
+.grid-card__background--help {
+    background-image: 
+    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-help.webp"),
+    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-help.png");
+}
+
+.grid-card__background--materials {
+    background-image: 
+    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-materials.webp"),
+    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-materials.png");
+}
+
+/*Styles for the testimonial section*/
+.testimonial-card {
+    padding: 2rem;
+    width: 90%;
+}
+
+.testimonial-card img {
+    border: 1rem solid #9B00FF;
+    border-radius: 50%;
+}
+
+.testimonial-card p {
+    padding-left: 3em;
+}
+
+.testimonial-text {
+    font-size: 1.8rem;
+}
+
+.contact .column-2 p {
+    margin-top: 2rem;
+}
+
+/*Styles for the form we ave at the bottom of the page*/
+label {
+    vertical-align: top;
+    padding-left: 2rem;
+    font-family: montserrat, sans-serif;
+    font-size: 1.2rem;
+    color: rgb(187, 187, 187);
+}
+
+.red-star {
+    color: red;
+}
+
+.column-2__text {
+    margin-top: 1.5rem;
+}
+
+.form-wrapper {
+    width: 76.2%;
+    height: auto;
+    padding: 2em;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.form-wrapper h3 {
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 2rem;
+    padding-left: 2em;
+    border-radius: 2rem;
+    border: 1px solid rgb(150, 150, 150);
+}
+
+.legal-text {
+    margin-bottom: 1rem;
+}
+
+.newsletter {
+    padding-left: 0;
+    color: black;
+}
+
+/*Styles for the footer*/
+footer {
+    width: 100vw;
+    height: 8vh;
+}
+
+.footer-logo {
+    width: 20rem;
+}
+
+.social {
+    margin-left: auto;
+}
+
+.social-icon {
+    width: 2.5rem;
+    height: 100%;
+    margin-left: 2rem;
+}
+
+/*FONT STYLE DECLARATIONS*/
+
+/*POPPINS FONT STYLES*/
+/* poppins-100 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-200 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-300 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-800 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /*MONTSERRAT FONT STYLES*/
+  /* montserrat-100 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 100;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-200 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-300 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-800 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/*MEDIA QUERIES
+Since we work from the desktop down (desktop-first design) we need to order the queries correctly*/
+
+/*MEDIA QUERIES FOR XXL SCREENS*/
+@media screen and (min-width: 1400px) {
+    .headerbar {
+        padding: 1em 20rem;
+    }
+}
+
+/*MEDIA QUERIES FOR XL SCREENS*/
+@media screen and (min-width: 1200px) {
+    .headerbar {
+        padding: 1em 20rem;
+    }
+}
+
+/*MEDIA QUERIES FOR L SCREENS*/
+@media screen and (max-width: 992px) {
+
+    /*HEADER STYLES FOR L*/
+    .headerbar {
+        padding: 1rem 1rem 1rem 1rem;
+        display: block;
+    }
+
+    .headerbar__images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerbar__mobile {
+        width: 3.5rem;
+        height: 2.5rem;
+        align-self: center;
+    }
+
+    .headerbar__logo {
+        width: 15rem;
+        align-self: center;
+    }
+
+    .headerbar__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45vw;
+        height: 100vh;
+        background: rgb(14, 110, 218);
+        background: linear-gradient(330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 100%);
+        transition: right 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .headerbar__nav ul {
+        margin: 0;
+        padding-top: 0;
+        display: block;
+        margin-right: -3rem;
+        font-family: Poppins, sans-serif;
+        font-weight: 400;
+    }
+
+    .headerbar__nav a {
+        color: white;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .headerbar__nav a:active {
+        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    .headerbar__nav a:hover {
+        color: white;
+    }
+
+    .headerbar__nav a:visited {
+        color: rgba(255, 255, 255, 0.50);
+    }
+
+    .headerbar__mobile {
+        display: flex;
+    }
+
+    .headerbar__mobile--close {
+        display: flex;
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+        border: 1px solid white;
+        border-radius: 100%;
+    }
+
+    .closed {
+        right: -45vw;
+    }
+
+    .open {
+        right: 0;
+    }
+
+    /*HERO SECTION STYLES FOR XS*/ 
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.3rem
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .container-mobile {
+        width: 87.5%;
+        height: auto;
+    }
+
+    .column-2-mobile {
+        width: 100%;
+        text-align: center;
+    }
+
+    .column-2-mobile > img {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    .flex-column-mobile {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .align-center-mobile {
+        justify-content: center;
+    }
+
+    .flex-order {
+        order: 1;
+    }
+
+    .flex-row-mobile {
+        flex-direction: row;
+    }
+
+    .align-start-mobile {
+        align-items: start;
+    }
+
+    
+
+    /*ABOUT SECTION STYLES FOR XS*/
+    .grid-container-mobile {
+        place-items: center;
+        width: 100%;
+        padding: 3em 0em;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 35px;
+        grid-row-gap: 35px;
+    }
+    
+
+    /*TESTIMONIAL SECTION STYLES FOR XS*/
+
+    .testimonial-text {
+        font-size: 1.3rem; 
+    }
+
+    .testimonial-card {
+        margin-top: 3em;
+    }
+
+    .testimonial-card  img {
+        width: 50%;
+    }
+
+    .testimonial-card p {
+        padding-left: 0;
+        padding-bottom: 0.5rem;
+    }
+
+    /*CONTACT SECTION STYLES FOR XS*/
+    .form-wrapper {
+        width: 100%;
+    }
+
+    .column-2__text {
+        margin-bottom: 3em;
+    }
+
+    label {
+        padding: 0;
+    }
+
+    /*FOOTER SECTION STYLES FOR XS*/
+
+    .container-mobile--100 {
+        width: 100%;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .social {
+        margin: 0 auto;
+    }
+}
+
+/*MEDIA QUERIES FOR M SCREENS*/
+@media only screen and (max-width: 768px) {
+
+    /*HEADER STYLES FOR XS*/
+    .headerbar {
+        padding: 1rem 1rem 1rem 1rem;
+        display: block;
+    }
+
+    .headerbar__images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerbar__mobile {
+        width: 3.5rem;
+        height: 2.5rem;
+        align-self: center;
+    }
+
+    .headerbar__logo {
+        width: 15rem;
+        align-self: center;
+    }
+
+    .headerbar__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45vw;
+        height: 100vh;
+        background: rgb(14, 110, 218);
+        background: linear-gradient(330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 100%);
+        transition: right 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .headerbar__nav ul {
+        margin: 0;
+        padding-top: 0;
+        display: block;
+        margin-right: -3rem;
+        font-family: Poppins, sans-serif;
+        font-weight: 400;
+    }
+
+    .headerbar__nav a {
+        color: white;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .headerbar__nav a:active {
+        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    .headerbar__nav a:hover {
+        color: white;
+    }
+
+    .headerbar__nav a:visited {
+        color: rgba(255, 255, 255, 0.50);
+    }
+
+    .headerbar__mobile {
+        display: flex;
+    }
+
+    .headerbar__mobile--close {
+        display: flex;
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+        border: 1px solid white;
+        border-radius: 100%;
+    }
+
+    .closed {
+        right: -45vw;
+    }
+
+    .open {
+        right: 0;
+    }
+
+    /*HERO SECTION STYLES FOR XS*/ 
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.3rem
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .container-mobile {
+        width: 87.5%;
+        height: auto;
+    }
+
+    .column-2-mobile {
+        width: 100%;
+        text-align: center;
+    }
+
+    .column-2-mobile > img {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    .flex-column-mobile {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .align-center-mobile {
+        justify-content: center;
+    }
+
+    .flex-order {
+        order: 1;
+    }
+
+    .flex-row-mobile {
+        flex-direction: row;
+    }
+
+    .align-start-mobile {
+        align-items: start;
+    }
+
+    
+
+    /*ABOUT SECTION STYLES FOR XS*/
+    .grid-container-mobile {
+        place-items: center;
+        width: 100%;
+        padding: 3em 0em;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 35px;
+        grid-row-gap: 35px;
+    }
+    
+
+    /*TESTIMONIAL SECTION STYLES FOR XS*/
+
+    .testimonial-text {
+        font-size: 1.3rem; 
+    }
+
+    .testimonial-card {
+        margin-top: 3em;
+    }
+
+    .testimonial-card  img {
+        width: 50%;
+    }
+
+    .testimonial-card p {
+        padding-left: 0;
+        padding-bottom: 0.5rem;
+    }
+
+    /*CONTACT SECTION STYLES FOR XS*/
+    .form-wrapper {
+        width: 100%;
+    }
+
+    .column-2__text {
+        margin-bottom: 3em;
+    }
+
+    label {
+        padding: 0;
+    }
+
+    /*FOOTER SECTION STYLES FOR XS*/
+
+    .container-mobile--100 {
+        width: 100%;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .social {
+        margin: 0 auto;
+    }
+}
+
+/*MEDIA QUERIES FOR S SCREENS*/
+@media only screen and (max-width: 576px) {
+
+    /*HEADER STYLES FOR XS*/
+    .headerbar {
+        padding: 1rem 1rem 1rem 1rem;
+        display: block;
+    }
+
+    .headerbar__images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerbar__mobile {
+        width: 3.5rem;
+        height: 2.5rem;
+        align-self: center;
+    }
+
+    .headerbar__logo {
+        width: 15rem;
+        align-self: center;
+    }
+
+    .headerbar__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45vw;
+        height: 100vh;
+        background: var(--color-light);
+        transition: right 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .headerbar__nav ul {
+        margin: 0;
+        padding-top: 0;
+        display: block;
+        margin-right: -3rem;
+        font-family: Poppins, sans-serif;
+        font-weight: 400;
+    }
+
+    .headerbar__nav a {
+        color: white;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .headerbar__nav a:active {
+        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    .headerbar__nav a:hover {
+        color: white;
+    }
+
+    .headerbar__nav a:visited {
+        color: rgba(255, 255, 255, 0.50);
+    }
+
+    .headerbar__mobile--close {
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+        border: 1px solid white;
+        border-radius: 100%;
+    }
+
+    .closed {
+        right: -45vw;
+    }
+
+    .open {
+        right: 0;
+    }
+
+    /*HERO SECTION STYLES FOR XS*/ 
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.3rem
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .container-mobile {
+        width: 87.5%;
+        height: auto;
+    }
+
+    .column-2-mobile {
+        width: 100%;
+        text-align: center;
+    }
+
+    .column-2-mobile > img {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    .flex-column-mobile {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .align-center-mobile {
+        justify-content: center;
+    }
+
+    .flex-order {
+        order: 1;
+    }
+
+    .flex-row-mobile {
+        flex-direction: row;
+    }
+
+    .align-start-mobile {
+        align-items: start;
+    }
+
+    
+
+    /*ABOUT SECTION STYLES FOR XS*/
+    .grid-container-mobile {
+        place-items: center;
+        width: 100%;
+        padding: 3em 0em;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 35px;
+        grid-row-gap: 35px;
+    }
+    
+
+    /*TESTIMONIAL SECTION STYLES FOR XS*/
+
+    .testimonial-text {
+        font-size: 1.3rem; 
+    }
+
+    .testimonial-card {
+        margin-top: 3em;
+    }
+
+    .testimonial-card  img {
+        width: 50%;
+    }
+
+    .testimonial-card p {
+        padding-left: 0;
+        padding-bottom: 0.5rem;
+    }
+
+    /*CONTACT SECTION STYLES FOR XS*/
+    .form-wrapper {
+        width: 100%;
+    }
+
+    .column-2__text {
+        margin-bottom: 3em;
+    }
+
+    label {
+        padding: 0;
+    }
+
+    /*FOOTER SECTION STYLES FOR XS*/
+
+    .container-mobile--100 {
+        width: 100%;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .social {
+        margin: 0 auto;
+    }
+}
+
+/*MEDIA QUERIES FOR XS SCREENS*/
+@media only screen and (max-width: 375px) {
+
+    /*RESPONSIVE HEADER START*/
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .headerbar {
+        padding: 1rem 1rem 1rem 1rem;
+        display: block;
+    }
+
+    .headerbar__images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerbar__mobile {
+        width: 3.5rem;
+        height: 2.5rem;
+        align-self: center;
+    }
+
+    .headerbar__logo {
+        width: 15rem;
+        align-self: center;
+    }
+
+    .headerbar__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45vw;
+        height: 100vh;
+        background: rgb(14, 110, 218);
+        background: linear-gradient(330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 100%);
+        transition: right 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .headerbar__nav ul {
+        margin: 0;
+        padding-top: 0;
+        display: block;
+        margin-right: -3rem;
+        font-family: Poppins, sans-serif;
+        font-weight: 400;
+    }
+
+    .headerbar__nav a {
+        color: white;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .headerbar__nav a:active {
+        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    .headerbar__nav a:hover {
+        color: white;
+    }
+
+    .headerbar__nav a:visited {
+        color: rgba(255, 255, 255, 0.50);
+    }
+
+    .headerbar__mobile--close {
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+        border: 1px solid white;
+        border-radius: 100%;
+    }
+
+    .closed {
+        right: -45vw;
+    }
+
+    .open {
+        right: 0;
+    }
+/*RESPONSIVE HEADER END*/
+
+    /*HERO SECTION STYLES FOR XS*/ 
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.3rem
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .container-mobile {
+        width: 87.5%;
+        height: auto;
+    }
+
+    .column-2-mobile {
+        width: 100%;
+        text-align: center;
+    }
+
+    .column-2-mobile > img {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    .flex-column-mobile {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .align-center-mobile {
+        justify-content: center;
+    }
+
+    .flex-order {
+        order: 1;
+    }
+
+    .flex-row-mobile {
+        flex-direction: row;
+    }
+
+    .align-start-mobile {
+        align-items: start;
+    }
+
+    
+
+    /*ABOUT SECTION STYLES FOR XS*/
+    .grid-container-mobile {
+        place-items: center;
+        width: 100%;
+        padding: 3em 0em;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 35px;
+        grid-row-gap: 35px;
+    }
+    
+
+    /*TESTIMONIAL SECTION STYLES FOR XS*/
+
+    .testimonial-text {
+        font-size: 1.3rem; 
+    }
+
+    .testimonial-card {
+        margin-top: 3em;
+    }
+
+    .testimonial-card  img {
+        width: 50%;
+    }
+
+    .testimonial-card p {
+        padding-left: 0;
+        padding-bottom: 0.5rem;
+    }
+
+    /*CONTACT SECTION STYLES FOR XS*/
+    .form-wrapper {
+        width: 100%;
+    }
+
+    .column-2__text {
+        margin-bottom: 3em;
+    }
+
+    label {
+        padding: 0;
+    }
+
+    /*FOOTER SECTION STYLES FOR XS*/
+
+    .container-mobile--100 {
+        width: 100%;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .social {
+        margin: 0 auto;
+    }
+    
+}
