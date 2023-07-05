@@ -550,112 +550,19 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 
 /*MEDIA QUERIES FOR XXL SCREENS*/
 @media screen and (min-width: 1400px) {
-    .headerbar {
-        padding: 1em 20rem;
-    }
+   
 }
 
 /*MEDIA QUERIES FOR XL SCREENS*/
 @media screen and (min-width: 1200px) {
-    .headerbar {
-        padding: 1em 20rem;
-    }
+   
 }
 
 /*MEDIA QUERIES FOR L SCREENS*/
 @media screen and (max-width: 992px) {
 
     /*HEADER STYLES FOR L*/
-    .headerbar {
-        padding: 1rem 1rem 1rem 1rem;
-        display: block;
-    }
-
-    .headerbar__images {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        height: 100%;
-    }
-
-    .headerbar__mobile {
-        width: 3.5rem;
-        height: 2.5rem;
-        align-self: center;
-    }
-
-    .headerbar__logo {
-        width: 15rem;
-        align-self: center;
-    }
-
-    .headerbar__nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 45vw;
-        height: 100vh;
-        background: rgb(14, 110, 218);
-        background: linear-gradient(330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 100%);
-        transition: right 1s;
-        transition-timing-function: ease-in-out;
-    }
-
-    .headerbar__nav ul {
-        margin: 0;
-        padding-top: 0;
-        display: block;
-        margin-right: -3rem;
-        font-family: Poppins, sans-serif;
-        font-weight: 400;
-    }
-
-    .headerbar__nav a {
-        color: white;
-        text-align: center;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-
-    .headerbar__nav a:active {
-        color: white;
-        text-decoration: underline;
-        text-decoration-thickness: 3px;
-    }
-
-    .headerbar__nav a:hover {
-        color: white;
-    }
-
-    .headerbar__nav a:visited {
-        color: rgba(255, 255, 255, 0.50);
-    }
-
-    .headerbar__mobile {
-        display: flex;
-    }
-
-    .headerbar__mobile--close {
-        display: flex;
-        width: 2rem;
-        height: 2rem;
-        position: relative;
-        border: 1px solid white;
-        border-radius: 100%;
-    }
-
-    .closed {
-        right: -45vw;
-    }
-
-    .open {
-        right: 0;
-    }
+    
 
     /*HERO SECTION STYLES FOR XS*/ 
     h1 {
@@ -775,97 +682,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 /*MEDIA QUERIES FOR M SCREENS*/
 @media only screen and (max-width: 768px) {
 
-    /*HEADER STYLES FOR XS*/
-    .headerbar {
-        padding: 1rem 1rem 1rem 1rem;
-        display: block;
-    }
-
-    .headerbar__images {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        height: 100%;
-    }
-
-    .headerbar__mobile {
-        width: 3.5rem;
-        height: 2.5rem;
-        align-self: center;
-    }
-
-    .headerbar__logo {
-        width: 15rem;
-        align-self: center;
-    }
-
-    .headerbar__nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 45vw;
-        height: 100vh;
-        background: rgb(14, 110, 218);
-        background: linear-gradient(330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 100%);
-        transition: right 1s;
-        transition-timing-function: ease-in-out;
-    }
-
-    .headerbar__nav ul {
-        margin: 0;
-        padding-top: 0;
-        display: block;
-        margin-right: -3rem;
-        font-family: Poppins, sans-serif;
-        font-weight: 400;
-    }
-
-    .headerbar__nav a {
-        color: white;
-        text-align: center;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-
-    .headerbar__nav a:active {
-        color: white;
-        text-decoration: underline;
-        text-decoration-thickness: 3px;
-    }
-
-    .headerbar__nav a:hover {
-        color: white;
-    }
-
-    .headerbar__nav a:visited {
-        color: rgba(255, 255, 255, 0.50);
-    }
-
-    .headerbar__mobile {
-        display: flex;
-    }
-
-    .headerbar__mobile--close {
-        display: flex;
-        width: 2rem;
-        height: 2rem;
-        position: relative;
-        border: 1px solid white;
-        border-radius: 100%;
-    }
-
-    .closed {
-        right: -45vw;
-    }
-
-    .open {
-        right: 0;
-    }
+    
 
     /*HERO SECTION STYLES FOR XS*/ 
     h1 {
@@ -985,91 +802,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 /*MEDIA QUERIES FOR S SCREENS*/
 @media only screen and (max-width: 576px) {
 
-    /*HEADER STYLES FOR XS*/
-    .headerbar {
-        padding: 1rem 1rem 1rem 1rem;
-        display: block;
-    }
-
-    .headerbar__images {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        height: 100%;
-    }
-
-    .headerbar__mobile {
-        width: 3.5rem;
-        height: 2.5rem;
-        align-self: center;
-    }
-
-    .headerbar__logo {
-        width: 15rem;
-        align-self: center;
-    }
-
-    .headerbar__nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 45vw;
-        height: 100vh;
-        background: var(--color-light);
-        transition: right 1s;
-        transition-timing-function: ease-in-out;
-    }
-
-    .headerbar__nav ul {
-        margin: 0;
-        padding-top: 0;
-        display: block;
-        margin-right: -3rem;
-        font-family: Poppins, sans-serif;
-        font-weight: 400;
-    }
-
-    .headerbar__nav a {
-        color: white;
-        text-align: center;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-
-    .headerbar__nav a:active {
-        color: white;
-        text-decoration: underline;
-        text-decoration-thickness: 3px;
-    }
-
-    .headerbar__nav a:hover {
-        color: white;
-    }
-
-    .headerbar__nav a:visited {
-        color: rgba(255, 255, 255, 0.50);
-    }
-
-    .headerbar__mobile--close {
-        width: 2rem;
-        height: 2rem;
-        position: relative;
-        border: 1px solid white;
-        border-radius: 100%;
-    }
-
-    .closed {
-        right: -45vw;
-    }
-
-    .open {
-        right: 0;
-    }
+    
 
     /*HERO SECTION STYLES FOR XS*/ 
     h1 {
@@ -1189,97 +922,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 /*MEDIA QUERIES FOR XS SCREENS*/
 @media only screen and (max-width: 375px) {
 
-    /*RESPONSIVE HEADER START*/
-    body {
-        overflow-x: hidden;
-        width: 100%;
-    }
-
-    .headerbar {
-        padding: 1rem 1rem 1rem 1rem;
-        display: block;
-    }
-
-    .headerbar__images {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        height: 100%;
-    }
-
-    .headerbar__mobile {
-        width: 3.5rem;
-        height: 2.5rem;
-        align-self: center;
-    }
-
-    .headerbar__logo {
-        width: 15rem;
-        align-self: center;
-    }
-
-    .headerbar__nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 45vw;
-        height: 100vh;
-        background: rgb(14, 110, 218);
-        background: linear-gradient(330deg, rgba(14, 110, 218, 1) 0%, rgba(105, 32, 221, 1) 100%);
-        transition: right 1s;
-        transition-timing-function: ease-in-out;
-    }
-
-    .headerbar__nav ul {
-        margin: 0;
-        padding-top: 0;
-        display: block;
-        margin-right: -3rem;
-        font-family: Poppins, sans-serif;
-        font-weight: 400;
-    }
-
-    .headerbar__nav a {
-        color: white;
-        text-align: center;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-
-    .headerbar__nav a:active {
-        color: white;
-        text-decoration: underline;
-        text-decoration-thickness: 3px;
-    }
-
-    .headerbar__nav a:hover {
-        color: white;
-    }
-
-    .headerbar__nav a:visited {
-        color: rgba(255, 255, 255, 0.50);
-    }
-
-    .headerbar__mobile--close {
-        width: 2rem;
-        height: 2rem;
-        position: relative;
-        border: 1px solid white;
-        border-radius: 100%;
-    }
-
-    .closed {
-        right: -45vw;
-    }
-
-    .open {
-        right: 0;
-    }
+    
 /*RESPONSIVE HEADER END*/
 
     /*HERO SECTION STYLES FOR XS*/ 
