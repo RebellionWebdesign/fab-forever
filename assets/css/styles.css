@@ -969,7 +969,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         width: 45vw;
         height: 100vh;
         background: var(--color-secondary);
-        background: linear-gradient(43deg, var(--color-secondary) 0%, var(--color-primary 95%));
+        background: linear-gradient(43deg, var(--color-secondary) 0%, var(--color-primary) 95%);
         position: absolute;
         right: 0;
         top: 0;
