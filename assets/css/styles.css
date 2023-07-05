@@ -223,6 +223,14 @@ span {
     margin-bottom: 3em;
 }
 
+.margin-top--s {
+    margin-top: 1.5em;
+}
+
+.margin-bottom--s {
+    margin-bottom: 1.5em;
+}
+
 .section-padding--top {
     padding-top: 9em;
 }
