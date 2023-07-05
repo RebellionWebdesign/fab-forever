@@ -960,7 +960,19 @@ Since we work from the desktop down (desktop-first design) we need to order the 
     }
 
     .container--mobile {
-        width: 95%
+        width: 95%;
+    }
+
+    .column-2__open--mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mobile--open {
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
     .column-2__nav--mobile {
@@ -974,6 +986,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         position: absolute;
         right: 0;
         top: 0;
+        display: none;
     }
 
     nav {
