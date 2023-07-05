@@ -277,6 +277,10 @@ ul > a {
     padding-right: 1.5em;
 }
 
+ul > a:nth-child(4) {
+    padding-right: 0;
+}
+
 /*Styles for the about section´s grid cards*/
 .grid-container {
     place-items: end;
