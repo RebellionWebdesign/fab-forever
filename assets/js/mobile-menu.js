@@ -1,6 +1,6 @@
 const mobileToggleOpen = document.getElementsByClassName("mobile--open")[0]
 const mobileToggleClose = document.getElementsByClassName("mobile--close")[0]
-const navBar = document.getElementsByClassName("headerbar__nav")[0]
+const navBar = document.getElementsByClassName("column-2__nav--mobile")[0]
 
 
 mobileToggleOpen.addEventListener("click", () => {
