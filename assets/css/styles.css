@@ -215,6 +215,14 @@ span {
     transform: scaleX(-1);
 }
 
+.margin-top {
+    margin-top: 30rem;
+}
+
+.margin-bottom {
+    margin-bottom: 30rem;
+}
+
 /*The bottom divider for the contact section doesnt go all the way down, so we need to set a
 negative margin*/
 .divider-bottom {
