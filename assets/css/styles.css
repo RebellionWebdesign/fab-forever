@@ -271,6 +271,7 @@ actually only this one together with the styles for the grid cards and their con
 
 .headerbar__logo {
     width: 20rem;
+    margin-top: 4px;
 }
 
 ul {
