@@ -584,11 +584,19 @@ Since we work from the desktop down (desktop-first design) we need to order the 
     .mobile--open {
         display: none;
        }
+
+       .mobile--close {
+        display: none;
+       }
 }
 
 /*MEDIA QUERIES FOR XL SCREENS*/
 @media screen and (min-width: 1200px) {
    .mobile--open {
+    display: none;
+   }
+
+   .mobile--close {
     display: none;
    }
 }
