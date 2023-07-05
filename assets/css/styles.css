@@ -713,9 +713,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 /*MEDIA QUERIES FOR M SCREENS*/
 @media only screen and (max-width: 768px) {
 
-    
-
-    /*HERO SECTION STYLES FOR XS*/ 
+    /*HERO SECTION STYLES FOR M*/ 
     h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
