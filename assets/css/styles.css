@@ -953,7 +953,10 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 @media only screen and (max-width: 375px) {
 
     
-/*RESPONSIVE HEADER END*/
+    /*RESPONSIVE HEADER STYLES FOR XS*/
+    .container--mobile {
+        width: 95%
+    }
 
     /*HERO SECTION STYLES FOR XS*/ 
     h1 {
