@@ -1178,6 +1178,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         position: absolute;
         right: 0;
         top: 0;
+        transition: 1s ease-in-out;
     }
 
     nav {
@@ -1195,7 +1196,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 
     .closed {
         width: 0;
-        padding: 0
+        padding: 0;
     }
 
     .open {
