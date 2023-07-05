@@ -257,10 +257,16 @@ actually only this one together with the styles for the grid cards and their con
 
 /*Styles for the header*/
 .headerbar {
+    background-color: var(--color-light);
     width: 100vw;
     height: 6vh;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0 5px 10px var(--color-shadow);
 }
 
 .headerbar__logo {
