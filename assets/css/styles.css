@@ -954,6 +954,10 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 
     
     /*RESPONSIVE HEADER STYLES FOR XS*/
+    .headerbar__logo--mobile {
+        width: 15rem;
+    }
+
     .container--mobile {
         width: 95%
     }
