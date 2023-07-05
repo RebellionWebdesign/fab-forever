@@ -1143,6 +1143,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 
     .closed {
         width: 0;
+        padding: 0
     }
 
     .open {
