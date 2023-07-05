@@ -581,12 +581,16 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 
 /*MEDIA QUERIES FOR XXL SCREENS*/
 @media screen and (min-width: 1400px) {
-   
+    .mobile--open {
+        display: none;
+       }
 }
 
 /*MEDIA QUERIES FOR XL SCREENS*/
 @media screen and (min-width: 1200px) {
-   
+   .mobile--open {
+    display: none;
+   }
 }
 
 /*MEDIA QUERIES FOR L SCREENS*/
