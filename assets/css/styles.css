@@ -215,11 +215,11 @@ span {
     transform: scaleX(-1);
 }
 
-.margin-top {
+.margin-top--l {
     margin-top: 3em;
 }
 
-.margin-bottom {
+.margin-bottom--l {
     margin-bottom: 3em;
 }
 
