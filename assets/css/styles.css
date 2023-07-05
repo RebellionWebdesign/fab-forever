@@ -1126,7 +1126,6 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         position: absolute;
         right: 0;
         top: 0;
-        display: none;
     }
 
     nav {
