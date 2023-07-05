@@ -1145,6 +1145,10 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         width: 0;
     }
 
+    .open {
+        width: 45vw;
+    }
+
     /*HERO SECTION STYLES FOR XS*/ 
     h1 {
         font-size: 2.5rem;
