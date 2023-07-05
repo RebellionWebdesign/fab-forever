@@ -1,5 +1,5 @@
-const mobileToggleOpen = document.getElementsByClassName("headerbar__mobile")[0]
-const mobileToggleClose = document.getElementsByClassName("headerbar__mobile--close")[0]
+const mobileToggleOpen = document.getElementsByClassName("mobile--open")[0]
+const mobileToggleClose = document.getElementsByClassName("mobile--close")[0]
 const navBar = document.getElementsByClassName("headerbar__nav")[0]
 
 
