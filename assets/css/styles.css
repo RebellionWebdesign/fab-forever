@@ -216,11 +216,11 @@ span {
 }
 
 .margin-top {
-    margin-top: 30rem;
+    margin-top: 3em;
 }
 
 .margin-bottom {
-    margin-bottom: 30rem;
+    margin-bottom: 3em;
 }
 
 /*The bottom divider for the contact section doesnt go all the way down, so we need to set a
