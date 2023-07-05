@@ -962,6 +962,32 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         width: 95%
     }
 
+    .column-2--mobile {
+        padding: 0.5em;
+        display: flex;
+        align-items: center;
+        width: 45vw;
+        height: 100vh;
+        background: var(--color-secondary);
+        background: linear-gradient(43deg, var(--color-secondary) 0%, var(--color-primary 95%));
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    ul > a {
+        width: 100%;
+        justify-content: center;
+        padding-top: 1em;
+        padding-right: 0;
+        color: white;
+        display: flex;
+    }
+
     /*HERO SECTION STYLES FOR XS*/ 
     h1 {
         font-size: 2.5rem;
