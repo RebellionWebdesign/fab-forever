@@ -963,7 +963,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         width: 95%
     }
 
-    .column-2--mobile {
+    .column-2__nav--mobile {
         padding: 0.5em;
         display: flex;
         align-items: center;
