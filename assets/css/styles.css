@@ -1115,6 +1115,11 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         height: 2.5rem;
     }
 
+    .mobile--close {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
     .column-2__nav--mobile {
         padding: 0.5em;
         display: flex;
