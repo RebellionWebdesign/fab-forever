@@ -278,6 +278,8 @@ ul {
 }
 
 ul > a {
+    font-family: poppins, sans-serif;
+    color: var(--color-dark);
     text-decoration: none;
     display: inline-block;
     padding-right: 1.5em;
