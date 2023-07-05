@@ -255,7 +255,10 @@ actually only this one together with the styles for the grid cards and their con
 
 /*LOCAL STYLES FOR ELEMENTS WHICH NEED CUSTOM STYLING*/
 /*Styles for the header*/
-
+.headerbar {
+    width: 100vw;
+    height: 6vh;
+}
 /*Styles for the about section´s grid cards*/
 .grid-container {
     place-items: end;
