@@ -223,6 +223,15 @@ span {
     margin-bottom: 3em;
 }
 
+.section-padding--top {
+    padding-top: 9em;
+}
+
+.section-padding--bottom {
+    padding-bottom: 9em;
+}
+
+
 /*The bottom divider for the contact section doesnt go all the way down, so we need to set a
 negative margin*/
 .divider-bottom {
