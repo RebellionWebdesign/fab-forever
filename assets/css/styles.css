@@ -258,6 +258,8 @@ actually only this one together with the styles for the grid cards and their con
 .headerbar {
     width: 100vw;
     height: 6vh;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 /*Styles for the about section´s grid cards*/
 .grid-container {
