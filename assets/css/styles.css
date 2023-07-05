@@ -596,7 +596,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 /*MEDIA QUERIES FOR L SCREENS*/
 @media screen and (max-width: 992px) {
 
-    /*HEADER STYLES FOR L*/
+    /*RESPONSIVE HEADER STYLES FOR L*/
     .headerbar__logo--mobile {
         width: 15rem;
     }
@@ -617,6 +617,11 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         height: 2.5rem;
     }
 
+    .mobile--close {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
     .column-2__nav--mobile {
         padding: 0.5em;
         display: flex;
@@ -628,7 +633,6 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         position: absolute;
         right: 0;
         top: 0;
-        display: none;
     }
 
     nav {
@@ -642,6 +646,15 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         padding-right: 0;
         color: white;
         display: flex;
+    }
+
+    .closed {
+        width: 0;
+        padding: 0
+    }
+
+    .open {
+        width: 45vw;
     }
 
     /*HERO SECTION STYLES FOR XS*/ 
@@ -783,6 +796,11 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         height: 2.5rem;
     }
 
+    .mobile--close {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
     .column-2__nav--mobile {
         padding: 0.5em;
         display: flex;
@@ -794,7 +812,6 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         position: absolute;
         right: 0;
         top: 0;
-        display: none;
     }
 
     nav {
@@ -808,6 +825,15 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         padding-right: 0;
         color: white;
         display: flex;
+    }
+
+    .closed {
+        width: 0;
+        padding: 0
+    }
+
+    .open {
+        width: 45vw;
     }
 
     /*HERO SECTION STYLES FOR M*/ 
@@ -949,6 +975,11 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         height: 2.5rem;
     }
 
+    .mobile--close {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
     .column-2__nav--mobile {
         padding: 0.5em;
         display: flex;
@@ -960,7 +991,6 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         position: absolute;
         right: 0;
         top: 0;
-        display: none;
     }
 
     nav {
@@ -974,6 +1004,15 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         padding-right: 0;
         color: white;
         display: flex;
+    }
+
+    .closed {
+        width: 0;
+        padding: 0
+    }
+
+    .open {
+        width: 45vw;
     }
 
     /*HERO SECTION STYLES FOR XS*/ 
