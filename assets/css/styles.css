@@ -606,7 +606,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 
     body, html {
         width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     /*RESPONSIVE HEADER STYLES FOR L*/
@@ -790,7 +790,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 
     body, html {
         width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     /*RESPONSIVE HEADER STYLES FOR M*/
@@ -974,7 +974,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 
     body, html {
         width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     /*RESPONSIVE HEADER STYLES FOR S*/
@@ -1158,7 +1158,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 
     body, html {
         width: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     /*RESPONSIVE HEADER STYLES FOR XS*/
