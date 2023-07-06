@@ -766,6 +766,10 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         width: 50%;
     }
 
+    .column-2-mobile {
+        width: 80%;
+    }
+
     .column-2__text {
         margin-bottom: 3em;
     }
