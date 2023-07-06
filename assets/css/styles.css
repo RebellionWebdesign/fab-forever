@@ -1235,7 +1235,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
     }
 
     p {
-        font-size: 1.3rem
+        font-size: 1.3rem;
     }
 
     h2 {
