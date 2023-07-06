@@ -1061,6 +1061,8 @@ Since we work from the desktop down (desktop-first design) we need to order the 
     .column-2-mobile {
         width: 100%;
         text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .column-2-mobile > img {
