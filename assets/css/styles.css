@@ -1219,6 +1219,10 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         right: 0vw;
     }
 
+    .flex-column--mobile {
+        flex-direction: column;
+    }
+
     /*HERO SECTION STYLES FOR XS*/ 
     h1 {
         font-size: 2.5rem;
