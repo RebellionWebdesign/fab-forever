@@ -1215,7 +1215,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         justify-content: center;
         padding-top: 1em;
         padding-right: 0;
-        color: white;
+        color: var(--color-light);
         display: flex;
     }
 
