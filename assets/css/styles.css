@@ -1172,6 +1172,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 
     .container--mobile {
         width: 95%;
+        height: 100%;
     }
 
     .column-2__open--mobile {
