@@ -35,7 +35,8 @@ html {
 But we can still calculate all other values based on the 62.5% we set earlier.*/
 body {
     font-size: 1.6rem;
-    overflow-x: hidden; /*disables horizontal scrolling*/
+    overflow-x: hidden;
+    /*disables horizontal scrolling*/
     display: flex;
     flex-direction: column;
 }
@@ -278,7 +279,7 @@ ul {
     list-style-type: none;
 }
 
-ul > a {
+ul>a {
     font-family: poppins, sans-serif;
     color: var(--color-dark);
     text-decoration: none;
@@ -286,7 +287,7 @@ ul > a {
     padding-right: 1.5em;
 }
 
-ul > a:nth-child(4) {
+ul>a:nth-child(4) {
     padding-right: 0;
 }
 
@@ -311,27 +312,27 @@ ul > a:nth-child(4) {
 and therfore very good for imaging on the web. Since not all browsers support it fully (check here: https://caniuse.com/webp)
 we need a fallback which is the eact same image but in png format.*/
 .grid-card__background--basics {
-    background-image: 
-    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-basics.webp"),
-    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-basics.png");
+    background-image:
+        url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-basics.webp"),
+        url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-basics.png");
 }
 
 .grid-card__background--models {
-    background-image: 
-    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-models.webp"),
-    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-models.png");
+    background-image:
+        url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-models.webp"),
+        url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-models.png");
 }
 
 .grid-card__background--help {
-    background-image: 
-    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-help.webp"),
-    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-help.png");
+    background-image:
+        url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-help.webp"),
+        url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-help.png");
 }
 
 .grid-card__background--materials {
-    background-image: 
-    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-materials.webp"),
-    url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-materials.png");
+    background-image:
+        url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-materials.webp"),
+        url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-materials.png");
 }
 
 /*Styles for the testimonial section*/
@@ -436,150 +437,202 @@ footer {
 /*POPPINS FONT STYLES*/
 /* poppins-100 - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 100;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-200 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 200;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-300 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-regular - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-500 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-600 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-800 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 800;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* poppins-900 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 900;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-100.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
-  /*MONTSERRAT FONT STYLES*/
-  /* montserrat-100 - latin */
+/* poppins-200 - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-200.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/*MONTSERRAT FONT STYLES*/
+/* montserrat-100 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 100;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-100.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* montserrat-200 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-100.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-200 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 200;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-200.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* montserrat-300 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-200.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* montserrat-regular - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* montserrat-500 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* montserrat-600 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* montserrat-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* montserrat-800 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* montserrat-900 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-900 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 900;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-900.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 /*MEDIA QUERIES
 Since we work from the desktop down (desktop-first design) we need to order the queries correctly*/
@@ -588,27 +641,29 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 @media screen and (min-width: 1400px) {
     .mobile--open {
         display: none;
-       }
+    }
 
-       .mobile--close {
+    .mobile--close {
         display: none;
-       }
+    }
 }
 
 /*MEDIA QUERIES FOR XL SCREENS*/
 @media screen and (min-width: 1200px) {
-   .mobile--open {
-    display: none;
-   }
+    .mobile--open {
+        display: none;
+    }
 
-   .mobile--close {
-    display: none;
-   }
+    .mobile--close {
+        display: none;
+    }
 }
 
 /*MEDIA QUERY FOR IN BETWEEN SIZE (993px to 1199px)*/
 @media (min-width: 993px) and (max-width: 1199px) {
-    body, html {
+
+    body,
+    html {
         width: 100%;
         overflow-x: hidden;
     }
@@ -656,7 +711,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         width: 100%;
     }
 
-    ul > a {
+    ul>a {
         width: 100%;
         justify-content: center;
         margin-top: 0;
@@ -665,7 +720,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         display: flex;
     }
 
-    ul > a:active {
+    ul>a:active {
         background-color: rgba(255, 255, 255, 0.11);
         border-radius: 5px;
     }
@@ -678,7 +733,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         right: 0vw;
     }
 
-    /*HERO SECTION STYLES FOR L*/ 
+    /*HERO SECTION STYLES FOR L*/
     h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
@@ -706,7 +761,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         text-align: center;
     }
 
-    .column-2-mobile > img {
+    .column-2-mobile>img {
         width: 80%;
         margin-bottom: 3rem;
     }
@@ -732,7 +787,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         align-items: start;
     }
 
-    
+
 
     /*ABOUT SECTION STYLES FOR L*/
     .grid-container-mobile {
@@ -744,12 +799,12 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         grid-column-gap: 35px;
         grid-row-gap: 35px;
     }
-    
+
 
     /*TESTIMONIAL SECTION STYLES FOR L*/
 
     .testimonial-text {
-        font-size: 1.3rem; 
+        font-size: 1.3rem;
     }
 
     .testimonial-card {
@@ -757,7 +812,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         margin-top: 3em;
     }
 
-    .testimonial-card  img {
+    .testimonial-card img {
         width: 25%;
     }
 
@@ -805,7 +860,8 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 /*MEDIA QUERIES FOR L SCREENS*/
 @media screen and (max-width: 992px) {
 
-    body, html {
+    body,
+    html {
         width: 100%;
         overflow-x: hidden;
     }
@@ -853,7 +909,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         width: 100%;
     }
 
-    ul > a {
+    ul>a {
         width: 100%;
         justify-content: center;
         margin-top: 0;
@@ -862,7 +918,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         display: flex;
     }
 
-    ul > a:active {
+    ul>a:active {
         background-color: rgba(255, 255, 255, 0.11);
         border-radius: 5px;
     }
@@ -875,7 +931,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         right: 0vw;
     }
 
-    /*HERO SECTION STYLES FOR L*/ 
+    /*HERO SECTION STYLES FOR L*/
     h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
@@ -903,7 +959,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         text-align: center;
     }
 
-    .column-2-mobile > img {
+    .column-2-mobile>img {
         width: 80%;
         margin-bottom: 3rem;
     }
@@ -929,7 +985,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         align-items: start;
     }
 
-    
+
 
     /*ABOUT SECTION STYLES FOR L*/
     .grid-container-mobile {
@@ -941,12 +997,12 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         grid-column-gap: 35px;
         grid-row-gap: 35px;
     }
-    
+
 
     /*TESTIMONIAL SECTION STYLES FOR L*/
 
     .testimonial-text {
-        font-size: 1.3rem; 
+        font-size: 1.3rem;
     }
 
     .testimonial-card {
@@ -954,7 +1010,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         margin-top: 3em;
     }
 
-    .testimonial-card  img {
+    .testimonial-card img {
         width: 25%;
     }
 
@@ -1002,7 +1058,8 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 /*MEDIA QUERIES FOR M SCREENS*/
 @media only screen and (-width: 768px) {
 
-    body, html {
+    body,
+    html {
         width: 100%;
         overflow-x: hidden;
     }
@@ -1050,7 +1107,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         width: 100%;
     }
 
-    ul > a {
+    ul>a {
         width: 100%;
         justify-content: center;
         margin-top: 0;
@@ -1059,7 +1116,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         display: flex;
     }
 
-    ul > a:active {
+    ul>a:active {
         background-color: rgba(255, 255, 255, 0.11);
         border-radius: 5px;
     }
@@ -1072,7 +1129,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         right: 0vw;
     }
 
-    /*HERO SECTION STYLES FOR M*/ 
+    /*HERO SECTION STYLES FOR M*/
     h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
@@ -1100,7 +1157,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         text-align: center;
     }
 
-    .column-2-mobile > img {
+    .column-2-mobile>img {
         width: 80%;
         margin-bottom: 3rem;
     }
@@ -1126,7 +1183,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         align-items: start;
     }
 
-    
+
 
     /*ABOUT SECTION STYLES FOR XS*/
     .grid-container-mobile {
@@ -1138,19 +1195,19 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         grid-column-gap: 35px;
         grid-row-gap: 35px;
     }
-    
+
 
     /*TESTIMONIAL SECTION STYLES FOR XS*/
 
     .testimonial-text {
-        font-size: 1.3rem; 
+        font-size: 1.3rem;
     }
 
     .testimonial-card {
         margin-top: 3em;
     }
 
-    .testimonial-card  img {
+    .testimonial-card img {
         width: 50%;
     }
 
@@ -1190,7 +1247,8 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 /*MEDIA QUERIES FOR S SCREENS*/
 @media only screen and (max-width: 576px) {
 
-    body, html {
+    body,
+    html {
         width: 100%;
         overflow-x: hidden;
     }
@@ -1238,7 +1296,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         width: 100%;
     }
 
-    ul > a {
+    ul>a {
         width: 100%;
         justify-content: center;
         margin-top: 0;
@@ -1247,7 +1305,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         display: flex;
     }
 
-    ul > a:active {
+    ul>a:active {
         background-color: rgba(255, 255, 255, 0.11);
         border-radius: 5px;
     }
@@ -1260,7 +1318,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         right: 0vw;
     }
 
-    /*HERO SECTION STYLES FOR XS*/ 
+    /*HERO SECTION STYLES FOR XS*/
     h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
@@ -1290,7 +1348,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         padding-right: 10px;
     }
 
-    .column-2-mobile > img {
+    .column-2-mobile>img {
         width: 80%;
         margin-bottom: 3rem;
     }
@@ -1316,7 +1374,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         align-items: start;
     }
 
-    
+
 
     /*ABOUT SECTION STYLES FOR XS*/
     .grid-container-mobile {
@@ -1328,12 +1386,12 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         grid-column-gap: 35px;
         grid-row-gap: 35px;
     }
-    
+
 
     /*TESTIMONIAL SECTION STYLES FOR XS*/
 
     .testimonial-text {
-        font-size: 1.3rem; 
+        font-size: 1.3rem;
     }
 
     .testimonial-card {
@@ -1341,7 +1399,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         width: 80%;
     }
 
-    .testimonial-card  img {
+    .testimonial-card img {
         width: 50%;
     }
 
@@ -1385,7 +1443,8 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 /*MEDIA QUERIES FOR XS SCREENS*/
 @media only screen and (max-width: 375px) {
 
-    body, html {
+    body,
+    html {
         width: 100%;
         overflow-x: hidden;
     }
@@ -1435,7 +1494,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         width: 100%;
     }
 
-    ul > a {
+    ul>a {
         width: 100%;
         justify-content: center;
         margin-top: 0;
@@ -1444,7 +1503,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         display: flex;
     }
 
-    ul > a:active {
+    ul>a:active {
         background-color: rgba(255, 255, 255, 0.11);
         border-radius: 5px;
     }
@@ -1466,7 +1525,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         flex-direction: column;
     }
 
-    /*HERO SECTION STYLES FOR XS*/ 
+    /*HERO SECTION STYLES FOR XS*/
     h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
@@ -1496,7 +1555,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         padding-right: 10px;
     }
 
-    .column-2-mobile > img {
+    .column-2-mobile>img {
         width: 80%;
         margin-bottom: 3rem;
     }
@@ -1522,7 +1581,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         align-items: start;
     }
 
-    
+
 
     /*ABOUT SECTION STYLES FOR XS*/
     .grid-container-mobile {
@@ -1534,12 +1593,12 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         grid-column-gap: 35px;
         grid-row-gap: 35px;
     }
-    
+
 
     /*TESTIMONIAL SECTION STYLES FOR XS*/
 
     .testimonial-text {
-        font-size: 1.3rem; 
+        font-size: 1.3rem;
     }
 
     .testimonial-card {
@@ -1547,7 +1606,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         width: 80%;
     }
 
-    .testimonial-card  img {
+    .testimonial-card img {
         width: 50%;
     }
 
