@@ -1352,8 +1352,5 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         margin: 0 auto;
     }
 
-    /*FOOTER STYLES FOR XS*/
-    .hide--mobile {
-        display: none;
-    }  
+
 }
