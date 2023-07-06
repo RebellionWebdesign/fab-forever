@@ -780,7 +780,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 
     /*FOOTER SECTION STYLES FOR L*/
 
-    .container-mobile--100 {
+    .container-2-mobile {
         width: 100%;
     }
 
