@@ -1303,6 +1303,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 
     .testimonial-card {
         margin-top: 3em;
+        width: 80%;
     }
 
     .testimonial-card  img {
