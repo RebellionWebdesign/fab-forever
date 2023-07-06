@@ -662,11 +662,11 @@ Since we work from the desktop down (desktop-first design) we need to order the 
     }
 
     .closed {
-        right: 0;
+        right: -45vw;
     }
 
     .open {
-        right: 45vw;
+        right: 0vw;
     }
 
     /*HERO SECTION STYLES FOR XS*/ 
@@ -845,11 +845,11 @@ Since we work from the desktop down (desktop-first design) we need to order the 
     }
 
     .closed {
-        right: 0;
+        right: -45vw;
     }
 
     .open {
-        right: 45vw;
+        right: 0vw;
     }
 
     /*HERO SECTION STYLES FOR M*/ 
@@ -1028,11 +1028,11 @@ Since we work from the desktop down (desktop-first design) we need to order the 
     }
 
     .closed {
-        right: 0;
+        right: -45vw;
     }
 
     .open {
-        right: 45vw;
+        right: 0vw;
     }
 
     /*HERO SECTION STYLES FOR XS*/ 
