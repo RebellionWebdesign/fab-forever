@@ -763,7 +763,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 
     /*CONTACT SECTION STYLES FOR L*/
     .form-wrapper {
-        width: 100%;
+        width: 50%;
     }
 
     .column-2__text {
