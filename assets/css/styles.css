@@ -604,6 +604,11 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 /*MEDIA QUERIES FOR L SCREENS*/
 @media screen and (max-width: 992px) {
 
+    body, html {
+        width: 100%;
+        overflow: hidden;
+    }
+
     /*RESPONSIVE HEADER STYLES FOR L*/
     .headerbar__logo--mobile {
         width: 15rem;
@@ -783,6 +788,11 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 /*MEDIA QUERIES FOR M SCREENS*/
 @media only screen and (max-width: 768px) {
 
+    body, html {
+        width: 100%;
+        overflow: hidden;
+    }
+
     /*RESPONSIVE HEADER STYLES FOR M*/
     .headerbar__logo--mobile {
         width: 15rem;
@@ -961,6 +971,11 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 
 /*MEDIA QUERIES FOR S SCREENS*/
 @media only screen and (max-width: 576px) {
+
+    body, html {
+        width: 100%;
+        overflow: hidden;
+    }
 
     /*RESPONSIVE HEADER STYLES FOR S*/
     .headerbar__logo--mobile {
