@@ -1218,6 +1218,11 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         display: flex;
     }
 
+    li {
+        width: 100%;
+        text-align: center;
+    }
+
     .closed {
         right: -45vw;
     }
