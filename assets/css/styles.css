@@ -1340,10 +1340,6 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 
     /*FOOTER SECTION STYLES FOR XS*/
 
-    .container-mobile--100 {
-        width: 100%;
-    }
-
     .hide {
         display: none;
     }
