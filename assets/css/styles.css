@@ -749,15 +749,15 @@ Since we work from the desktop down (desktop-first design) we need to order the 
     }
 
     .testimonial-card {
+        width: 80%;
         margin-top: 3em;
     }
 
     .testimonial-card  img {
-        width: 50%;
+        width: 25%;
     }
 
     .testimonial-card p {
-        padding-left: 0;
         padding-bottom: 0.5rem;
     }
 
