@@ -1135,6 +1135,10 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         padding: 0;
     }
 
+    .flex-column--mobile {
+        flex-direction: column;
+    }
+
     /*FOOTER SECTION STYLES FOR XS*/
 
     .container-mobile--100 {
