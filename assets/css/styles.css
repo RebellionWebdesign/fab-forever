@@ -426,6 +426,11 @@ footer {
     margin-left: 2rem;
 }
 
+/*STYLES FOR THE BASICS SECTION*/
+.picture-wrapper {
+    width: 100%;
+}
+
 /*FONT STYLE DECLARATIONS*/
 
 /*POPPINS FONT STYLES*/
