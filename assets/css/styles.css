@@ -1141,6 +1141,11 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 /*MEDIA QUERIES FOR XS SCREENS*/
 @media only screen and (max-width: 375px) {
 
+    body, html {
+        width: 100%;
+        overflow: hidden;
+    }
+
     /*RESPONSIVE HEADER STYLES FOR XS*/
     .headerbar__logo--mobile {
         width: 15rem;
