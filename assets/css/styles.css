@@ -1427,7 +1427,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 
     /*FOOTER SECTION STYLES FOR S*/
 
-    .container-mobile--100 {
+    .container-mobile {
         width: 100%;
     }
 
