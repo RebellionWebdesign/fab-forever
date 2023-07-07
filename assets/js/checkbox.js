@@ -1,5 +1,5 @@
 function checkbox() {
     if (document.getElementsByClassName("newsletter").checked) {
-        localStorage-setItem("isChecked", "yes")
+        localStorage.setItem("isChecked", "yes")
     }
 }
