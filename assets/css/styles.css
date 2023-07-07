@@ -39,6 +39,7 @@ body {
     /*disables horizontal scrolling*/
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 /*Global styles for elements that are the same over the complete website.
@@ -651,79 +652,82 @@ footer {
 /*MEDIA QUERIES
 Since we work from the desktop down (desktop-first design) we need to order the queries correctly*/
 
-/*MEDIA QUERIES FOR XXL SCREENS*/
-@media screen and (min-width: 1400px) {
-    .mobile--open {
-        display: none;
-    }
 
-    .mobile--close {
+/*MEDIA QUERIES FOR XXL SCREENS*/
+
+/*@media screen and (min-width: 1400px) {
+/*    .mobile--open {
         display: none;
-    }
-}
+/*    }
+/*
+/*    .mobile--close {
+        display: none;
+/*    }
+/*}
 
 /*MEDIA QUERIES FOR XL SCREENS*/
-@media screen and (min-width: 1200px) {
-    .mobile--open {
+
+/*@media screen and (min-width: 1200px) {
+/*    .mobile--open {
         display: none;
-    }
-
-    .mobile--close {
+/*    }
+/*
+/*    .mobile--close {
         display: none;
-    }
-
-        /*RESPONSE SECTION STYLES FOR XS*/
-
-        .response {
+/*    }
+/*
+/*        /*RESPONSE SECTION STYLES FOR XS*/
+/*
+/*        .response {
             width: 80%;
             padding: 30px;
-        }
-    
-        h1 {
+/*        }
+/*    
+/*        h1 {
             font-size: 5rem;
-        }
-    
-        p {
+/*        }
+/*    
+/*        p {
             font-size: 1.6rem;
-        }
-}
+/*        }
+/*}
 
 /*MEDIA QUERY FOR IN BETWEEN SIZE (993px to 1199px)*/
-@media (min-width: 993px) and (max-width: 1199px) {
-
-    body,
-    html {
+/*@media (min-width: 993px) and (max-width: 1199px) {
+/*
+/*    body,
+/*    html {
         width: 100%;
         overflow-x: hidden;
-    }
-
-    /*RESPONSIVE HEADER STYLES FOR IN BETWEEN SCREENS*/
-    .headerbar__logo--mobile {
+/*    }
+/*
+/*    /*RESPONSIVE HEADER STYLES FOR IN BETWEEN SCREENS*/
+/*    .headerbar__logo--mobile {
         width: 15rem;
-    }
-
-    .container--mobile {
+/*    }
+/*
+/*    .container--mobile {
         width: 95%;
-    }
-
-    .column-2__open--mobile {
+/*    }
+/*
+/*    .column-2__open--mobile {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    .mobile--open {
+/*    }
+/*
+/*    .mobile--open {
         width: 2.5rem;
         height: 2.5rem;
-    }
-
-    .mobile--close {
+/*    }
+/*
+/*    .mobile--close {
         width: 2.5rem;
         height: 2.5rem;
-    }
-
-    .column-2__nav--mobile {
+/*    }
+/*
+/*    .column-2__nav--mobile {
         padding: 0.5em;
         display: flex;
         align-items: center;
@@ -734,92 +738,92 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         position: absolute;
         right: 0;
         top: 0;
-    }
-
-    nav {
+/*    }
+/*
+/*    nav {
         width: 100%;
-    }
-
-    ul>a {
+/*    }
+/*
+/*    ul>a {
         width: 100%;
         justify-content: center;
         margin-top: 0;
         padding: 0.5em 0;
         color: var(--color-light);
         display: flex;
-    }
-
-    ul>a:active {
+/*    }
+/*
+/*    ul>a:active {
         background-color: rgba(255, 255, 255, 0.11);
         border-radius: 5px;
-    }
-
-    .closed {
+/*    }
+/*
+/*    .closed {
         right: -45vw;
-    }
-
-    .open {
+/*    }
+/*
+/*    .open {
         right: 0vw;
-    }
-
-    /*HERO SECTION STYLES FOR IN BETWEEN SCREENS*/
-    h1 {
+/*    }
+/*
+/*    /*HERO SECTION STYLES FOR IN BETWEEN SCREENS*/
+/*    h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
-    }
-
-    p {
+/*    }
+/*
+/*    p {
         font-size: 1.3rem
-    }
-
-    h2 {
+/*    }
+/*
+/*    h2 {
         font-size: 2rem;
-    }
-
-    h3 {
+/*    }
+/*
+/*    h3 {
         font-size: 1.8rem;
-    }
-
-    .container-mobile {
+/*    }
+/*
+/*    .container-mobile {
         width: 87.5%;
         height: auto;
-    }
-
-    .column-2-mobile {
+/*    }
+/*
+/*    .column-2-mobile {
         width: 100%;
         text-align: center;
-    }
-
-    .column-2-mobile>img {
+/*    }
+/*
+/*    .column-2-mobile>img {
         width: 80%;
         margin-bottom: 3rem;
-    }
-
-    .flex-column-mobile {
+/*    }
+/*
+/*    .flex-column-mobile {
         flex-direction: column-reverse;
         width: 100%;
-    }
-
-    .align-center-mobile {
+/*    }
+/*
+/*    .align-center-mobile {
         justify-content: center;
-    }
-
-    .flex-order {
+/*    }
+/*
+/*    .flex-order {
         order: 1;
-    }
-
-    .flex-row-mobile {
+/*    }
+/*
+/*    .flex-row-mobile {
         flex-direction: row;
-    }
-
-    .align-start-mobile {
+/*    }
+/*
+/*    .align-start-mobile {
         align-items: start;
-    }
-
-
-
-    /*ABOUT SECTION STYLES FOR IN BETWEEN SCREENS*/
-    .grid-container-mobile {
+/*    }
+/*
+/*
+/*
+/*    /*ABOUT SECTION STYLES FOR IN BETWEEN SCREENS*/
+/*    .grid-container-mobile {
         place-items: center;
         width: 100%;
         padding: 3em 0em;
@@ -827,116 +831,116 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 35px;
         grid-row-gap: 35px;
-    }
-
-
-    /*TESTIMONIAL SECTION STYLES FOR IN BETWEEN SCREENS*/
-
-    .testimonial-text {
+/*    }
+/*
+/*
+/*    /*TESTIMONIAL SECTION STYLES FOR IN BETWEEN SCREENS*/
+/*
+/*    .testimonial-text {
         font-size: 1.3rem;
-    }
-
-    .testimonial-card {
+/*    }
+/*
+/*    .testimonial-card {
         width: 80%;
         margin-top: 3em;
-    }
-
-    .testimonial-card img {
+/*    }
+/*
+/*    .testimonial-card img {
         width: 25%;
-    }
-
-    .testimonial-card p {
+/*    }
+/*
+/*    .testimonial-card p {
         padding-bottom: 0.5rem;
-    }
-
-    /*CONTACT SECTION STYLES FOR IN BETWEEN SCREENS*/
-    .form-wrapper {
+/*    }
+/*
+/*    /*CONTACT SECTION STYLES FOR IN BETWEEN SCREENS*/
+/*    .form-wrapper {
         width: 50%;
-    }
-
-    .column-2-mobile {
+/*    }
+/*
+/*    .column-2-mobile {
         width: 100%;
         padding: 0em 2em;
-    }
-
-    .column-2__text {
+/*    }
+/*
+/*    .column-2__text {
         margin-bottom: 3em;
-    }
-
-    label {
+/*    }
+/*
+/*    label {
         padding: 0;
-    }
-
-    .flex-center--mobile {
+/*    }
+/*
+/*    .flex-center--mobile {
         justify-content: center;
-    }
-
-    /*FOOTER SECTION STYLES FOR IN BETWEEN SCREENS*/
-
-    .container-2-mobile {
+/*    }
+/*
+/*    /*FOOTER SECTION STYLES FOR IN BETWEEN SCREENS*/
+/*
+/*    .container-2-mobile {
         width: 100%;
-    }
-
-    .hide-mobile {
+/*    }
+/*
+/*    .hide-mobile {
         display: none;
-    }
-
-    .social {
+/*    }
+/*
+/*    .social {
         margin: 0 auto;
-    }
-
-        /*RESPONSE SECTION STYLES FOR XS*/
-
-        .response {
+/*    }
+/*
+/*        /*RESPONSE SECTION STYLES FOR XS*/
+/*
+/*        .response {
             width: 70%;
             padding: 50px;
-        }
-    
-        h1 {
+/*        }
+/*    
+/*        h1 {
             font-size: 5rem;
-        }
-    
-        p {
+/*        }
+/*    
+/*        p {
             font-size: 1.6rem;
-        }
-}
+/*        }
+/*}
 
 /*MEDIA QUERIES FOR L SCREENS*/
-@media screen and (max-width: 992px) {
-
-    body,
-    html {
+/*@media screen and (max-width: 992px) {
+/*
+/*    body,
+/*    html {
         width: 100%;
         overflow-x: hidden;
-    }
-
-    /*RESPONSIVE HEADER STYLES FOR L*/
-    .headerbar__logo--mobile {
+/*    }
+/*
+/*    /*RESPONSIVE HEADER STYLES FOR L*/
+/*    .headerbar__logo--mobile {
         width: 15rem;
-    }
-
-    .container--mobile {
+/*    }
+/*
+/*    .container--mobile {
         width: 95%;
-    }
-
-    .column-2__open--mobile {
+/*    }
+/*
+/*    .column-2__open--mobile {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    .mobile--open {
+/*    }
+/*
+/*    .mobile--open {
         width: 2.5rem;
         height: 2.5rem;
-    }
-
-    .mobile--close {
+/*    }
+/*
+/*    .mobile--close {
         width: 2.5rem;
         height: 2.5rem;
-    }
-
-    .column-2__nav--mobile {
+/*    }
+/*
+/*    .column-2__nav--mobile {
         padding: 0.5em;
         display: flex;
         align-items: center;
@@ -947,92 +951,92 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         position: absolute;
         right: 0;
         top: 0;
-    }
-
-    nav {
+/*    }
+/*
+/*    nav {
         width: 100%;
-    }
-
-    ul>a {
+/*    }
+/*
+/*    ul>a {
         width: 100%;
         justify-content: center;
         margin-top: 0;
         padding: 0.5em 0;
         color: var(--color-light);
         display: flex;
-    }
-
-    ul>a:active {
+/*    }
+/*
+/*    ul>a:active {
         background-color: rgba(255, 255, 255, 0.11);
         border-radius: 5px;
-    }
-
-    .closed {
+/*    }
+/*
+/*    .closed {
         right: -45vw;
-    }
-
-    .open {
+/*    }
+/*
+/*    .open {
         right: 0vw;
-    }
-
-    /*HERO SECTION STYLES FOR L*/
-    h1 {
+/*    }
+/*
+/*    /*HERO SECTION STYLES FOR L*/
+/*    h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
-    }
-
-    p {
+/*    }
+/*
+/*    p {
         font-size: 1.3rem
-    }
-
-    h2 {
+/*    }
+/*
+/*    h2 {
         font-size: 2rem;
-    }
-
-    h3 {
+/*    }
+/*
+/*    h3 {
         font-size: 1.8rem;
-    }
-
-    .container-mobile {
+/*    }
+/*
+/*    .container-mobile {
         width: 87.5%;
         height: auto;
-    }
-
-    .column-2-mobile {
+/*    }
+/*
+/*    .column-2-mobile {
         width: 100%;
         text-align: center;
-    }
-
-    .column-2-mobile>img {
+/*    }
+/*
+/*    .column-2-mobile>img {
         width: 80%;
         margin-bottom: 3rem;
-    }
-
-    .flex-column-mobile {
+/*    }
+/*
+/*    .flex-column-mobile {
         flex-direction: column-reverse;
         width: 100%;
-    }
-
-    .align-center-mobile {
+/*    }
+/*
+/*    .align-center-mobile {
         justify-content: center;
-    }
-
-    .flex-order {
+/*    }
+/*
+/*    .flex-order {
         order: 1;
-    }
-
-    .flex-row-mobile {
+/*    }
+/*
+/*    .flex-row-mobile {
         flex-direction: row;
-    }
-
-    .align-start-mobile {
+/*    }
+/*
+/*    .align-start-mobile {
         align-items: start;
-    }
-
-
-
-    /*ABOUT SECTION STYLES FOR L*/
-    .grid-container-mobile {
+/*    }
+/*
+/*
+/*
+/*    /*ABOUT SECTION STYLES FOR L*/
+/*    .grid-container-mobile {
         place-items: center;
         width: 100%;
         padding: 3em 0em;
@@ -1040,101 +1044,101 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 35px;
         grid-row-gap: 35px;
-    }
-
-
-    /*TESTIMONIAL SECTION STYLES FOR L*/
-
-    .testimonial-text {
+/*    }
+/*
+/*
+/*    /*TESTIMONIAL SECTION STYLES FOR L*/
+/*
+/*    .testimonial-text {
         font-size: 1.3rem;
-    }
-
-    .testimonial-card {
+/*    }
+/*
+/*    .testimonial-card {
         width: 80%;
         margin-top: 3em;
-    }
-
-    .testimonial-card img {
+/*    }
+/*
+/*    .testimonial-card img {
         width: 25%;
-    }
-
-    .testimonial-card p {
+/*    }
+/*
+/*    .testimonial-card p {
         padding-bottom: 0.5rem;
-    }
-
-    /*CONTACT SECTION STYLES FOR L*/
-    .form-wrapper {
+/*    }
+/*
+/*    /*CONTACT SECTION STYLES FOR L*/
+/*    .form-wrapper {
         width: 50%;
-    }
-
-    .column-2-mobile {
+/*    }
+/*
+/*    .column-2-mobile {
         width: 100%;
         padding: 0em 2em;
-    }
-
-    .column-2__text {
+/*    }
+/*
+/*    .column-2__text {
         margin-bottom: 3em;
-    }
-
-    label {
+/*    }
+/*
+/*    label {
         padding: 0;
-    }
-
-    .flex-center--mobile {
+/*    }
+/*
+/*    .flex-center--mobile {
         justify-content: center;
-    }
-
-    /*FOOTER SECTION STYLES FOR L*/
-
-    .container-2-mobile {
+/*    }
+/*
+/*    /*FOOTER SECTION STYLES FOR L*/
+/*
+/*    .container-2-mobile {
         width: 100%;
-    }
-
-    .hide-mobile {
+/*    }
+/*
+/*    .hide-mobile {
         display: none;
-    }
-
-    .social {
+/*    }
+/*
+/*    .social {
         margin: 0 auto;
-    }
-}
+/*    }
+/*}
 
 /*MEDIA QUERIES FOR M SCREENS*/
-@media only screen and (-width: 768px) {
-
-    body,
-    html {
+/*@media only screen and (-width: 768px) {
+/*
+/*    body,
+/*    html {
         width: 100%;
         overflow-x: hidden;
-    }
-
-    /*RESPONSIVE HEADER STYLES FOR M*/
-    .headerbar__logo--mobile {
+/*    }
+/*
+/*    /*RESPONSIVE HEADER STYLES FOR M*/
+/*    .headerbar__logo--mobile {
         width: 15rem;
-    }
-
-    .container--mobile {
+/*    }
+/*
+/*    .container--mobile {
         width: 95%;
-    }
-
-    .column-2__open--mobile {
+/*    }
+/*
+/*    .column-2__open--mobile {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    .mobile--open {
+/*    }
+/*
+/*    .mobile--open {
         width: 2.5rem;
         height: 2.5rem;
-    }
-
-    .mobile--close {
+/*    }
+/*
+/*    .mobile--close {
         width: 2.5rem;
         height: 2.5rem;
-    }
-
-    .column-2__nav--mobile {
+/*    }
+/*
+/*    .column-2__nav--mobile {
         padding: 0.5em;
         display: flex;
         align-items: center;
@@ -1145,92 +1149,92 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         position: absolute;
         right: 0;
         top: 0;
-    }
-
-    nav {
+/*    }
+/*
+/*    nav {
         width: 100%;
-    }
-
-    ul>a {
+/*    }
+/*
+/*    ul>a {
         width: 100%;
         justify-content: center;
         margin-top: 0;
         padding: 0.5em 0;
         color: var(--color-light);
         display: flex;
-    }
-
-    ul>a:active {
+/*    }
+/*
+/*    ul>a:active {
         background-color: rgba(255, 255, 255, 0.11);
         border-radius: 5px;
-    }
-
-    .closed {
+/*    }
+/*
+/*    .closed {
         right: -45vw;
-    }
-
-    .open {
+/*    }
+/*
+/*    .open {
         right: 0vw;
-    }
-
-    /*HERO SECTION STYLES FOR M*/
-    h1 {
+/*    }
+/*
+/*    /*HERO SECTION STYLES FOR M*/
+/*    h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
-    }
-
-    p {
+/*    }
+/*
+/*    p {
         font-size: 1.3rem
-    }
-
-    h2 {
+/*    }
+/*
+/*    h2 {
         font-size: 2rem;
-    }
-
-    h3 {
+/*    }
+/*
+/*    h3 {
         font-size: 1.8rem;
-    }
-
-    .container-mobile {
+/*    }
+/*
+/*    .container-mobile {
         width: 87.5%;
         height: auto;
-    }
-
-    .column-2-mobile {
+/*    }
+/*
+/*    .column-2-mobile {
         width: 100%;
         text-align: center;
-    }
-
-    .column-2-mobile>img {
+/*    }
+/*
+/*    .column-2-mobile>img {
         width: 80%;
         margin-bottom: 3rem;
-    }
-
-    .flex-column-mobile {
+/*    }
+/*
+/*    .flex-column-mobile {
         flex-direction: column-reverse;
         width: 100%;
-    }
-
-    .align-center-mobile {
+/*    }
+/*
+/*    .align-center-mobile {
         justify-content: center;
-    }
-
-    .flex-order {
+/*    }
+/*
+/*    .flex-order {
         order: 1;
-    }
-
-    .flex-row-mobile {
+/*    }
+/*
+/*    .flex-row-mobile {
         flex-direction: row;
-    }
-
-    .align-start-mobile {
+/*    }
+/*
+/*    .align-start-mobile {
         align-items: start;
-    }
-
-
-
-    /*ABOUT SECTION STYLES FOR M*/
-    .grid-container-mobile {
+/*    }
+/*
+/*
+/*
+/*    /*ABOUT SECTION STYLES FOR M*/
+/*    .grid-container-mobile {
         place-items: center;
         width: 100%;
         padding: 3em 0em;
@@ -1238,107 +1242,107 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 35px;
         grid-row-gap: 35px;
-    }
-
-
-    /*TESTIMONIAL SECTION STYLES FOR M*/
-
-    .testimonial-text {
+/*    }
+/*
+/*
+/*    /*TESTIMONIAL SECTION STYLES FOR M*/
+/*
+/*    .testimonial-text {
         font-size: 1.3rem;
-    }
-
-    .testimonial-card {
+/*    }
+/*
+/*    .testimonial-card {
         margin-top: 3em;
-    }
-
-    .testimonial-card img {
+/*    }
+/*
+/*    .testimonial-card img {
         width: 50%;
-    }
-
-    .testimonial-card p {
+/*    }
+/*
+/*    .testimonial-card p {
         padding-left: 0;
         padding-bottom: 0.5rem;
-    }
-
-    /*CONTACT SECTION STYLES FOR M*/
-    .form-wrapper {
+/*    }
+/*
+/*    /*CONTACT SECTION STYLES FOR M*/
+/*    .form-wrapper {
         width: 100%;
-    }
-
-    .column-2__text {
+/*    }
+/*
+/*    .column-2__text {
         margin-bottom: 3em;
-    }
-
-    label {
+/*    }
+/*
+/*    label {
         padding: 0;
-    }
-
-    /*FOOTER SECTION STYLES FOR M*/
-
-    .container-mobile--100 {
+/*    }
+/*
+/*    /*FOOTER SECTION STYLES FOR M*/
+/*
+/*    .container-mobile--100 {
         width: 100%;
-    }
-
-    .hide-mobile {
+/*    }
+/*
+/*    .hide-mobile {
         display: none;
-    }
-
-    .social {
+/*    }
+/*
+/*    .social {
         margin: 0 auto;
-    }
-
-        /*RESPONSE SECTION STYLES FOR M*/
-
-        .response {
+/*    }
+/*
+/*        /*RESPONSE SECTION STYLES FOR M*/
+/*
+/*        .response {
             width: 98%;
             padding: 10px;
-        }
-    
-        h1 {
+/*        }
+/*    
+/*        h1 {
             font-size: 2rem;
-        }
-    
-        p {
+/*        }
+/*    
+/*        p {
             font-size: 1.1rem;
-        }
-}
+/*        }
+/*}
 
 /*MEDIA QUERIES FOR S SCREENS*/
-@media only screen and (max-width: 576px) {
-
-    body,
-    html {
+/*@media only screen and (max-width: 576px) {
+/*
+/*    body,
+/*    html {
         width: 100%;
         overflow-x: hidden;
-    }
-
-    /*RESPONSIVE HEADER STYLES FOR S*/
-    .headerbar__logo--mobile {
+/*    }
+/*
+/*    /*RESPONSIVE HEADER STYLES FOR S*/
+/*    .headerbar__logo--mobile {
         width: 15rem;
-    }
-
-    .container--mobile {
+/*    }
+/*
+/*    .container--mobile {
         width: 95%;
-    }
-
-    .column-2__open--mobile {
+/*    }
+/*
+/*    .column-2__open--mobile {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    .mobile--open {
+/*    }
+/*
+/*    .mobile--open {
         width: 2.5rem;
         height: 2.5rem;
-    }
-
-    .mobile--close {
+/*    }
+/*
+/*    .mobile--close {
         width: 2.5rem;
         height: 2.5rem;
-    }
-
-    .column-2__nav--mobile {
+/*    }
+/*
+/*    .column-2__nav--mobile {
         padding: 0.5em;
         display: flex;
         align-items: center;
@@ -1349,94 +1353,94 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         position: absolute;
         right: 0;
         top: 0;
-    }
-
-    nav {
+/*    }
+/*
+/*    nav {
         width: 100%;
-    }
-
-    ul>a {
+/*    }
+/*
+/*    ul>a {
         width: 100%;
         justify-content: center;
         margin-top: 0;
         padding: 0.5em 0;
         color: var(--color-light);
         display: flex;
-    }
-
-    ul>a:active {
+/*    }
+/*
+/*    ul>a:active {
         background-color: rgba(255, 255, 255, 0.11);
         border-radius: 5px;
-    }
-
-    .closed {
+/*    }
+/*
+/*    .closed {
         right: -45vw;
-    }
-
-    .open {
+/*    }
+/*
+/*    .open {
         right: 0vw;
-    }
-
-    /*HERO SECTION STYLES FOR S*/
-    h1 {
+/*    }
+/*
+/*    /*HERO SECTION STYLES FOR S*/
+/*    h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
-    }
-
-    p {
+/*    }
+/*
+/*    p {
         font-size: 1.3rem
-    }
-
-    h2 {
+/*    }
+/*
+/*    h2 {
         font-size: 2rem;
-    }
-
-    h3 {
+/*    }
+/*
+/*    h3 {
         font-size: 1.8rem;
-    }
-
-    .container-mobile {
+/*    }
+/*
+/*    .container-mobile {
         width: 87.5%;
         height: auto;
-    }
-
-    .column-2-mobile {
+/*    }
+/*
+/*    .column-2-mobile {
         width: 100%;
         text-align: center;
         padding-left: 10px;
         padding-right: 10px;
-    }
-
-    .column-2-mobile>img {
+/*    }
+/*
+/*    .column-2-mobile>img {
         width: 80%;
         margin-bottom: 3rem;
-    }
-
-    .flex-column-mobile {
+/*    }
+/*
+/*    .flex-column-mobile {
         flex-direction: column-reverse;
         width: 100%;
-    }
-
-    .align-center-mobile {
+/*    }
+/*
+/*    .align-center-mobile {
         justify-content: center;
-    }
-
-    .flex-order {
+/*    }
+/*
+/*    .flex-order {
         order: 1;
-    }
-
-    .flex-row-mobile {
+/*    }
+/*
+/*    .flex-row-mobile {
         flex-direction: row;
-    }
-
-    .align-start-mobile {
+/*    }
+/*
+/*    .align-start-mobile {
         align-items: start;
-    }
-
-
-
-    /*ABOUT SECTION STYLES FOR S*/
-    .grid-container-mobile {
+/*    }
+/*
+/*
+/*
+/*    /*ABOUT SECTION STYLES FOR S*/
+/*    .grid-container-mobile {
         place-items: center;
         width: 100%;
         padding: 3em 0em;
@@ -1444,113 +1448,113 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 35px;
         grid-row-gap: 35px;
-    }
-
-
-    /*TESTIMONIAL SECTION STYLES FOR S*/
-
-    .testimonial-text {
+/*    }
+/*
+/*
+/*    /*TESTIMONIAL SECTION STYLES FOR S*/
+/*
+/*    .testimonial-text {
         font-size: 1.3rem;
-    }
-
-    .testimonial-card {
+/*    }
+/*
+/*    .testimonial-card {
         margin-top: 3em;
         width: 80%;
-    }
-
-    .testimonial-card img {
+/*    }
+/*
+/*    .testimonial-card img {
         width: 50%;
-    }
-
-    .testimonial-card p {
+/*    }
+/*
+/*    .testimonial-card p {
         padding-left: 0;
         padding-bottom: 0.5rem;
-    }
-
-    /*CONTACT SECTION STYLES FOR S*/
-    .form-wrapper {
+/*    }
+/*
+/*    /*CONTACT SECTION STYLES FOR S*/
+/*    .form-wrapper {
         width: 100%;
-    }
-
-    .column-2__text {
+/*    }
+/*
+/*    .column-2__text {
         margin-bottom: 3em;
-    }
-
-    label {
+/*    }
+/*
+/*    label {
         padding: 0;
-    }
-
-    .flex-column--mobile {
+/*    }
+/*
+/*    .flex-column--mobile {
         flex-direction: column;
-    }
-
-    /*FOOTER SECTION STYLES FOR S*/
-
-    .container-mobile {
+/*    }
+/*
+/*    /*FOOTER SECTION STYLES FOR S*/
+/*
+/*    .container-mobile {
         width: 100%;
-    }
-
-    .hide-mobile {
+/*    }
+/*
+/*    .hide-mobile {
         display: none;
-    }
-
-    .social {
+/*    }
+/*
+/*    .social {
         margin: 0 auto;
-    }
-
-        /*RESPONSE SECTION STYLES FOR S*/
-
-        .response {
+/*    }
+/*
+/*        /*RESPONSE SECTION STYLES FOR S*/
+/*
+/*        .response {
             width: 98%;
             padding: 10px;
-        }
-    
-        h1 {
+/*        }
+/*    
+/*        h1 {
             font-size: 2rem;
-        }
-    
-        p {
+/*        }
+/*    
+/*        p {
             font-size: 1.1rem;
-        }
-}
+/*        }
+/*}
 
 /*MEDIA QUERIES FOR XS SCREENS*/
-@media only screen and (max-width: 375px) {
-
-    body,
-    html {
+/*@media only screen and (max-width: 375px) {
+/*
+/*    body,
+/*    html {
         width: 100%;
         overflow-x: hidden;
-    }
-
-    /*RESPONSIVE HEADER STYLES FOR XS*/
-    .headerbar__logo--mobile {
+/*    }
+/*
+/*    /*RESPONSIVE HEADER STYLES FOR XS*/
+/*    .headerbar__logo--mobile {
         width: 15rem;
-    }
-
-    .container--mobile {
+/*    }
+/*
+/*    .container--mobile {
         width: 95%;
         height: 100%;
-    }
-
-    .column-2__open--mobile {
+/*    }
+/*
+/*    .column-2__open--mobile {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    .mobile--open {
+/*    }
+/*
+/*    .mobile--open {
         width: 2.5rem;
         height: 2.5rem;
-    }
-
-    .mobile--close {
+/*    }
+/*
+/*    .mobile--close {
         width: 100%;
         height: 2.5rem;
-    }
-
-    .column-2__nav--mobile {
+/*    }
+/*
+/*    .column-2__nav--mobile {
         padding: 0.5em;
         display: flex;
         align-items: center;
@@ -1562,103 +1566,103 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         right: 0;
         top: 0;
         transition: 1s ease-in-out;
-    }
-
-    nav {
+/*    }
+/*
+/*    nav {
         width: 100%;
-    }
-
-    ul>a {
+/*    }
+/*
+/*    ul>a {
         width: 100%;
         justify-content: center;
         margin-top: 0;
         padding: 0.5em 0;
         color: var(--color-light);
         display: flex;
-    }
-
-    ul>a:active {
+/*    }
+/*
+/*    ul>a:active {
         background-color: rgba(255, 255, 255, 0.11);
         border-radius: 5px;
-    }
-
-    li {
+/*    }
+/*
+/*    li {
         width: 100%;
         text-align: center;
-    }
-
-    .closed {
+/*    }
+/*
+/*    .closed {
         right: -45vw;
-    }
-
-    .open {
+/*    }
+/*
+/*    .open {
         right: 0vw;
-    }
-
-    .flex-column--mobile {
+/*    }
+/*
+/*    .flex-column--mobile {
         flex-direction: column;
-    }
-
-    /*HERO SECTION STYLES FOR XS*/
-    h1 {
+/*    }
+/*
+/*    /*HERO SECTION STYLES FOR XS*/
+/*    h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
-    }
-
-    p {
+/*    }
+/*
+/*    p {
         font-size: 1.3rem;
-    }
-
-    h2 {
+/*    }
+/*
+/*    h2 {
         font-size: 2rem;
-    }
-
-    h3 {
+/*    }
+/*
+/*    h3 {
         font-size: 1.8rem;
-    }
-
-    .container-mobile {
+/*    }
+/*
+/*    .container-mobile {
         width: 87.5%;
         height: auto;
-    }
-
-    .column-2-mobile {
+/*    }
+/*
+/*    .column-2-mobile {
         width: 100%;
         text-align: center;
         padding-left: 10px;
         padding-right: 10px;
-    }
-
-    .column-2-mobile>img {
+/*    }
+/*
+/*    .column-2-mobile>img {
         width: 80%;
         margin-bottom: 3rem;
-    }
-
-    .flex-column-mobile {
+/*    }
+/*
+/*    .flex-column-mobile {
         flex-direction: column-reverse;
         width: 100%;
-    }
-
-    .align-center-mobile {
+/*    }
+/*
+/*    .align-center-mobile {
         justify-content: center;
-    }
-
-    .flex-order {
+/*    }
+/*
+/*    .flex-order {
         order: 1;
-    }
-
-    .flex-row-mobile {
+/*    }
+/*
+/*    .flex-row-mobile {
         flex-direction: row;
-    }
-
-    .align-start-mobile {
+/*    }
+/*
+/*    .align-start-mobile {
         align-items: start;
-    }
-
-
-
-    /*ABOUT SECTION STYLES FOR XS*/
-    .grid-container-mobile {
+/*    }
+/*
+/*
+/*
+/*    /*ABOUT SECTION STYLES FOR XS*/
+/*    .grid-container-mobile {
         place-items: center;
         width: 100%;
         padding: 3em 0em;
@@ -1666,64 +1670,64 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 35px;
         grid-row-gap: 35px;
-    }
-
-
-    /*TESTIMONIAL SECTION STYLES FOR XS*/
-
-    .testimonial-text {
+/*    }
+/*
+/*
+/*    /*TESTIMONIAL SECTION STYLES FOR XS*/
+/*
+/*    .testimonial-text {
         font-size: 1.3rem;
-    }
-
-    .testimonial-card {
+/*    }
+/*
+/*    .testimonial-card {
         margin-top: 3em;
         width: 80%;
-    }
-
-    .testimonial-card img {
+/*    }
+/*
+/*    .testimonial-card img {
         width: 50%;
-    }
-
-    .testimonial-card p {
+/*    }
+/*
+/*    .testimonial-card p {
         padding-left: 0;
         padding-bottom: 0.5rem;
-    }
-
-    /*CONTACT SECTION STYLES FOR XS*/
-    .form-wrapper {
+/*    }
+/*
+/*    /*CONTACT SECTION STYLES FOR XS*/
+/*    .form-wrapper {
         width: 100%;
-    }
-
-    .column-2__text {
+/*    }
+/*
+/*    .column-2__text {
         margin-bottom: 3em;
-    }
-
-    label {
+/*    }
+/*
+/*    label {
         padding: 0;
-    }
-
-    /*FOOTER SECTION STYLES FOR XS*/
-
-    .hide-mobile {
+/*    }
+/*
+/*    /*FOOTER SECTION STYLES FOR XS*/
+/*
+/*    .hide-mobile {
         display: none;
-    }
-
-    .social {
+/*    }
+/*
+/*    .social {
         margin: 0 auto;
-    }
-
-    /*RESPONSE SECTION STYLES FOR XS*/
-
-    .response {
+/*    }
+/*
+/*    /*RESPONSE SECTION STYLES FOR XS*/
+/*
+/*    .response {
         width: 98%;
         padding: 10px;
-    }
-
-    h1 {
+/*    }
+/*
+/*    h1 {
         font-size: 2rem;
-    }
-
-    p {
+/*    }
+/*
+/*    p {
         font-size: 1.1rem;
-    }
-}
+/*    }
+/*}
