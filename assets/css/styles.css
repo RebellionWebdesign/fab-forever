@@ -244,6 +244,7 @@ span {
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: 1;
 }
 
 /*The bottom divider for the contact section doesnt go all the way down, so we need to set a
@@ -416,6 +417,7 @@ input[type=email] {
 footer {
     width: 100vw;
     height: 8vh;
+    background-color: var(--color-light);
 }
 
 .footer-logo {
