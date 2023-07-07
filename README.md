@@ -48,6 +48,15 @@ Closed Navigation             |  Open Navigation
 :-------------------------:|:-------------------------:
 ![closed nav on top](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-navbar-closed.png)  |  ![open nav on top](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-navbar-opened.png)
 
+### THE HOMEPAGE
+- The homepage was designed with the following thoughts:  
+    * Nice, modern layout and design so users can consume it easily
+    * Presenting the key points for visiting this site
+    * Providing feedback from users who have visited the site already
+    * Giving the user the option to make contact to the website owner  
+  
+![The homepage on the desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-homepage.png)
+
 # TOOLS USED
 
 ## PREVIS
