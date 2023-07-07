@@ -17,8 +17,8 @@
 <body>
     <!--RESPONSIVE HEADER START-->
     <header class="headerbar flex flex-center">
-        <div class="container container--mobile flex flex-center--y">
-            <div class="column-2 column-2__open--mobile">
+        <div class="container container-mobile flex flex-center--y">
+            <div class="column-2 column-2__open--mobile flex flex-between">
                 <a href="https://rebellionwebdesign.github.io/fab-forever"
                     aria-label="the logo sends you back to the homepage">
                     <img class="headerbar__logo headerbar__logo--mobile" src="assets/img/fab-forever-logo.svg"
@@ -27,8 +27,8 @@
                 <img class="mobile--open" src="assets/img/bars-solid.svg" alt="this should be an open icon">
             </div>
             <div class="column-2 column-2__nav--mobile closed flex flex-end">
+                <img class="mobile--close" src="assets/img/xmark-solid.svg" alt="this should be a close icon">
                 <nav>
-                    <img class="mobile--close" src="assets/img/xmark-solid.svg" alt="this should be an open icon">
                     <ul>
                         <a href="https://rebellionwebdesign.github.io/fab-forever/basics.html" rel="noopener"
                             target="_blank" aria-label="this link sends you to the basics page">
@@ -74,17 +74,16 @@
     <!--HERO SECTION END-->
 
     <!--ABOUT SECTION START-->
-    <section class="section-full background-reverse flex flex-center flex-column flex-between">
+    <section class="section-full background-reverse flex flex-center flex-column flex-between text-center">
         <img class="flip-x divider" src="assets/img/shape-divider-top.svg" alt="the top shape divider">
         <div class="container container-mobile flex flex-row flex-center--y flex-column-mobile">
-            <div class="column-2 column-2-mobile text-white text-shadow flex-order">
+            <div class="column-2 column-2-mobile flex-column-mobile text-white text-shadow flex-order">
                 <h2><span>3D</span>Printing resources for you!</h2>
                 <p class="margin-top--s">Discover how we can help you with getting on track in your 3D printing journey!
                     We start easy and over time we will get into the nitty gritty stuff. Promised!
                 </p>
             </div>
             <div class="column-2 column-2-mobile flex flex-end align-center-mobile">
-                <div class="grid-wrapper">
                     <div class="grid grid-container grid-container-mobile">
                         <div class="grid-card grid-card__background--basics box-shadow">
                             <h3>BASICS</h3>
@@ -99,7 +98,6 @@
                             <h3>HELP</h3>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
         <img class="divider divider-bottom" src="assets/img/shape-divider-bottom.svg" alt="the bottom shape divider">
@@ -108,12 +106,12 @@
 
     <!--TESTIMONIAL SECTION START-->
     <section class="section-half flex flex-center">
-        <div class="container flex container-mobile flex-center flex-column-mobile">
+        <div class="container flex container-mobile flex-center flex-column-mobile text-center">
             <div class="column-2 column-2-mobile flex-order">
                 <h2 class="text-shadow"><span>HOW</span> we help people</h2>
             </div>
             <div
-                class="column-2 column-2-mobile flex flex-center box-shadow rounded testimonial-card flex-row flex-column--mobile">
+                class="column-2 column-2-mobile flex flex-center box-shadow rounded testimonial-card flex-row flex-column-mobile">
                 <img src="assets/img/testimonial-slider-asian-dude.png" alt="this should be a persons image">
                 <div>
                     <p class="testimonial-text">"Jeez. This got me up and running for a job interview!"</p>
@@ -127,15 +125,15 @@
     <!--CONTACT SECTION START-->
     <section class="section-full background flex flex-center flex-column flex-between">
         <img class="divider" src="assets/img/shape-divider-top.svg" alt="the top shape divider">
-        <div class="container container-mobile flex-column-mobile flex">
+        <div class="container container-mobile flex-column-mobile flex text-center">
             <div class="column-2 column-2-mobile text-white text-shadow flex flex-column flex-center--x flex-order">
                 <h2><span>GOT</span> questions?</h2>
                 <p class="margin-top--s">Feel free to contact us at any time! We will come back to you as soon as
                     possible. By the way: by filling out the form you can also see how de don´t send spam!</p>
             </div>
-            <div class="column-2 column-2-mobile flex flex-end flex-center--mobile">
+            <div class="column-2 column-2-mobile flex flex-end flex-center--x">
                 <form action="https://rebellionwebdesign.github.io/fab-forever/response.html" class="form-wrapper flex flex-column box-shadow">
-                    <h3 class="text-center">Lets stay in contact!</h3>
+                    <h3>Lets stay in contact!</h3>
                     <label for="fname">Your first name <span class="red-star">*</span></label>
                     <input type="text" id="fname" name="fname" aria-label="Put your first name in here" required>
                     <label for="lname">Your last name <span class="red-star">*</span></label>
@@ -157,15 +155,15 @@
 </main>
     <!--FOOTER START-->
     <footer class="flex flex-center">
-        <div class="container container-mobile flex flex-center container-mobile--100">
+        <div class="container container-mobile">
             <div class="column-2 column-2-mobile hide-mobile">
                 <img class="footer-logo" src="assets/img/fab-forever-logo.svg" alt="the fab forever footer logo">
                 <p class="footer-text">An educational static website project</p>
             </div>
-            <div class="column-2 column-2-mobile column-2-mobile--100 flex">
+            <div class="column-2 column-2-mobile flex flex-row">
                 <div class="social">
                     <a href="https://www.instagram.com" rel="noopener" target="_blank"
-                        aria-label="this link sends you to instagram"><img class="social-icon"
+                        aria-label="this link sends you to instagram"><img class="social-icon no-margin"
                             src="assets/img/instagram.svg" alt="the instagram logo"></a>
                     <a href="https://www.facebook.com" rel="noopener" target="_blank"
                         aria-label="this link sends you to facebook"><img class="social-icon"
