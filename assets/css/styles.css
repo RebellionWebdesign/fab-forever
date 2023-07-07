@@ -862,7 +862,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         width: 100%;
     }
 
-    .hide--mobile {
+    .hide-mobile {
         display: none;
     }
 
@@ -1060,7 +1060,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         width: 100%;
     }
 
-    .hide {
+    .hide-mobile {
         display: none;
     }
 
@@ -1249,7 +1249,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         width: 100%;
     }
 
-    .hide {
+    .hide-mobile {
         display: none;
     }
 
@@ -1445,7 +1445,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         width: 100%;
     }
 
-    .hide {
+    .hide-mobile {
         display: none;
     }
 
@@ -1644,7 +1644,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 
     /*FOOTER SECTION STYLES FOR XS*/
 
-    .hide {
+    .hide-mobile {
         display: none;
     }
 
@@ -1652,5 +1652,18 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         margin: 0 auto;
     }
 
+    /*RESPONSE SECTION STYLES FOR XS*/
 
+    .response {
+        width: 98%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
 }
