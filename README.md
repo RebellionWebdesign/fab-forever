@@ -58,7 +58,7 @@ The code was written in VSCODE using the following extensions:
 - Five Server for previewing with auto reload on save and live code changes - [Five Server](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server)
 - HTML CSS Support for Intellisense id and class completion - [HTML CSS SUPPORT](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
 - Auto Rename Tag for easy automated tag changing - [AUTO RENAME TAG](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-- Previewing the responsive layouts were primarily made with [Responsively](https://responsively.app/) an open source solution for previewing resposive layouts
+- Previewing the responsive layouts were primarily made with [RESPONSIVELY](https://responsively.app/) an open source solution for previewing resposive layouts
 
 ## EXTERNAL TOOLS  
 Gradients were made with [this tool](https://cssgradient.io/) 
