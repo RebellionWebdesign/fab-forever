@@ -35,8 +35,7 @@ html {
 But we can still calculate all other values based on the 62.5% we set earlier.*/
 body {
     font-size: 1.6rem;
-    overflow-x: hidden;
-    /*disables horizontal scrolling*/
+    overflow-x: hidden; /*disables horizontal scrolling*/
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -256,6 +255,7 @@ span {
 negative margin*/
 .divider-bottom {
     margin-bottom: -2px;
+    width: 100%;
 }
 
 
