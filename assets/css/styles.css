@@ -671,6 +671,21 @@ Since we work from the desktop down (desktop-first design) we need to order the 
     .mobile--close {
         display: none;
     }
+
+        /*RESPONSE SECTION STYLES FOR XS*/
+
+        .response {
+            width: 80%;
+            padding: 30px;
+        }
+    
+        h1 {
+            font-size: 5rem;
+        }
+    
+        p {
+            font-size: 1.6rem;
+        }
 }
 
 /*MEDIA QUERY FOR IN BETWEEN SIZE (993px to 1199px)*/
@@ -682,7 +697,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         overflow-x: hidden;
     }
 
-    /*RESPONSIVE HEADER STYLES FOR L*/
+    /*RESPONSIVE HEADER STYLES FOR IN BETWEEN SCREENS*/
     .headerbar__logo--mobile {
         width: 15rem;
     }
@@ -747,7 +762,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         right: 0vw;
     }
 
-    /*HERO SECTION STYLES FOR L*/
+    /*HERO SECTION STYLES FOR IN BETWEEN SCREENS*/
     h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
@@ -803,7 +818,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 
 
 
-    /*ABOUT SECTION STYLES FOR L*/
+    /*ABOUT SECTION STYLES FOR IN BETWEEN SCREENS*/
     .grid-container-mobile {
         place-items: center;
         width: 100%;
@@ -815,7 +830,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
     }
 
 
-    /*TESTIMONIAL SECTION STYLES FOR L*/
+    /*TESTIMONIAL SECTION STYLES FOR IN BETWEEN SCREENS*/
 
     .testimonial-text {
         font-size: 1.3rem;
@@ -834,7 +849,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         padding-bottom: 0.5rem;
     }
 
-    /*CONTACT SECTION STYLES FOR L*/
+    /*CONTACT SECTION STYLES FOR IN BETWEEN SCREENS*/
     .form-wrapper {
         width: 50%;
     }
@@ -856,7 +871,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         justify-content: center;
     }
 
-    /*FOOTER SECTION STYLES FOR L*/
+    /*FOOTER SECTION STYLES FOR IN BETWEEN SCREENS*/
 
     .container-2-mobile {
         width: 100%;
@@ -869,6 +884,21 @@ Since we work from the desktop down (desktop-first design) we need to order the 
     .social {
         margin: 0 auto;
     }
+
+        /*RESPONSE SECTION STYLES FOR XS*/
+
+        .response {
+            width: 70%;
+            padding: 50px;
+        }
+    
+        h1 {
+            font-size: 5rem;
+        }
+    
+        p {
+            font-size: 1.6rem;
+        }
 }
 
 /*MEDIA QUERIES FOR L SCREENS*/
