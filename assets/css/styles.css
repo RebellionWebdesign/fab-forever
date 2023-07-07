@@ -395,10 +395,6 @@ label {
     color: red;
 }
 
-.column-2__text {
-    margin-top: 1.5rem;
-}
-
 .form-wrapper {
     width: 76.2%;
     height: auto;
@@ -667,6 +663,7 @@ footer {
 /*MEDIA QUERIES FOR XS (375px)*/
 @media screen and (max-width: 375px) {
 
+    /*XS STYLES FOR HERO SECTION*/
     h1 {
         font-size: 3.2rem;
     }
@@ -687,8 +684,21 @@ footer {
 
     .column-2-mobile {
         width: 100%;
+        padding: 20px 0px;
     }
 
+    .column-2-mobile > img {
+        width: 70%;
+    }
+
+    /*XS STYLES FOR ABOUT SECTION*/
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
 
 
 
