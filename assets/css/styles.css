@@ -3,16 +3,6 @@ The method used here is the top-down method which goes through the styles
 from the parents to the children in this manner: 
 [ROOT -> HTML -> BODY -> SECTION -> CONTAINER -> COLUMN -> HEADING -> TEXT -> BUTTON, IMAGE ETC.]*/
 
-/*The following sets all elements in the DOM to have no padding, no margin and the box-sizing.
-This includes the ::before and ::after pseudo-elements*/
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 /*CSSRoots is used for declaring the website colors as global variables.
 Declare them once and then use the variable name as value within the CSS.*/
 :root {
@@ -22,6 +12,16 @@ Declare them once and then use the variable name as value within the CSS.*/
     --color-dark: #000000;
     --color-light: #ffffff;
     --color-shadow: rgba(0, 0, 0, 0.25);
+}
+
+/*The following sets all elements in the DOM to have no padding, no margin and the box-sizing.
+This includes the ::before and ::after pseudo-elements*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /*Here we set the HTML scroll behaviour to smooth scroll and the font size to 62.5% = 10px,
