@@ -135,7 +135,7 @@ The images on the models page are taken from unsplash:
 
 ### HELP PAGE
 
-The images on the models page are taken from unsplash:
+The images on the help page are taken from unsplash:
 
 [Christian Englmeier on Unsplash](https://unsplash.com/de/fotos/lUv3mGISafg)  
 [eMotion Tech on Unsplash](https://unsplash.com/de/fotos/D971boKoaC8)
