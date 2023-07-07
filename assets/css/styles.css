@@ -247,6 +247,10 @@ span {
     z-index: 1;
 }
 
+.hide {
+    display: none;
+}
+
 /*The bottom divider for the contact section doesnt go all the way down, so we need to set a
 negative margin*/
 .divider-bottom {
@@ -432,6 +436,14 @@ footer {
     width: 2.5rem;
     height: 100%;
     margin-left: 2rem;
+}
+
+/*Styles for the response*/
+.response {
+    width: 60%;
+    height: 50%;
+    background-color: var(--color-light);
+    padding: 40px;
 }
 
 /*FONT STYLE DECLARATIONS*/
@@ -850,7 +862,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         width: 100%;
     }
 
-    .hide {
+    .hide--mobile {
         display: none;
     }
 
