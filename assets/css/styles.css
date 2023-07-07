@@ -1452,6 +1452,21 @@ Since we work from the desktop down (desktop-first design) we need to order the 
     .social {
         margin: 0 auto;
     }
+
+        /*RESPONSE SECTION STYLES FOR S*/
+
+        .response {
+            width: 98%;
+            padding: 10px;
+        }
+    
+        h1 {
+            font-size: 2rem;
+        }
+    
+        p {
+            font-size: 1.1rem;
+        }
 }
 
 /*MEDIA QUERIES FOR XS SCREENS*/
