@@ -578,6 +578,7 @@ footer {
         align-items: center;
         text-align: center;
         flex-direction: column;
+        transition: 1s ease-in-out;
     }
 
     nav a {
