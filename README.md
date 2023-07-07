@@ -69,6 +69,17 @@ The code was written in VSCODE using the following extensions:
 - Auto Rename Tag for easy automated tag changing - [AUTO RENAME TAG](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 - Previewing the responsive layouts were primarily made with [RESPONSIVELY](https://responsively.app/) an open source solution for previewing resposive layouts
 
+## TECHNOLOGIES
+- The foundation of the site was made using HTML
+- The design of the site was made using CSS, more explicit:  
+    * CSS Flexbox for positioning elements on the page
+    * CSS Grid for making the cards in the about section
+    * CSS Root for defining colors as variables
+    * Git for version control
+    * GitHub for hosting the source code
+    * GitPages for deploying the website to the web
+- The behaviour for the mobile sidebar was made using JS
+
 ## EXTERNAL TOOLS  
 Gradients were made with [this tool](https://cssgradient.io/) 
 
