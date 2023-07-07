@@ -496,7 +496,7 @@ footer {
 
 /*MEDIA QUERIES FOR XL SCREENS (1200px)*/
 @media screen and (max-width: 1200px) {
-    /*General font sizes for the breakpoint*/
+    /*General headings for the breakpoint*/
     h1 {
         font-size: 3.5rem;
     }
@@ -514,6 +514,44 @@ footer {
         width: 100%;
     }
 
+}
+
+/*MEDIA QUERIES FOR L SCREENS (992px)*/
+@media screen and (max-width: 992px) {
+
+    .column-2-mobile {
+        width: 100%;
+    }
+
+    .text-center-mobile {
+        text-align: center;
+    }
+
+    .flex-column-mobile {
+        flex-direction: column;
+    }
+
+    .grid-container {
+        margin-top: 3rem;
+        place-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    .testimonial-card {
+        margin-top: 3rem;
+    }
+
+    .form-wrapper {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    label {
+        padding: 0;
+    }
 }
 
 /*FONT STYLE DECLARATIONS*/
