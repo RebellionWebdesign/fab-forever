@@ -240,6 +240,11 @@ span {
     padding-bottom: 9em;
 }
 
+.fix-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
 
 /*The bottom divider for the contact section doesnt go all the way down, so we need to set a
 negative margin*/
