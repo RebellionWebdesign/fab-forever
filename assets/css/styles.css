@@ -664,6 +664,156 @@ footer {
 
 /*MEDIA QUERIES*/
 
+/*MEDIA QUERIES FOR S (576px)*/
+@media screen and (max-width: 576px) {
+
+    /*S STYLES FOR HEADER*/
+    .headerbar {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .headerbar__logo {
+        width: 15rem;
+    }
+
+    .mobile--open {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .column-2__open--mobile {
+        width: 100%;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    ul > a {
+        color: var(--color-light);
+        display: block;
+        text-align: center;
+        padding: 10px 0px;
+        width: 100%;
+    }
+
+    .column-2__nav--mobile {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 45vw;
+        height: 100vh;
+        padding: 20px;
+        background: var(--color-primary);
+        background: linear-gradient(43deg, var(--color-primary) 0%, var(--color-secondary) 95%);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s ease-in-out;
+    }
+
+    .mobile--close {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin-bottom: 50px;
+    }
+
+    .open {
+        right: 0;
+    }
+
+    .closed {
+        right: -45vw;
+    }
+
+
+    /*S STYLES FOR HERO SECTION*/
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .flex-column-mobile {
+        flex-direction: column-reverse;
+    }
+
+    .container-mobile {
+        width: 100%;
+        height: 50%;
+    }
+
+    .column-2-mobile {
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    .column-2-mobile > img {
+        width: 70%;
+    }
+
+    /*S STYLES FOR ABOUT SECTION*/
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .grid-container-mobile {
+        place-items: center;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 35px;
+        grid-row-gap: 35px;
+    }
+
+    /*S STYLES FOR TESTIMONIAL SECTION*/
+    .testimonial-text {
+        font-size: 1.6rem;
+    }
+
+    .testimonial-card img {
+        margin-top: 3rem;
+    }
+
+    .testimonial-card  p {
+        padding: 0;
+    }
+
+    /*S STYLES FOR CONTACT SECTION*/
+    .form-wrapper {
+        width: 100%;
+    }
+
+    label {
+        text-align: left;
+    }
+
+    .button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*S STYLES FOR FOOTER*/
+    .hide-mobile {
+        display: none;
+    }
+
+    .social {
+        margin: 0 auto;
+    }
+
+    .no-margin {
+        margin-left: 0;
+    }
+}
+
 /*MEDIA QUERIES FOR XS (375px)*/
 @media screen and (max-width: 375px) {
 
