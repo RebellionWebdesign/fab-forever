@@ -258,6 +258,10 @@ negative margin*/
     width: 100%;
 }
 
+.divider {
+    width: 100%;
+}
+
 
 /* UTILITY CLASSES FOR USE WITH GRID
 actually only this one together with the styles for the grid cards and their container/wrapper*/
