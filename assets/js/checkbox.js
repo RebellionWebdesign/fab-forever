@@ -1,4 +1,4 @@
-function validate() {
+function checkbox() {
     if (document.getElementsByClassName("newsletter").checked) {
         localStorage-setItem("isChecked", "yes")
     }
