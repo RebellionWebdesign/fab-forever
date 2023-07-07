@@ -469,6 +469,8 @@ footer {
     padding: 40px;
 }
 
+/*MEDIA QUERIES*/
+
 /*FONT STYLE DECLARATIONS*/
 
 /*POPPINS FONT STYLES*/
@@ -670,5 +672,3 @@ footer {
     src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-900.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
-/*MEDIA QUERIES*/
