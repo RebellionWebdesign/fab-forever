@@ -667,5 +667,29 @@ footer {
 /*MEDIA QUERIES FOR XS (375px)*/
 @media screen and (max-width: 375px) {
 
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .flex-column-mobile {
+        flex-direction: column-reverse;
+    }
+
+    .container-mobile {
+        width: 100%;
+        height: 50%;
+        padding: 20px 0;
+    }
+
+    .column-2-mobile {
+        width: 100%;
+    }
+
+
+
 
 }
