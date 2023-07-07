@@ -31,9 +31,8 @@ The website has images which are released under different licenses than the CC l
 
 ### THE NAVBAR
 - The navbar is fixed to the top of the page  
-- It contains a logo for the company on the left and a navigation on the right so visitors understand it easily
-
-![The navbar on the desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-navbar-desktop.png)
+- It contains a logo for the company on the left and a navigation on the right so visitors understand it easily  
+![The navbar on the desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-navbar-desktop.png)  
 
     * THE LOGO - It has a link which sends users to the home page  
     * THE NAVIGATION: 
@@ -43,7 +42,7 @@ The website has images which are released under different licenses than the CC l
         * HELP sends the visitor to the help page where they can have a look at the most common errors in 3D printing.
 
 - The links have animated effects for the hover and active states
-- The Navbar is fully responsive and collapses the menu into a burger icon. It opens the sidebar menu when clicked.
+- The Navbar is fully responsive and collapses the menu into a burger icon. It opens the sidebar menu when clicked:
 
 Closed Navigation             |  Open Navigation
 :-------------------------:|:-------------------------:
