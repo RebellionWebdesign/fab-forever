@@ -1199,7 +1199,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 
 
 
-    /*ABOUT SECTION STYLES FOR XS*/
+    /*ABOUT SECTION STYLES FOR M*/
     .grid-container-mobile {
         place-items: center;
         width: 100%;
@@ -1211,7 +1211,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
     }
 
 
-    /*TESTIMONIAL SECTION STYLES FOR XS*/
+    /*TESTIMONIAL SECTION STYLES FOR M*/
 
     .testimonial-text {
         font-size: 1.3rem;
@@ -1230,7 +1230,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         padding-bottom: 0.5rem;
     }
 
-    /*CONTACT SECTION STYLES FOR XS*/
+    /*CONTACT SECTION STYLES FOR M*/
     .form-wrapper {
         width: 100%;
     }
@@ -1243,7 +1243,7 @@ Since we work from the desktop down (desktop-first design) we need to order the 
         padding: 0;
     }
 
-    /*FOOTER SECTION STYLES FOR XS*/
+    /*FOOTER SECTION STYLES FOR M*/
 
     .container-mobile--100 {
         width: 100%;
@@ -1256,6 +1256,21 @@ Since we work from the desktop down (desktop-first design) we need to order the 
     .social {
         margin: 0 auto;
     }
+
+        /*RESPONSE SECTION STYLES FOR M*/
+
+        .response {
+            width: 98%;
+            padding: 10px;
+        }
+    
+        h1 {
+            font-size: 2rem;
+        }
+    
+        p {
+            font-size: 1.1rem;
+        }
 }
 
 /*MEDIA QUERIES FOR S SCREENS*/
