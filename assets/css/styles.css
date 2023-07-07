@@ -39,6 +39,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Global styles for elements that are the same over the complete website.
@@ -1523,215 +1525,214 @@ Since we work from the desktop down (desktop-first design) we need to order the 
 /*}
 
 /*MEDIA QUERIES FOR XS SCREENS*/
-/*@media only screen and (max-width: 375px) {
-/*
-/*    body,
-/*    html {
-        width: 100%;
-        overflow-x: hidden;
-/*    }
-/*
-/*    /*RESPONSIVE HEADER STYLES FOR XS*/
-/*    .headerbar__logo--mobile {
-        width: 15rem;
-/*    }
-/*
-/*    .container--mobile {
-        width: 95%;
-        height: 100%;
-/*    }
-/*
-/*    .column-2__open--mobile {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-/*    }
-/*
-/*    .mobile--open {
-        width: 2.5rem;
-        height: 2.5rem;
-/*    }
-/*
-/*    .mobile--close {
-        width: 100%;
-        height: 2.5rem;
-/*    }
-/*
-/*    .column-2__nav--mobile {
-        padding: 0.5em;
-        display: flex;
-        align-items: center;
-        width: 45vw;
-        height: 100vh;
-        background: var(--color-secondary);
-        background: linear-gradient(43deg, var(--color-secondary) 0%, var(--color-primary) 95%);
-        position: absolute;
-        right: 0;
-        top: 0;
-        transition: 1s ease-in-out;
-/*    }
-/*
-/*    nav {
-        width: 100%;
-/*    }
-/*
-/*    ul>a {
-        width: 100%;
-        justify-content: center;
-        margin-top: 0;
-        padding: 0.5em 0;
-        color: var(--color-light);
-        display: flex;
-/*    }
-/*
-/*    ul>a:active {
-        background-color: rgba(255, 255, 255, 0.11);
-        border-radius: 5px;
-/*    }
-/*
-/*    li {
-        width: 100%;
-        text-align: center;
-/*    }
-/*
-/*    .closed {
-        right: -45vw;
-/*    }
-/*
-/*    .open {
-        right: 0vw;
-/*    }
-/*
-/*    .flex-column--mobile {
-        flex-direction: column;
-/*    }
-/*
-/*    /*HERO SECTION STYLES FOR XS*/
-/*    h1 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-/*    }
-/*
-/*    p {
-        font-size: 1.3rem;
-/*    }
-/*
-/*    h2 {
-        font-size: 2rem;
-/*    }
-/*
-/*    h3 {
-        font-size: 1.8rem;
-/*    }
-/*
-/*    .container-mobile {
-        width: 87.5%;
-        height: auto;
-/*    }
-/*
-/*    .column-2-mobile {
-        width: 100%;
-        text-align: center;
-        padding-left: 10px;
-        padding-right: 10px;
-/*    }
-/*
-/*    .column-2-mobile>img {
-        width: 80%;
-        margin-bottom: 3rem;
-/*    }
-/*
-/*    .flex-column-mobile {
-        flex-direction: column-reverse;
-        width: 100%;
-/*    }
-/*
-/*    .align-center-mobile {
-        justify-content: center;
-/*    }
-/*
-/*    .flex-order {
-        order: 1;
-/*    }
-/*
-/*    .flex-row-mobile {
-        flex-direction: row;
-/*    }
-/*
-/*    .align-start-mobile {
-        align-items: start;
-/*    }
-/*
-/*
-/*
-/*    /*ABOUT SECTION STYLES FOR XS*/
-/*    .grid-container-mobile {
-        place-items: center;
-        width: 100%;
-        padding: 3em 0em;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 35px;
-        grid-row-gap: 35px;
-/*    }
-/*
-/*
-/*    /*TESTIMONIAL SECTION STYLES FOR XS*/
-/*
-/*    .testimonial-text {
-        font-size: 1.3rem;
-/*    }
-/*
-/*    .testimonial-card {
-        margin-top: 3em;
-        width: 80%;
-/*    }
-/*
-/*    .testimonial-card img {
-        width: 50%;
-/*    }
-/*
-/*    .testimonial-card p {
-        padding-left: 0;
-        padding-bottom: 0.5rem;
-/*    }
-/*
-/*    /*CONTACT SECTION STYLES FOR XS*/
-/*    .form-wrapper {
-        width: 100%;
-/*    }
-/*
-/*    .column-2__text {
-        margin-bottom: 3em;
-/*    }
-/*
-/*    label {
-        padding: 0;
-/*    }
-/*
-/*    /*FOOTER SECTION STYLES FOR XS*/
-/*
-/*    .hide-mobile {
-        display: none;
-/*    }
-/*
-/*    .social {
-        margin: 0 auto;
-/*    }
-/*
-/*    /*RESPONSE SECTION STYLES FOR XS*/
-/*
-/*    .response {
-        width: 98%;
-        padding: 10px;
-/*    }
-/*
-/*    h1 {
-        font-size: 2rem;
-/*    }
-/*
-/*    p {
-        font-size: 1.1rem;
-/*    }
-/*}
+@media only screen and (max-width: 375px) {
+
+    body,
+    html {
+     width: 100%;
+     overflow-x: hidden;
+    }
+
+    /*RESPONSIVE HEADER STYLES FOR XS*/
+    .headerbar__logo--mobile {
+     width: 15rem;
+    }
+    .container--mobile {
+     width: 95%;
+     height: 100%;
+    }
+
+    .column-2__open--mobile {
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+    }
+
+    .mobile--open {
+     width: 2.5rem;
+     height: 2.5rem;
+    }
+
+    .mobile--close {
+     width: 100%;
+     height: 2.5rem;
+    }
+
+    .column-2__nav--mobile {
+     padding: 0.5em;
+     display: flex;
+     align-items: center;
+     width: 45vw;
+     height: 100vh;
+     background: var(--color-secondary);
+     background: linear-gradient(43deg, var(--color-secondary) 0%, var(--color-primary) 95%);
+     position: absolute;
+     right: 0;
+     top: 0;
+     transition: 1s ease-in-out;
+    }
+
+    nav {
+     width: 100%;
+    }
+
+    ul>a {
+     width: 100%;
+     justify-content: center;
+     margin-top: 0;
+     padding: 0.5em 0;
+     color: var(--color-light);
+     display: flex;
+    }
+
+    ul>a:active {
+     background-color: rgba(255, 255, 255, 0.11);
+     border-radius: 5px;
+    }
+
+    li {
+     width: 100%;
+     text-align: center;
+    }
+
+    .closed {
+     right: -45vw;
+    }
+
+    .open {
+     right: 0vw;
+    }
+
+    .flex-column--mobile {
+     flex-direction: column;
+    }
+
+    /*HERO SECTION STYLES FOR XS*/
+    h1 {
+     font-size: 2.5rem;
+     margin-bottom: 1rem;
+    }
+
+    p {
+     font-size: 1.3rem;
+    }
+
+    h2 {
+     font-size: 2rem;
+    }
+
+    h3 {
+     font-size: 1.8rem;
+    }
+
+    .container-mobile {
+     width: 87.5%;
+     height: auto;
+    }
+
+    .column-2-mobile {
+     width: 100%;
+     text-align: center;
+     padding-left: 10px;
+     padding-right: 10px;
+    }
+
+    .column-2-mobile>img {
+     width: 80%;
+     margin-bottom: 3rem;
+    }
+
+    .flex-column-mobile {
+     flex-direction: column-reverse;
+     width: 100%;
+    }
+
+    .align-center-mobile {
+     justify-content: center;
+    }
+
+    .flex-order {
+     order: 1;
+    }
+
+    .flex-row-mobile {
+     flex-direction: row;
+    }
+
+    .align-start-mobile {
+     align-items: start;
+    }
+
+
+
+    /*ABOUT SECTION STYLES FOR XS*/
+    .grid-container-mobile {
+     place-items: center;
+     width: 100%;
+     padding: 3em 0em;
+     grid-template-columns: repeat(1, 1fr);
+     grid-template-rows: repeat(4, 1fr);
+     grid-column-gap: 35px;
+     grid-row-gap: 35px;
+    }
+
+
+    /*TESTIMONIAL SECTION STYLES FOR XS*/
+
+    .testimonial-text {
+     font-size: 1.3rem;
+    }
+
+    .testimonial-card {
+     margin-top: 3em;
+     width: 80%;
+    }
+
+    .testimonial-card img {
+     width: 50%;
+    }
+
+    .testimonial-card p {
+     padding-left: 0;
+     padding-bottom: 0.5rem;
+    }
+
+    /*CONTACT SECTION STYLES FOR XS*/
+    .form-wrapper {
+     width: 100%;
+    }
+
+    .column-2__text {
+     margin-bottom: 3em;
+    }
+
+    label {
+     padding: 0;
+    }
+
+    /*FOOTER SECTION STYLES FOR XS*/
+
+    .hide-mobile {
+     display: none;
+    }
+
+    .social {
+     margin: 0 auto;
+    }
+
+    /*RESPONSE SECTION STYLES FOR XS*/
+
+    .response {
+     width: 98%;
+     padding: 10px;
+    }
+
+    h1 {
+     font-size: 2rem;
+    }
+
+    p {
+     font-size: 1.1rem;
+    }
+}
