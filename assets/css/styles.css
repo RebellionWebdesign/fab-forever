@@ -627,6 +627,7 @@ footer {
 
 /*MEDIA QUERIES FOR XS SCREENS (378px)*/
 @media screen and (max-width: 378px) {
+
     .flex-center-x-mobile {
         justify-content: center;
     }
@@ -639,6 +640,18 @@ footer {
         margin-top: 3rem;
     }
 
+    .testimonial-card  img {
+        width: 50%;
+    }
+
+    .testimonial-card p {
+        padding-left: 0;
+    }
+
+    .container-padding-mobile {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
     
 }
 
