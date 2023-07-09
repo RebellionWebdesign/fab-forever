@@ -6,17 +6,17 @@ Fab Forever is a fictional website aimed at persons interested in 3D Printing te
 
 Have a look at it [here](https://rebellionwebdesign.com.github.io/fab-forever).
 
-# LICENSE
+## LICENSE
 This website is released under the Creative Commons BY-NC-SA 4.0 - this means you can fork the website and do your changes as long as:
 
 - You make an attribution to the original creator
 - You dont use it commercially
 - You share the website under the same license it was released
 
-## LICENSE DISCLAIMER
+### LICENSE DISCLAIMER
 The website has images which are released under different licenses than the CC license. It is forbidden to use these images from this repo or the website. I have provided the licenses and the appropriate links so you can aquire the files on your own. It must be a fututre goal to change these proprietary images to images which can be used freely (like in free beer).
 
-# USER STORIES  
+## USER STORIES  
 
 ### FIRST TIME VISITOR GOALS (US1-PP1):
 - I am a first time visitor. I want to be able to navigate the website easily.
@@ -48,6 +48,8 @@ Closed Navigation             |  Open Navigation
 :-------------------------:|:-------------------------:
 ![closed nav on top](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-navbar-closed.png)  |  ![open nav on top](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-navbar-opened.png)
 
+---
+
 ### THE HOMEPAGE
 - The homepage was designed with the following thoughts:  
     * Nice, modern layout and design so users can consume it easily
@@ -57,19 +59,55 @@ Closed Navigation             |  Open Navigation
   
 ![The homepage on the desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-homepage.png)
 
-# TOOLS USED
+---
 
-## PREVIS
+### THE HERO SECTION
+
+---
+
+### THE ABOUT SECTION
+
+---
+
+### THE TESTIMONIAL SECTION
+
+---
+
+### THE CONTACT SECTION
+
+---
+
+### THE FOOTER
+
+---
+
+### THE CONTENT PAGES
+
+---
+
+### THE RESPONSE PAGE
+
+## DESIGN
+
+### COLOR SCHEME
+
+### TYPOGHRAPHY
+
+### WIREFRAMES
+
+## TOOLS USED
+
+### PREVIS
 The previs (eg hifi wireframes) was made using affinity designer. There is also a pdf in the docs folder to provide a viewable document if you dont have it. However, you can get a license or a trial [here](https://affinity.serif.com/en/designer/).
 
-## CODING
+### CODING
 The code was written in VSCODE using the following extensions:
 - Five Server for previewing with auto reload on save and live code changes - [Five Server](https://marketplace.visualstudio.com/items?itemName=yandeu.five-server)
 - HTML CSS Support for Intellisense id and class completion - [HTML CSS SUPPORT](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
 - Auto Rename Tag for easy automated tag changing - [AUTO RENAME TAG](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 - Previewing the responsive layouts were primarily made with [RESPONSIVELY](https://responsively.app/) an open source solution for previewing resposive layouts
 
-## TECHNOLOGIES
+### TECHNOLOGIES
 - The foundation of the site was made using HTML
 - The design of the site was made using CSS, more explicit:  
     * CSS Flexbox for positioning elements on the page
@@ -83,14 +121,15 @@ The code was written in VSCODE using the following extensions:
 ## EXTERNAL TOOLS  
 Gradients were made with [this tool](https://cssgradient.io/) 
 
-# ACKNOWLEDGEMENTS
+## TESTING
+Please refer to the TESTING.md file for everything related to testing.
 
-## RESPONSIVE NAVIGATION  
+### RESPONSIVE NAVIGATION  
 The JavaScript code for the responsive menu was changed and built upon to suit the needs of this website and taken from the following tutorial:
 
 [WebDevSimplified](https://www.youtube.com/watch?v=At4B7A4GOPg) on YouTube.
 
-## KEEPING THE MOBILE BROWSER FROM SCROLLING HORIZONTAL
+### KEEPING THE MOBILE BROWSER FROM SCROLLING HORIZONTAL
 The extra HTML and CSS declarations to do this were taken from the following source:
 
 [Klaas van der Weij](https://stackoverflow.com/a/16981485)
@@ -163,4 +202,4 @@ fonts come from here:
 
 The fonts are released under the [SIL Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
 
-# SAYING THANKS
+## SAYING THANKS
