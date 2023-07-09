@@ -625,8 +625,8 @@ footer {
     }
 }
 
-/*MEDIA QUERIES FOR XS SCREENS (375px)*/
-@media screen and (max-width: 375px) {
+/*MEDIA QUERIES FOR XS SCREENS (378px)*/
+@media screen and (max-width: 378px) {
     .flex-center-x-mobile {
         justify-content: center;
     }
