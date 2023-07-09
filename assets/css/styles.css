@@ -626,7 +626,20 @@ footer {
 }
 
 /*MEDIA QUERIES FOR XS SCREENS (375px)*/
-@media screen and (max-width: 375px)
+@media screen and (max-width: 375px) {
+    .flex-center-x-mobile {
+        justify-content: center;
+    }
+
+    .flex-column-reverse-mobile {
+        flex-direction: column-reverse;
+    }
+
+    .margin-top-l-mobile {
+        margin-top: 3rem;
+    }
+    
+}
 
 /*FONT STYLE DECLARATIONS*/
 
