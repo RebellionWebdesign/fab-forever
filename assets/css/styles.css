@@ -551,6 +551,58 @@ footer {
 /*MEDIA QUERIES FOR M SCREENS (762px)*/
 @media screen and (max-width: 762px) {
 
+    .column-2__nav--mobile {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45vw;
+        height: 100vh;
+        z-index: 1;
+        background: var(--color-primary);
+        background: linear-gradient(43deg, var(--color-primary) 0%, var(--color-secondary) 95%);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        transition: 1s ease-in-out;
+    }
+
+    nav a {
+        color: var(--color-light);
+        display: block;
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .full-row {
+        width: 100%;
+    }
+
+    .mobile--open {
+        display: block;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .mobile--close {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: block;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .open {
+        right: 0;
+    }
+
+    .closed {
+        right: -45vw;
+    }
+
+
     .form-wrapper {
         width: 70%;
     }
@@ -602,10 +654,6 @@ footer {
         display: none;
     }
 
-    .social {
-        margin: 0 auto;
-    }
-
     .open {
         right: 0;
     }
@@ -617,6 +665,10 @@ footer {
     .form-wrapper {
         width: 80%;
     }
+
+    .social {
+        margin: 0 auto;
+    }
 }
 
 /*MEDIA QUERIES FOR XS SCREENS (378px)*/
@@ -627,6 +679,58 @@ footer {
         top: 0;
         left: 0;
     }
+
+    .column-2__nav--mobile {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45vw;
+        height: 100vh;
+        z-index: 1;
+        background: var(--color-primary);
+        background: linear-gradient(43deg, var(--color-primary) 0%, var(--color-secondary) 95%);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        transition: 1s ease-in-out;
+    }
+
+    nav a {
+        color: var(--color-light);
+        display: block;
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .full-row {
+        width: 100%;
+    }
+
+    .mobile--open {
+        display: block;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .mobile--close {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: block;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .open {
+        right: 0;
+    }
+
+    .closed {
+        right: -45vw;
+    }
+
 
     .flex-center-x-mobile {
         justify-content: center;
