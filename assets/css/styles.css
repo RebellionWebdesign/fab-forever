@@ -406,7 +406,6 @@ ul>a:nth-child(5) {
 /*Styles for the form we ave at the bottom of the page*/
 label {
     vertical-align: top;
-    padding-left: 2rem;
     font-family: montserrat, sans-serif;
     font-size: 1.2rem;
     color: rgb(187, 187, 187);
