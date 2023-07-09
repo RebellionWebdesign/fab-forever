@@ -520,6 +520,10 @@ footer {
         width: 100%;
     }
 
+    picture > img {
+        width: 100%;
+    }
+
 }
 
 /*MEDIA QUERIES FOR L SCREENS (992px)*/
@@ -563,6 +567,10 @@ footer {
 
     label {
         padding: 0;
+    }
+
+    picture > img {
+        width: 100%;
     }
 }
 
@@ -804,6 +812,10 @@ footer {
     .form-wrapper {
         width: 95%;
         padding: 1em;
+    }
+
+    picture > img {
+        width: 100%;
     }
     
 }
