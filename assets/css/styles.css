@@ -467,6 +467,12 @@ footer {
 
 /*MEDIA FOR XXL SCREENS (1400px)*/
 @media screen and (max-width: 1400px) {
+
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+
+    }
     /*Sets the container element (every section has one) to 85.72% or about 1200px (1200px/1400px = 1200.8px)*/
     .container {
         width: 85.72%;
@@ -490,6 +496,12 @@ footer {
 
 /*MEDIA QUERIES FOR XL SCREENS (1200px)*/
 @media screen and (max-width: 1200px) {
+
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+
+    }
     /*General headings for the breakpoint*/
     h1 {
         font-size: 3.5rem;
@@ -512,6 +524,12 @@ footer {
 
 /*MEDIA QUERIES FOR L SCREENS (992px)*/
 @media screen and (max-width: 992px) {
+
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+
+    }
 
     .column-2-mobile {
         width: 100%;
@@ -550,6 +568,12 @@ footer {
 
 /*MEDIA QUERIES FOR M SCREENS (762px)*/
 @media screen and (max-width: 762px) {
+
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+
+    }
 
     .column-2__nav--mobile {
         position: absolute;
@@ -610,6 +634,12 @@ footer {
 
 /*MEDIA QUERIES FOR S SCREENS (576px)*/
 @media screen and (max-width: 576px) {
+
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+
+    }
 
     .flex-column-reverse-mobile {
         flex-direction: column-reverse;
@@ -681,6 +711,12 @@ footer {
 
 /*MEDIA QUERIES FOR XS SCREENS (378px)*/
 @media screen and (max-width: 378px) {
+
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+
+    }
 
     .headerbar {
         position: fixed;
