@@ -611,6 +611,14 @@ footer {
 /*MEDIA QUERIES FOR S SCREENS (576px)*/
 @media screen and (max-width: 576px) {
 
+    .flex-column-reverse-mobile {
+        flex-direction: column-reverse;
+    }
+
+    .flex-center-x-mobile {
+        justify-content: center;
+    }
+
     .column-2__nav--mobile {
         position: absolute;
         top: 0;
