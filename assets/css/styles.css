@@ -325,7 +325,7 @@ ul>a:hover {
     color: var(--color-accent);
 }
 
-ul>a:active {
+ul>a:target {
     color: var(--color-accent);
 }
 
