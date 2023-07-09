@@ -350,25 +350,21 @@ and therfore very good for imaging on the web. Since not all browsers support it
 we need a fallback which is the eact same image but in png format.*/
 .grid-card__background--basics {
     background-image:
-        url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-basics.webp"),
         url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-basics.png");
 }
 
 .grid-card__background--models {
     background-image:
-        url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-models.webp"),
         url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-models.png");
 }
 
 .grid-card__background--help {
     background-image:
-        url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-help.webp"),
         url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-help.png");
 }
 
 .grid-card__background--materials {
     background-image:
-        url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-materials.webp"),
         url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-materials.png");
 }
 
