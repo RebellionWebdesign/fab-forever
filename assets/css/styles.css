@@ -345,9 +345,7 @@ ul>a:nth-child(4) {
     height: 210px;
 }
 
-/*This represents the background images for the grid cards. The primary format used here is webp which is lightweight
-and therfore very good for imaging on the web. Since not all browsers support it fully (check here: https://caniuse.com/webp)
-we need a fallback which is the eact same image but in png format.*/
+/*This represents the background images for the grid cards.*/
 .grid-card__background--basics {
     background-image:
         url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-basics.png");
