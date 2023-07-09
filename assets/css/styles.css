@@ -582,6 +582,10 @@ footer {
     picture > img {
         width: 100%;
     }
+
+    ul > a {
+        font-size: 1.4rem;
+    }
 }
 
 /*MEDIA QUERIES FOR M SCREENS (762px)*/
