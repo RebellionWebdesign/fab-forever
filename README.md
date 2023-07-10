@@ -109,9 +109,17 @@ The footer is fully responsive and collapses to the centered social icons only o
 
 ### THE CONTENT PAGES
 
+The content pages have the same design overall, so the basics page is an example. Content pages feature large images on desktop. On mobile they collapse to smaller versions of the images.
+
+![Example content page](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/fab-forever-content.png)
+
 ---
 
 ### THE RESPONSE PAGE
+
+The response page acts as
+
+![Response page](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/fab-forever-reponse.png)
 
 ## DESIGN
 
