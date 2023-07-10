@@ -118,3 +118,15 @@ The underlying code was validated with NU html checker, JIGSAW css checker and W
 
 ### LANDING PAGE
 ![nu homepage result](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/lighthouse-homepage.png)
+
+### CONTENT PAGES
+
+#### BASICS PAGE
+![lighthouse-basics](https://github.com/RebellionWebdesign/fab-forever/assets/80954446/781ea6dd-33ed-49d9-b08b-6c5dec51a56c)
+
+#### MATERIALS PAGE
+![lighthouse-materials](https://github.com/RebellionWebdesign/fab-forever/assets/80954446/09508fdf-2b31-42cf-a293-cb27488a6548)
+
+
+### RESPONSE PAGE
+![lighthouse-response](https://github.com/RebellionWebdesign/fab-forever/assets/80954446/b2ddf436-e790-4e0e-b8bf-05617f0b93e9)
