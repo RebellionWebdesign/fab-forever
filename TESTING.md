@@ -114,4 +114,7 @@ The underlying code was validated with NU html checker, JIGSAW css checker and W
 
 
 
-## LIGHTHOUSE REPORT
+## LIGHTHOUSE REPORTS
+
+### LANDING PAGE
+![nu homepage result](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/lighthouse-homepage.png)
