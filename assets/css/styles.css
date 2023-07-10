@@ -597,8 +597,8 @@ footer {
         width: 100%;
     }
 
-    ul > a {
-        font-size: 1.4rem;
+    ul> li > a {
+        font-size: 1.2rem;
     }
 }
 
