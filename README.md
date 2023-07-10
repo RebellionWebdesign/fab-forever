@@ -126,8 +126,28 @@ The user gets redirected to the response page if the form is filled out and the 
 ### COLOR SCHEME
 
 ### TYPOGHRAPHY
+The font for the headings used is Montserrat (Google Fonts) regular, accompanied by Montserrat Extra Bold which is used to give emphasis to the first word of the headings.  
+
+![montserrat 400](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/fab-forever-montserrat-regular.png)
+
+![montserrat 800](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/fab-forever-montserrat-extra.png)
+
+For the body text the font Poppins (also Google) was used. It is a clean sans serif font which means it improves readability.
+
+![poppins 400](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/fab-forever-poppins-regular.png)
+
+In terms of design both fonts work together very well, as they are both clean and pleasing to the eye.
 
 ### WIREFRAMES
+
+#### HOMEPAGE
+[Landing page wireframes](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/wireframes/wireframes_landing_all_sizes.pdf)
+
+#### CONTENT PAGE
+[Content page wireframes](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/wireframes/wireframe_template_content_all_sizes.pdf)
+
+#### RESPONSE PAGE
+[Response page wireframes](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/wireframes/wireframe_response_all_sizes.pdf)
 
 ## TOOLS USED
 
@@ -143,14 +163,14 @@ The code was written in VSCODE using the following extensions:
 
 ### TECHNOLOGIES
 - The foundation of the site was made using HTML
-- The design of the site was made using CSS, more explicit:  
+- The design of the site was made using [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS?retiredLocale=en), more explicit:  
     * [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout) for positioning elements on the page
     * [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) for making the cards in the about section
-    * [CSS Root](https://developer.mozilla.org/en-US/docs/Web/CSS/:root?retiredLocale=de) for defining colors as variables
-    * [Git](https://git-scm.com/) for version control
-    * [GitHub](https://github.com/) for hosting the source code
-    * [GitHub Pages](https://pages.github.com/) for deploying the website to the web
-- The behaviour for the mobile sidebar was made using JS
+    * [CSS Root](https://developer.mozilla.org/en-US/docs/Web/CSS/:root?retiredLocale=en) for defining colors as variables
+- [Git](https://git-scm.com/) for version control
+- [GitHub](https://github.com/) for hosting the source code
+- [GitHub Pages](https://pages.github.com/) for deploying the website to the web
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript?retiredLocale=de) was used to model the behaviour of the mobile sidebar
 
 ## EXTERNAL TOOLS  
 Gradients were made with [cssgradient.io](https://cssgradient.io/) 
