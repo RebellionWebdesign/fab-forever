@@ -460,7 +460,7 @@ footer {
 }
 
 .social {
-    margin-left: auto;
+    margin: 0 auto;
 }
 
 .social-icon {
@@ -513,6 +513,7 @@ footer {
     picture > img {
         width: 100%;
     }
+
 
 }
 
@@ -603,6 +604,10 @@ footer {
 
     .response {
         width: 100%;
+    }
+
+    .hide-mobile {
+        display: none;
     }
 }
 
@@ -750,6 +755,14 @@ footer {
 
     .closed {
         right: -45vw;
+    }
+
+    .testimonial-card img {
+        width: 35%;
+    }
+
+    .testimonial-card p {
+        padding-left: 0;
     }
 
     .form-wrapper {
