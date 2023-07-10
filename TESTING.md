@@ -127,6 +127,11 @@ The underlying code was validated with NU html checker, JIGSAW css checker and W
 #### MATERIALS PAGE
 ![lighthouse-materials](https://github.com/RebellionWebdesign/fab-forever/assets/80954446/09508fdf-2b31-42cf-a293-cb27488a6548)
 
+#### MODELS PAGE
+![lighthouse-models](https://github.com/RebellionWebdesign/fab-forever/assets/80954446/5fe5825f-6613-4d00-8778-c500a327a421)
+
+#### HELP PAGE
+![lighthouse-help](https://github.com/RebellionWebdesign/fab-forever/assets/80954446/18b0071e-8246-4318-9fcf-2f2138ebda98)
 
 ### RESPONSE PAGE
 ![lighthouse-response](https://github.com/RebellionWebdesign/fab-forever/assets/80954446/b2ddf436-e790-4e0e-b8bf-05617f0b93e9)
