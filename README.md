@@ -119,7 +119,7 @@ The content pages have the same design overall, so the basics page is an example
 
 The user gets redirected to the response page if the form is filled out and the button clicked. It congrats the user and says thanks for reaching out. After 5 seconds it redirects the user to the homepage.
 
-![Response page](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/fab-forever-reponse.png)
+![Response page](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/fab-forever-response.png)
 
 ## DESIGN
 
@@ -144,16 +144,16 @@ The code was written in VSCODE using the following extensions:
 ### TECHNOLOGIES
 - The foundation of the site was made using HTML
 - The design of the site was made using CSS, more explicit:  
-    * CSS Flexbox for positioning elements on the page
-    * CSS Grid for making the cards in the about section
-    * CSS Root for defining colors as variables
-    * Git for version control
-    * GitHub for hosting the source code
-    * GitPages for deploying the website to the web
+    * [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout) for positioning elements on the page
+    * [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) for making the cards in the about section
+    * [CSS Root](https://developer.mozilla.org/en-US/docs/Web/CSS/:root?retiredLocale=de) for defining colors as variables
+    * [Git](https://git-scm.com/) for version control
+    * [GitHub](https://github.com/) for hosting the source code
+    * [GitHub Pages](https://pages.github.com/) for deploying the website to the web
 - The behaviour for the mobile sidebar was made using JS
 
 ## EXTERNAL TOOLS  
-Gradients were made with [this tool](https://cssgradient.io/) 
+Gradients were made with [cssgradient.io](https://cssgradient.io/) 
 
 ## TESTING
 Please refer to the TESTING.md file for everything related to testing.
@@ -161,7 +161,7 @@ Please refer to the TESTING.md file for everything related to testing.
 ### RESPONSIVE NAVIGATION  
 The JavaScript code for the responsive menu was changed and built upon to suit the needs of this website and taken from the following tutorial:
 
-[WebDevSimplified](https://www.youtube.com/watch?v=At4B7A4GOPg) on YouTube.
+[WebDevSimplified](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout) on YouTube.
 
 ### KEEPING THE MOBILE BROWSER FROM SCROLLING HORIZONTAL
 The extra HTML and CSS declarations to do this were taken from the following source:
