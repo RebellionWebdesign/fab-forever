@@ -269,3 +269,11 @@ fonts come from here:
 The fonts are released under the [SIL Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
 
 ## SAYING THANKS
+
+[Juliia Konovalova](https://github.com/IuliiaKonovalova) for being my mentor and helping through some of the issues I encountered on the project.
+
+My family for bearing with me and for keeping me grounded.
+
+[Code Institute](https://codeinstitute.net/de/) for letting me do this and for being a great school.
+
+[Kevin Powell](https://www.youtube.com/@KevinPowell) for being great.
