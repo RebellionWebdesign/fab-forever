@@ -6,7 +6,7 @@ To ensure the website works on many different browsers, the website was tested o
 
 ### CHROME:
 
-
+[![compatibility on chrome]({https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/fab-forever-hero-section.png})]({[video-url](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/video/chrome.mp4)} "Compatibility on Chrome")
 
 ### FIREFOX:
 
