@@ -83,7 +83,7 @@ The underlying code was validated with NU html checker, JIGSAW css checker and W
 
 #### HOMEPAGE
 
-![nu homepage result]([image.jpg](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/NU-homepage.png))
+![nu homepage result](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/NU-homepage.png)
 
 #### CONTENT PAGES
 
