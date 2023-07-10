@@ -6,19 +6,19 @@ To ensure the website works on many different browsers, the website was tested o
 
 ### CHROME:
 
-
+https://github.com/RebellionWebdesign/fab-forever/assets/80954446/defef3bc-5f46-427d-b130-82e560cc9fa6
 
 ### FIREFOX:
 
-
+https://github.com/RebellionWebdesign/fab-forever/assets/80954446/9d9f7de2-c826-4be2-92d7-196fbc41eb06
 
 ### EDGE:
 
-
+https://github.com/RebellionWebdesign/fab-forever/assets/80954446/3c2b92e7-1735-43d0-833a-7c1ba5edf421
 
 ### BRAVE:
 
-
+https://github.com/RebellionWebdesign/fab-forever/assets/80954446/8ac3696d-9b3f-4b4a-9b27-6e948c42c49f
 
 ## RESPONSIVE BEHAVIOR:
 
