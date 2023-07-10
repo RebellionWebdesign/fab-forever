@@ -67,7 +67,7 @@ The hero section has a tagline which speaks directly to interested people. In ad
 
 The CTA button can be hovered to change the color slightly.
 
-![The hero section on desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-homepage.png)
+![The hero section on desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/fab-forever-hero-section.png)
 
 ---
 
