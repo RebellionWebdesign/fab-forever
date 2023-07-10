@@ -44,9 +44,11 @@ The website has images which are released under different licenses than the CC l
 - The links have an animated effect for the hover state.
 - The Navbar is fully responsive and collapses the menu into a burger icon. It opens the sidebar menu when clicked:
 
+<p align="center">
 Closed Navigation             |  Open Navigation
 :-------------------------:|:-------------------------:
 ![closed nav on top](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-navbar-closed.png)  |  ![open nav on top](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-navbar-opened.png)
+</p>
 
 ---
 
@@ -101,7 +103,7 @@ The form can be filled and "sent off" which results in being directed to a respo
 
 The footer has the website logo and states that this website is an educational project. On the right side the user can find social link icons which will send visitors to the respective platform displayed on the icons.
 
-The footer is fully responsive and collapses to the centers social icons only on mobiles.
+The footer is fully responsive and collapses to the centered social icons only on mobiles.
 
 ![The footer on desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/fab-forever-footer.png)
 
