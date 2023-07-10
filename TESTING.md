@@ -42,11 +42,11 @@ To ensure responsiveness the website was tested on the devtools built into the b
 
 ### RESPONSIVELY:
 
-
+https://github.com/RebellionWebdesign/fab-forever/assets/80954446/b900912d-146a-4d39-84ee-d0ea9e0c8b4c
 
 ### SAMSUNG S22 ULTRA:
 
-
+https://github.com/RebellionWebdesign/fab-forever/assets/80954446/af30377e-1e0a-4bc6-a688-512d67004fc4
 
 ### SAMSUNG TAB S7:
 
