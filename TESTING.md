@@ -98,7 +98,7 @@ The underlying code was validated with NU html checker, JIGSAW css checker and W
 
 ### JIGSAW CSS CHECKER
 
-
+![jigsaw result](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/JIGS-css.png)
 
 ### WAVE ACCESSIBILITY CHECKER
 
