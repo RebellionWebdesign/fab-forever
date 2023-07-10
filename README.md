@@ -117,7 +117,7 @@ The content pages have the same design overall, so the basics page is an example
 
 ### THE RESPONSE PAGE
 
-The response page acts as
+The user gets redirected to the response page if the form is filled out and the button clicked. It congrats the user and says thanks for reaching out. After 5 seconds it redirects the user to the homepage.
 
 ![Response page](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/fab-forever-reponse.png)
 
