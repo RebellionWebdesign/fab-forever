@@ -312,24 +312,25 @@ ul {
     list-style-type: none;
 }
 
-ul>a {
+ul>li {
     font-family: poppins, sans-serif;
     color: var(--color-dark);
     text-decoration: none;
     display: inline-block;
     padding-right: 1.5em;
+}
+
+ul>li>a {
+    text-decoration: none;
+    color: var(--color-dark);
     transition: all 0.5s ease-in-out;
 }
 
-ul>a:hover {
+ul>li>a:hover {
     color: var(--color-accent);
 }
 
-ul>a:target {
-    color: var(--color-accent);
-}
-
-ul>a:nth-child(5) {
+ul>li:nth-child(5) {
     padding-right: 0;
 }
 
