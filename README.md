@@ -125,6 +125,16 @@ The user gets redirected to the response page if the form is filled out and the 
 
 ### COLOR SCHEME
 
+The chosen color scheme consists of the following colors:
+
+![color scheme](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/fab-forever-color-scheme.png)
+
+- Purple and purple accent colors were chosen because it combines the energy of red and the stability/trustworthyness of blue
+
+- Blue was chosen because it represents trustworthyness and stability, also it looks superb with purple in a gradient
+
+- Black and white were chosen for contrast
+
 ### TYPOGHRAPHY
 The font for the headings used is Montserrat (Google Fonts) regular, accompanied by Montserrat Extra Bold which is used to give emphasis to the first word of the headings.  
 
@@ -177,6 +187,8 @@ Gradients were made with [cssgradient.io](https://cssgradient.io/)
 
 ## TESTING
 Please refer to the TESTING.md file for everything related to testing.
+
+## CREDITS
 
 ### RESPONSIVE NAVIGATION  
 The JavaScript code for the responsive menu was changed and built upon to suit the needs of this website and taken from the following tutorial:
