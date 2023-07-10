@@ -41,7 +41,7 @@ The website has images which are released under different licenses than the CC l
         * MODELS sends the visitor to the models content page. They can learn about creating and obtaining models here.  
         * HELP sends the visitor to the help page where they can have a look at the most common errors in 3D printing.
 
-- The links have animated effects for the hover and active states
+- The links have an animated effect for the hover state.
 - The Navbar is fully responsive and collapses the menu into a burger icon. It opens the sidebar menu when clicked:
 
 Closed Navigation             |  Open Navigation
@@ -63,21 +63,47 @@ Closed Navigation             |  Open Navigation
 
 ### THE HERO SECTION
 
+The hero section has a tagline which speaks directly to interested people. In addition to that there is also a sub tagline which suggests to have a look to the sites content. The CTA button can be used as a visible skiplink to get directly to the content without needing to browse the complete homepage. The main purpose of the website is presented with the hero image of an isometric 3D printer illustration.  
+
+The CTA button can be hovered to change the color slightly.
+
+![The hero section on desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-homepage.png)
+
 ---
 
 ### THE ABOUT SECTION
+
+The about section aims at clearing up what users can read on the website by presenting the main content categories as cards. This information is paired with the text to the left which extends the hero sections tagline by goind a step deeper into the covered topics.
+
+![The about section on desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/fab-forever-about-section.png)
 
 ---
 
 ### THE TESTIMONIAL SECTION
 
+Website users often need third party validation (social proof) so they can decide if the website is trustable and if it has value to them. Social proof is given by displaying a testimonial from a fictive user who became the CTO of another fictive company.
+
+![The testimonial on desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/fab-forever-testimonial.png)
+
 ---
 
 ### THE CONTACT SECTION
 
+While browsing the site the user might wants to contact the website owner for whatever reason comes to mind (asking to participate in content writing, asking questions etc.). This gets addressed by asking the user directly if there are questions and by providing a simple contact form.
+
+The form can be filled and "sent off" which results in being directed to a response page which redirects the user back to the homepage after 5 seconds.
+
+![The contact on desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/fab-forever-contact-section.png)
+
 ---
 
 ### THE FOOTER
+
+The footer has the website logo and states that this website is an educational project. On the right side the user can find social link icons which will send visitors to the respective platform displayed on the icons.
+
+The footer is fully responsive and collapses to the centers social icons only on mobiles.
+
+![The footer on desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/fab-forever-footer.png)
 
 ---
 
