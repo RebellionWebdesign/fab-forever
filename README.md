@@ -44,11 +44,9 @@ The website has images which are released under different licenses than the CC l
 - The links have an animated effect for the hover state.
 - The Navbar is fully responsive and collapses the menu into a burger icon. It opens the sidebar menu when clicked:
 
-<p align="center">
 Closed Navigation             |  Open Navigation
 :-------------------------:|:-------------------------:
 ![closed nav on top](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-navbar-closed.png)  |  ![open nav on top](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-navbar-opened.png)
-</p>
 
 ---
 
