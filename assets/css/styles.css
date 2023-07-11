@@ -173,6 +173,20 @@ span {
     background-color: var(--color-accent);
 }
 
+.page-button {
+    height: 4rem;
+    padding: 12px 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    font-family: montserrat, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
 /*UTILITY CLASSES FOR USE PRIMARILY WITH FLEXBOX*/
 .flex {
     display: flex;
@@ -441,6 +455,10 @@ input[type=email] {
 
 .legal-text {
     margin-bottom: 1rem;
+}
+
+.button-wrapper-bottom {
+    width: 100%;
 }
 
 .newsletter {
