@@ -286,7 +286,7 @@ span {
 /*The bottom divider for the contact section doesnt go all the way down, so we need to set a
 negative margin*/
 .divider-bottom {
-    margin-bottom: -2px;
+    margin-bottom: -1px;
     width: 100%;
 }
 
@@ -424,6 +424,7 @@ label {
     font-family: montserrat, sans-serif;
     font-size: 1.2rem;
     color: rgb(0, 0, 0);
+    margin-left: 2rem;
 }
 
 .red-star {
