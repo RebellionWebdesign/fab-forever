@@ -434,7 +434,7 @@ label {
 }
 
 .red-star {
-  color: red;
+  color: var(--color-dark);
 }
 
 .form-wrapper {
@@ -506,6 +506,10 @@ footer {
   body {
     width: 100%;
     overflow-x: hidden;
+  }
+
+  .headerbar {
+    width: 100%;
   }
 
   /*Sets the container element (every section has one) to 85.72% or about 1200px (1200px/1400px = 1200.8px)*/
