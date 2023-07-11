@@ -1,4 +1,4 @@
-![FAB FOREVER](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/fab-forever-logo.svg)  
+![FAB FOREVER](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/svg/fab-forever-logo.svg)  
 
 [![stability-wip](https://img.shields.io/badge/STABILITY-WIP-red.svg)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#work-in-progress) ![license](https://img.shields.io/badge/CC-BY--NC--SA--4.0-green.svg) ![editor](https://img.shields.io/badge/VSCODE-blue.svg) ![lang](https://img.shields.io/badge/CSS3-blue.svg) ![lang](https://img.shields.io/badge/HTML5-orange.svg) ![lang](https://img.shields.io/badge/JS-yellow.svg)
 
