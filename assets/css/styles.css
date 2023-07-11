@@ -6,12 +6,12 @@ from the parents to the children in this manner:
 /*CSSRoots is used for declaring the website colors as global variables.
 Declare them once and then use the variable name as value within the CSS.*/
 :root {
-    --color-primary: #BC00FF;
-    --color-secondary: #1100FF;
-    --color-accent: #CF49FF;
-    --color-dark: #000000;
-    --color-light: #ffffff;
-    --color-shadow: rgba(0, 0, 0, 0.25);
+  --color-primary: #bc00ff;
+  --color-secondary: #1100ff;
+  --color-accent: #cf49ff;
+  --color-dark: #000000;
+  --color-light: #ffffff;
+  --color-shadow: rgba(0, 0, 0, 0.25);
 }
 
 /*The following sets all elements in the DOM to have no padding, no margin and the box-sizing.
@@ -19,28 +19,28 @@ This includes the ::before and ::after pseudo-elements*/
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /*Here we set the HTML scroll behaviour to smooth scroll and the font size to 62.5% = 10px,
 this allows for easier calculations regarding the font size, paddings and margins*/
 html {
-    scroll-behavior: smooth;
-    font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 /*For the body we need to set the font size back to the default 16px - its the standard ssetting after all.
 But we can still calculate all other values based on the 62.5% we set earlier.*/
 body {
-    font-size: 1.6rem;
-    overflow-x: hidden; /*disables horizontal scrolling*/
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+  font-size: 1.6rem;
+  overflow-x: hidden; /*disables horizontal scrolling*/
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Global styles for elements that are the same over the complete website.
@@ -48,863 +48,867 @@ Elements are: Sections, Containers, Columns, Rows, Headings and Text*/
 
 /*MAIN STYLES*/
 main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /*SECTION STYLES*/
 
 /*Creates a section which fills the complete viewport in x and y*/
 .section-full {
-    width: 100vw;
-    min-height: 100vh;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 /*Creates a section which fills the complete width in x and half width y*/
 .section-half {
-    width: 100vw;
-    min-height: 50vh;
+  width: 100vw;
+  min-height: 50vh;
 }
 
 /*SECTION BACKGROUNDS - Some of them are also used on links (styled as buttons) and buttons
 but primrily they belong to sections.*/
 
 .background {
-    background: var(--color-secondary);
-    background: linear-gradient(43deg, var(--color-secondary) 0%, var(--color-primary) 95%);
+  background: var(--color-secondary);
+  background: linear-gradient(
+    43deg,
+    var(--color-secondary) 0%,
+    var(--color-primary) 95%
+  );
 }
 
 .background-reverse {
-    background: var(--color-primary);
-    background: linear-gradient(43deg, var(--color-primary) 0%, var(--color-secondary) 95%);
+  background: var(--color-primary);
+  background: linear-gradient(
+    43deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 95%
+  );
 }
 
 .background-mask {
-    background: var(--color-light);
-    background:
-        linear-gradient(30deg, var(--color-light) 65%, rgba(17, 0, 255, 0) 65%),
-        linear-gradient(43deg, var(--color-secondary) 0%, var(--color-primary) 95%);
+  background: var(--color-light);
+  background: linear-gradient(
+      30deg,
+      var(--color-light) 65%,
+      rgba(17, 0, 255, 0) 65%
+    ),
+    linear-gradient(43deg, var(--color-secondary) 0%, var(--color-primary) 95%);
 }
 
 /*CONTAINER STYLES*/
 
 /*Creates a container element which is 1200px wide (1920px * 0.625 = 1200px)*/
 .container {
-    width: 62.5%;
+  width: 62.5%;
 }
 
 /*COLUMN STYLES*/
 
 /*This generates a column half the width of its parent (usually the container)*/
 .column-2 {
-    width: 50%;
+  width: 50%;
 }
 
 /*This generates a column quarter the width of its parent*/
 .column-4 {
-    width: 25%;
+  width: 25%;
 }
 
 /*HEADING STYLES*/
 h1 {
-    font-family: montserrat, sans-serif;
-    font-size: 5rem;
-    font-weight: 400;
+  font-family: montserrat, sans-serif;
+  font-size: 5rem;
+  font-weight: 400;
 }
 
 h2 {
-    font-family: montserrat, sans-serif;
-    font-size: 3.5rem;
-    font-weight: 400;
+  font-family: montserrat, sans-serif;
+  font-size: 3.5rem;
+  font-weight: 400;
 }
 
 h3 {
-    font-family: montserrat, sans-serif;
-    font-size: 2rem;
+  font-family: montserrat, sans-serif;
+  font-size: 2rem;
 }
 
 /*TEXT STYLES*/
 p {
-    font-family: Poppins, sans-serif;
-    font-size: 1.6rem;
-    font-weight: 400;
+  font-family: Poppins, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 /*some text parts need to be very bold, so we set them here*/
 span {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 /*the default text color is black, but we also need some white text on the page*/
 .text-white {
-    color: var(--color-light);
+  color: var(--color-light);
 }
 
 .text-shadow {
-    text-shadow: 3px 3px 5px var(--color-shadow);
+  text-shadow: 3px 3px 5px var(--color-shadow);
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 /*BUTTON STYLES AND STYLES FOR LINKS (<a>-tags) WHICH ARE STYLED AS BUTTONS*/
 .button-wrapper {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .button {
-    width: 14.5rem;
-    height: 4rem;
-    padding: 12px 16px;
-    text-decoration: none;
-    border: none;
-    border-radius: 0.5rem;
-    background-color: var(--color-primary);
-    color: var(--color-light);
-    font-family: montserrat, sans-serif;
-    font-size: 1.6rem;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out;
+  width: 14.5rem;
+  height: 4rem;
+  padding: 12px 16px;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  font-family: montserrat, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
 }
 
 .button:hover {
-    background-color: var(--color-accent);
+  background-color: var(--color-accent);
 }
 
 .page-button {
-    height: 4rem;
-    padding: 12px 16px;
-    text-decoration: none;
-    border: none;
-    border-radius: 0.5rem;
-    background-color: var(--color-primary);
-    color: var(--color-light);
-    font-family: montserrat, sans-serif;
-    font-size: 1.6rem;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out;
+  height: 4rem;
+  padding: 12px 16px;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  font-family: montserrat, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
 }
 
 /*UTILITY CLASSES FOR USE PRIMARILY WITH FLEXBOX*/
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .flex-start {
-    justify-content: start;
+  justify-content: start;
 }
 
 .flex-center {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .flex-end {
-    justify-content: end;
+  justify-content: end;
 }
 
 .flex-center--x {
-    justify-content: center;
+  justify-content: center;
 }
 
 .flex-center--y {
-    align-items: center;
+  align-items: center;
 }
 
 .flex-column {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .flex-column--reverse {
-    flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 
 .flex-row {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .flex-order {
-    order: 1;
+  order: 1;
 }
 
 /*BOX SHADOWS AND CORNERS - they can go on any container, image or column elements*/
 .box-shadow {
-    box-shadow: 3px 3px 5px var(--color-shadow);
+  box-shadow: 3px 3px 5px var(--color-shadow);
 }
 
 .rounded {
-    border-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 /*GENERAL UTILITIES*/
 /*This flips a given image in the x axis (like in mirror)*/
 .flip-x {
-    transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .margin-top--l {
-    margin-top: 3em;
+  margin-top: 3em;
 }
 
 .margin-bottom--l {
-    margin-bottom: 3em;
+  margin-bottom: 3em;
 }
 
 .margin-top--s {
-    margin-top: 0.5em;
+  margin-top: 0.5em;
 }
 
 .margin-bottom--s {
-    margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .section-padding--top {
-    padding-top: 9em;
+  padding-top: 9em;
 }
 
 .section-padding--bottom {
-    padding-bottom: 9em;
+  padding-bottom: 9em;
 }
 
 .fix-bottom {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 /*The bottom divider for the contact section doesnt go all the way down, so we need to set a
 negative margin*/
 .divider-bottom {
-    margin-bottom: -1px;
-    width: 100%;
+  margin-bottom: -1px;
+  width: 100%;
 }
 
 .divider {
-    width: 100%;
+  width: 100%;
 }
-
 
 /* UTILITY CLASSES FOR USE WITH GRID
 actually only this one together with the styles for the grid cards and their container/wrapper*/
 .grid {
-    display: grid;
+  display: grid;
 }
 
 /*LOCAL STYLES FOR ELEMENTS WHICH NEED CUSTOM STYLING*/
 
 /*Styles for the header*/
 .headerbar {
-    background-color: var(--color-light);
-    width: 100vw;
-    height: 6vh;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    box-shadow: 0 5px 10px var(--color-shadow);
+  background-color: var(--color-light);
+  width: 100vw;
+  height: 6vh;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0 5px 10px var(--color-shadow);
 }
 
 .headerbar__logo {
-    width: 20rem;
-    margin-top: 4px;
+  width: 20rem;
+  margin-top: 4px;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-ul>li {
-    font-family: poppins, sans-serif;
-    color: var(--color-dark);
-    text-decoration: none;
-    display: inline-block;
-    padding-right: 1.5em;
+ul > li {
+  font-family: poppins, sans-serif;
+  color: var(--color-dark);
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 1.5em;
 }
 
-ul>li>a {
-    text-decoration: none;
-    color: var(--color-dark);
-    transition: all 0.5s ease-in-out;
+ul > li > a {
+  text-decoration: none;
+  color: var(--color-dark);
+  transition: all 0.5s ease-in-out;
 }
 
-ul>li>a:hover {
-    color: var(--color-accent);
+ul > li > a:hover {
+  color: var(--color-accent);
 }
 
-ul>li:nth-child(5) {
-    padding-right: 0;
+ul > li:nth-child(5) {
+  padding-right: 0;
 }
 
 .mobile--open {
-    display: none;
+  display: none;
 }
 
 .mobile--close {
-    display: none;
+  display: none;
 }
 
 /*Styles for the about section´s grid cards*/
 .grid-container {
-    place-items: end;
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 35px;
-    grid-row-gap: 35px;
-    padding-left: 145px;
+  place-items: end;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 35px;
+  grid-row-gap: 35px;
+  padding-left: 145px;
 }
 
 .grid-card {
-    text-align: center;
-    padding: 2em;
-    width: 210px;
-    height: 210px;
+  text-align: center;
+  padding: 2em;
+  width: 210px;
+  height: 210px;
 }
 
 /*This represents the background images for the grid cards.*/
 .grid-card__background--basics {
-    background-image:
-        url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-basics.png");
+  background-image: url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-basics.png");
 }
 
 .grid-card__background--models {
-    background-image:
-        url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-models.png");
+  background-image: url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-models.png");
 }
 
 .grid-card__background--help {
-    background-image:
-        url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-help.png");
+  background-image: url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-help.png");
 }
 
 .grid-card__background--materials {
-    background-image:
-        url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-materials.png");
+  background-image: url("https://rebellionwebdesign.github.io/fab-forever/assets/img/fab-forever-cards-materials.png");
 }
 
 /*Styles for the testimonial section*/
 .testimonial-card {
-    padding: 2rem;
-    width: 90%;
+  padding: 2rem;
+  width: 90%;
 }
 
 .testimonial-card img {
-    border: 1rem solid #9B00FF;
-    border-radius: 50%;
+  border: 1rem solid #9b00ff;
+  border-radius: 50%;
 }
 
 .testimonial-card p {
-    padding-left: 3em;
+  padding-left: 3em;
 }
 
 .testimonial-text {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 .contact .column-2 p {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 /*Styles for the form we ave at the bottom of the page*/
 label {
-    vertical-align: top;
-    font-family: montserrat, sans-serif;
-    font-size: 1.2rem;
-    color: rgb(0, 0, 0);
-    margin-left: 2rem;
+  vertical-align: top;
+  font-family: montserrat, sans-serif;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  margin-left: 2rem;
 }
 
 .red-star {
-    color: red;
+  color: red;
 }
 
 .form-wrapper {
-    width: 76.2%;
-    height: auto;
-    padding: 2em;
-    background-color: white;
-    border-radius: 1rem;
+  width: 76.2%;
+  height: auto;
+  padding: 2em;
+  background-color: white;
+  border-radius: 1rem;
 }
 
 .form-wrapper h3 {
-    margin-bottom: 3rem;
-    width: 100%;
+  margin-bottom: 3rem;
+  width: 100%;
 }
 
-input[type=text],
-input[type=email] {
-    width: 100%;
-    height: 4rem;
-    margin-bottom: 2rem;
-    padding-left: 2em;
-    border-radius: 2rem;
-    border: 1px solid rgb(150, 150, 150);
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 2rem;
+  padding-left: 2em;
+  border-radius: 2rem;
+  border: 1px solid rgb(150, 150, 150);
 }
 
 .legal-text {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .button-wrapper-bottom {
-    width: 100%;
+  width: 100%;
 }
 
 .newsletter {
-    padding-left: 0;
-    color: black;
+  padding-left: 0;
+  color: black;
 }
 
 /*Styles for the footer*/
 footer {
-    width: 100%;
-    height: 8vh;
-    background-color: var(--color-light);
+  width: 100%;
+  height: 8vh;
+  background-color: var(--color-light);
 }
 
 .footer-logo {
-    width: 20rem;
+  width: 20rem;
 }
 
 .social-icon {
-    width: 2.5rem;
-    height: 100%;
-    margin-left: 2rem;
+  width: 2.5rem;
+  height: 100%;
+  margin-left: 2rem;
 }
 
 /*Styles for the response*/
 .response {
-    width: 60%;
-    height: 50%;
-    background-color: var(--color-light);
-    padding: 40px;
+  width: 60%;
+  height: 50%;
+  background-color: var(--color-light);
+  padding: 40px;
 }
 
 /*MEDIA QUERIES*/
 
 /*MEDIA FOR XXL SCREENS (1400px)*/
 @media screen and (max-width: 1400px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
 
-    html, body {
-        width: 100%;
-        overflow-x: hidden;
-    }
+  /*Sets the container element (every section has one) to 85.72% or about 1200px (1200px/1400px = 1200.8px)*/
+  .container {
+    width: 85.72%;
+  }
 
-    /*Sets the container element (every section has one) to 85.72% or about 1200px (1200px/1400px = 1200.8px)*/
-    .container {
-        width: 85.72%;
-    }
+  .column-2 {
+    width: 50%;
+  }
 
-    .column-2 {
-        width: 50%;
-    }
-    
-    .hero-image {
-        width: 80%;
-    }
+  .hero-image {
+    width: 80%;
+  }
 
-    /*Testimonial Section*/
-    .testimonial-card > img {
-        width: 20%;
-    }
+  /*Testimonial Section*/
+  .testimonial-card > img {
+    width: 20%;
+  }
 
-    /*Footer Section*/
-    .footer-logo {
-       width: 20rem; 
-    }
+  /*Footer Section*/
+  .footer-logo {
+    width: 20rem;
+  }
 
-    picture > img {
-        width: 100%;
-    }
-
-
+  picture > img {
+    width: 100%;
+  }
 }
 
 /*MEDIA QUERIES FOR XL SCREENS (1200px)*/
 @media screen and (max-width: 1200px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  /*General headings for the breakpoint*/
+  h1 {
+    font-size: 3.5rem;
+  }
 
+  h2 {
+    font-size: 3rem;
+  }
 
+  h3 {
+    font-size: 2rem;
+  }
 
-    html, body {
-        width: 100%;
-        overflow-x: hidden;
+  .grid-container {
+    padding: 0;
+    width: 100%;
+  }
 
-    }
-    /*General headings for the breakpoint*/
-    h1 {
-        font-size: 3.5rem;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
-
-    h3 {
-        font-size: 2rem;
-    }
-
-    .grid-container {
-        padding: 0;
-        width: 100%;
-    }
-
-    picture > img {
-        width: 100%;
-    }
-
+  picture > img {
+    width: 100%;
+  }
 }
 
 /*MEDIA QUERIES FOR L SCREENS (992px)*/
 @media screen and (max-width: 992px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
 
-    html, body {
-        width: 100%;
-        overflow-x: hidden;
+  .column-2-mobile {
+    width: 100%;
+  }
 
-    }
+  .text-center-mobile {
+    text-align: center;
+  }
 
-    .column-2-mobile {
-        width: 100%;
-    }
+  .flex-column-mobile {
+    flex-direction: column;
+  }
 
-    .text-center-mobile {
-        text-align: center;
-    }
+  .grid-container {
+    margin-top: 3rem;
+    place-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
 
-    .flex-column-mobile {
-        flex-direction: column;
-    }
+  .testimonial-card {
+    margin-top: 3rem;
+  }
 
-    .grid-container {
-        margin-top: 3rem;
-        place-items: center;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-    }
+  .form-wrapper {
+    width: 50%;
+    margin: 0 auto;
+  }
 
-    .testimonial-card {
-        margin-top: 3rem;
-    }
+  label {
+    padding: 0;
+  }
 
-    .form-wrapper {
-        width: 50%;
-        margin: 0 auto;
-    }
+  picture > img {
+    width: 100%;
+  }
 
-    label {
-        padding: 0;
-    }
+  ul > li > a {
+    font-size: 1.2rem;
+  }
 
-    picture > img {
-        width: 100%;
-    }
+  .response {
+    width: 100%;
+  }
 
-    ul> li > a {
-        font-size: 1.2rem;
-    }
-
-    .response {
-        width: 100%;
-    }
-
-    .hide-mobile {
-        display: none;
-    }
+  .hide-mobile {
+    display: none;
+  }
 }
 
 /*MEDIA QUERIES FOR M SCREENS (762px)*/
 @media screen and (max-width: 762px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
 
-    html, body {
-        width: 100%;
-        overflow-x: hidden;
+  .column-2__nav--mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45vw;
+    height: 100vh;
+    z-index: 1;
+    background: var(--color-primary);
+    background: linear-gradient(
+      43deg,
+      var(--color-primary) 0%,
+      var(--color-secondary) 95%
+    );
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    transition: 1s ease-in-out;
+  }
 
-    }
+  nav li {
+    display: block;
+    padding: 0;
+    margin-top: 2rem;
+  }
 
-    .column-2__nav--mobile {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 45vw;
-        height: 100vh;
-        z-index: 1;
-        background: var(--color-primary);
-        background: linear-gradient(43deg, var(--color-primary) 0%, var(--color-secondary) 95%);
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-        transition: 1s ease-in-out;
-    }
+  nav li a {
+    color: var(--color-light);
+  }
 
-    nav li {
-        display: block;
-        padding: 0;
-        margin-top: 2rem;
-    }
+  nav a {
+    color: var(--color-light);
+  }
 
-    nav li a {
-        color: var(--color-light);
-    }
+  .full-row {
+    width: 100%;
+  }
 
+  .mobile--open {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 
-    nav a {
-        color: var(--color-light);
-    }
+  .mobile--close {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: block;
+  }
 
-    .full-row {
-        width: 100%;
-    }
+  .hide-mobile {
+    display: none;
+  }
 
-    .mobile--open {
-        display: block;
-        width: 2.5rem;
-        height: 2.5rem;
-    }
+  .open {
+    right: 0;
+  }
 
-    .mobile--close {
-        width: 2.5rem;
-        height: 2.5rem;
-        display: block;
-    }
+  .closed {
+    right: -45vw;
+  }
 
-    .hide-mobile {
-        display: none;
-    }
+  .form-wrapper {
+    width: 70%;
+  }
 
-    .open {
-        right: 0;
-    }
+  .response {
+    width: 100%;
+  }
 
-    .closed {
-        right: -45vw;
-    }
-
-
-    .form-wrapper {
-        width: 70%;
-    }
-
-    .response {
-        width: 100%;
-    }
+  .flex-center-x-mobile {
+    justify-content: center;
+  }
 }
 
 /*MEDIA QUERIES FOR S SCREENS (576px)*/
 @media screen and (max-width: 576px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
 
-    html, body {
-        width: 100%;
-        overflow-x: hidden;
+  .flex-column-reverse-mobile {
+    flex-direction: column-reverse;
+  }
 
-    }
+  .flex-center-x-mobile {
+    justify-content: center;
+  }
 
-    .flex-column-reverse-mobile {
-        flex-direction: column-reverse;
-    }
+  .column-2__nav--mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45vw;
+    height: 100vh;
+    z-index: 1;
+    background: var(--color-primary);
+    background: linear-gradient(
+      43deg,
+      var(--color-primary) 0%,
+      var(--color-secondary) 95%
+    );
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    transition: 1s ease-in-out;
+  }
 
-    .flex-center-x-mobile {
-        justify-content: center;
-    }
+  nav a {
+    color: var(--color-light);
+    display: block;
+    padding: 0;
+    margin-top: 2rem;
+  }
 
-    .column-2__nav--mobile {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 45vw;
-        height: 100vh;
-        z-index: 1;
-        background: var(--color-primary);
-        background: linear-gradient(43deg, var(--color-primary) 0%, var(--color-secondary) 95%);
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-        transition: 1s ease-in-out;
-    }
+  .full-row {
+    width: 100%;
+  }
 
-    nav a {
-        color: var(--color-light);
-        display: block;
-        padding: 0;
-        margin-top: 2rem;
-    }
+  .mobile--open {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 
-    .full-row {
-        width: 100%;
-    }
+  .mobile--close {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: block;
+  }
 
-    .mobile--open {
-        display: block;
-        width: 2.5rem;
-        height: 2.5rem;
-    }
+  .hide-mobile {
+    display: none;
+  }
 
-    .mobile--close {
-        width: 2.5rem;
-        height: 2.5rem;
-        display: block;
-    }
+  .open {
+    right: 0;
+  }
 
-    .hide-mobile {
-        display: none;
-    }
+  .closed {
+    right: -45vw;
+  }
 
-    .open {
-        right: 0;
-    }
+  .testimonial-card img {
+    width: 35%;
+  }
 
-    .closed {
-        right: -45vw;
-    }
+  .testimonial-card p {
+    padding-left: 0;
+  }
 
-    .testimonial-card img {
-        width: 35%;
-    }
+  .form-wrapper {
+    width: 80%;
+  }
 
-    .testimonial-card p {
-        padding-left: 0;
-    }
-
-    .form-wrapper {
-        width: 80%;
-    }
-
-    .social {
-        margin: 0 auto;
-    }
-
-    .response {
-        width: 100%;
-    }
+  .response {
+    width: 100%;
+  }
 }
 
 /*MEDIA QUERIES FOR XS SCREENS (378px)*/
 @media screen and (max-width: 378px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
 
-    html, body {
-        width: 100%;
-        overflow-x: hidden;
+  .headerbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 
-    }
+  .column-2__nav--mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45vw;
+    height: 100vh;
+    z-index: 1;
+    background: var(--color-primary);
+    background: linear-gradient(
+      43deg,
+      var(--color-primary) 0%,
+      var(--color-secondary) 95%
+    );
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    transition: 1s ease-in-out;
+  }
 
-    .headerbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
+  nav li {
+    display: block;
+    padding: 0;
+    margin-top: 2rem;
+  }
 
-    .column-2__nav--mobile {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 45vw;
-        height: 100vh;
-        z-index: 1;
-        background: var(--color-primary);
-        background: linear-gradient(43deg, var(--color-primary) 0%, var(--color-secondary) 95%);
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-        transition: 1s ease-in-out;
-    }
+  nav li a {
+    color: var(--color-light);
+  }
 
-    nav li {
-        display: block;
-        padding: 0;
-        margin-top: 2rem;
-    }
+  .full-row {
+    width: 100%;
+  }
 
-    nav li a {
-        color: var(--color-light);
-    }
+  .mobile--open {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 
-    .full-row {
-        width: 100%;
-    }
+  .mobile--close {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: block;
+  }
 
-    .mobile--open {
-        display: block;
-        width: 2.5rem;
-        height: 2.5rem;
-    }
+  .hide-mobile {
+    display: none;
+  }
 
-    .mobile--close {
-        width: 2.5rem;
-        height: 2.5rem;
-        display: block;
-    }
+  .open {
+    right: 0;
+  }
 
-    .hide-mobile {
-        display: none;
-    }
+  .closed {
+    right: -45vw;
+  }
 
-    .open {
-        right: 0;
-    }
+  .flex-center-x-mobile {
+    justify-content: center;
+  }
 
-    .closed {
-        right: -45vw;
-    }
+  .flex-column-reverse-mobile {
+    flex-direction: column-reverse;
+  }
 
+  .margin-top-l-mobile {
+    margin-top: 3rem;
+  }
 
-    .flex-center-x-mobile {
-        justify-content: center;
-    }
+  .testimonial-card img {
+    width: 50%;
+  }
 
-    .flex-column-reverse-mobile {
-        flex-direction: column-reverse;
-    }
+  .testimonial-card p {
+    padding-left: 0;
+  }
 
-    .margin-top-l-mobile {
-        margin-top: 3rem;
-    }
+  .container-padding-mobile {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 
-    .testimonial-card  img {
-        width: 50%;
-    }
+  .form-wrapper {
+    width: 95%;
+    padding: 1em;
+  }
 
-    .testimonial-card p {
-        padding-left: 0;
-    }
+  picture > img {
+    width: 100%;
+  }
 
-    .container-padding-mobile {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
+  .response {
+    width: 100%;
+  }
 
-    .form-wrapper {
-        width: 95%;
-        padding: 1em;
-    }
-
-    picture > img {
-        width: 100%;
-    }
-
-    .response {
-        width: 100%;
-    }
-
-    .response > h1 {
-        font-size: 2rem;
-    }
-    
+  .response > h1 {
+    font-size: 2rem;
+  }
 }
 
 /*FONT STYLE DECLARATIONS - THESE WERE AUTOMATICALLY GENERATED BY
@@ -914,199 +918,217 @@ https://gwfh.mranftl.com/fonts/montserrat?subsets=latin */
 /*POPPINS FONT STYLES*/
 /* poppins-100 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 100;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-100.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  src: url("https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-100.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* poppins-200 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 200;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-200.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200;
+  src: url("https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-200.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* poppins-300 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-300.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-300.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* poppins-regular - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-regular.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-regular.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* poppins-500 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-500.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-500.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* poppins-600 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-600.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-600.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* poppins-700 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-700.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-700.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* poppins-800 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 800;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-800.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  src: url("https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-800.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* poppins-900 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 900;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-900.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  src: url("https://rebellionwebdesign.github.io/fab-forever/assets/fonts/poppins-v20-latin-900.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /*MONTSERRAT FONT STYLES*/
 /* montserrat-100 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 100;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-100.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100;
+  src: url("https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-100.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* montserrat-200 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 200;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-200.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 200;
+  src: url("https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-200.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* montserrat-300 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 300;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-300.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-300.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* montserrat-regular - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-regular.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-regular.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* montserrat-500 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-500.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-500.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* montserrat-600 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-600.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-600.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* montserrat-700 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-700.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-700.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* montserrat-800 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-800.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  src: url("https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-800.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* montserrat-900 - latin */
 @font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 900;
-    src: url('https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-900.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  src: url("https://rebellionwebdesign.github.io/fab-forever/assets/fonts/montserrat-v25-latin-900.woff2")
+    format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
