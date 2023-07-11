@@ -72,6 +72,10 @@ Manual tests were made by myself, friends and family and CI community members.
 |     Contact Form Validation      |     send form without content      | displays a warning because of empty fields  |  yes   |  yes   |         |
 | Contact Form Button Hover Effect |       hover over form button       |    button changes color to accent color     |  yes   |  yes   |         |
 |   Contact Form Button Function   |  click button when form is filled  |         sends user to response page         |  yes   |  yes   |         |
+|   NEXT/BACK Button Hover Effect  |         hover over button          |    button changes color to accent color     |  yes   |  yes   |         |
+|     Content Page NEXT Button     |         click next button          |           sends user to next page           |  yes   |  yes   |         |
+|     Content Page BACK Button     |         click back button          |         sends user to previous page         |  yes   |  yes   |         |
+|    Content Page THANKS Button    |            click button            |           sends user to home page           |  yes   |  yes   |         |
 |          Response Page           |             just wait              | sends user back to homepage after 5 seconds |  yes   |  yes   |         |
 |           Social Icons           |             click icon             |      sends user to displayed platform       |  yes   |  yes   |         |
 
@@ -104,15 +108,21 @@ The underlying code was validated with NU html checker, JIGSAW css checker and W
 
 #### HOMEPAGE
 
-
+![wave-home](https://github.com/RebellionWebdesign/fab-forever/assets/80954446/a75c36fc-f103-4da9-90f9-f17fe98d997f)
 
 #### CONTENT PAGES
 
+![wave-basics](https://github.com/RebellionWebdesign/fab-forever/assets/80954446/e43337a4-420a-457c-8a32-b5512a5b7541)
 
+![wave-materials](https://github.com/RebellionWebdesign/fab-forever/assets/80954446/e430ee5c-e8e3-4e60-bfff-5397e7fdb4f5)
+
+![wave-models](https://github.com/RebellionWebdesign/fab-forever/assets/80954446/41ffa42e-15bf-48d2-99b9-0293cf75aec8)
+
+![wave-help](https://github.com/RebellionWebdesign/fab-forever/assets/80954446/47176dc5-467b-4636-bd41-c7b4ab80d7b1)
 
 #### RESPONSE PAGE
 
-
+![wave-response](https://github.com/RebellionWebdesign/fab-forever/assets/80954446/377caebc-9ed7-4c86-849c-a6e9d0e56022)
 
 ## LIGHTHOUSE REPORTS
 
