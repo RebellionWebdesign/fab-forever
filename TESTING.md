@@ -26,19 +26,19 @@ To ensure responsiveness the website was tested on the devtools built into the b
 
 ### CHROME:
 
-
+https://github.com/RebellionWebdesign/fab-forever/assets/80954446/7c7594fe-c75d-4eb3-b02a-7e0c4a229f2c
 
 ### FIREFOX:
 
-
+https://github.com/RebellionWebdesign/fab-forever/assets/80954446/3bd9eba7-8e84-48ce-9e42-10f72cb7c6a9
 
 ### EDGE:
 
-
+https://github.com/RebellionWebdesign/fab-forever/assets/80954446/21e86c09-017e-4d83-8cb2-05673120675c
 
 ### BRAVE:
 
-
+https://github.com/RebellionWebdesign/fab-forever/assets/80954446/03248c81-cbb8-480a-91b2-4986ffb530bf
 
 ### RESPONSIVELY:
 
