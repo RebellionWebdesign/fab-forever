@@ -32,7 +32,7 @@ The website has images which are released under different licenses than the CC l
 ### THE NAVBAR
 - The navbar is fixed to the top of the page  
 - It contains a logo for the company on the left and a navigation on the right so visitors understand it easily  
-![The navbar on the desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-navbar-desktop.png)  
+![The navbar on the desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-images/readme-navbar-desktop.png)  
 
     * THE LOGO - It has a link which sends users to the home page  
     * THE NAVIGATION: 
@@ -46,7 +46,7 @@ The website has images which are released under different licenses than the CC l
 
 Closed Navigation             |  Open Navigation
 :-------------------------:|:-------------------------:
-![closed nav on top](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-navbar-closed.png)  |  ![open nav on top](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-navbar-opened.png)
+![closed nav on top](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-images/readme-navbar-closed.png)  |  ![open nav on top](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-images/readme-navbar-opened.png)
 
 ---
 
@@ -57,7 +57,7 @@ Closed Navigation             |  Open Navigation
     * Providing feedback from users who have visited the site already
     * Giving the user the option to make contact to the website owner  
   
-![The homepage on the desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-homepage.png)
+![The homepage on the desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/readme-images/readme-homepage.png)
 
 ---
 
