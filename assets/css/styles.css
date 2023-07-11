@@ -619,10 +619,6 @@ footer {
   .response {
     width: 100%;
   }
-
-  .hide-mobile {
-    display: none;
-  }
 }
 
 /*MEDIA QUERIES FOR M SCREENS (762px)*/
