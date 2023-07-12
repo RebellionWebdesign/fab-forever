@@ -120,19 +120,19 @@ but primrily they belong to sections.*/
 /*HEADING STYLES*/
 h1 {
   font-family: montserrat, sans-serif;
-  font-size: 5rem;
+  font-size: clamp(1.2rem, 2vw + 1rem, 5rem);
   font-weight: 400;
 }
 
 h2 {
   font-family: montserrat, sans-serif;
-  font-size: 3.5rem;
+  font-size: clamp(1.2rem, 2vw + 1rem, 3.5rem);
   font-weight: 400;
 }
 
 h3 {
   font-family: montserrat, sans-serif;
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 2vw + 1rem, 2rem);
 }
 
 /*TEXT STYLES*/
@@ -547,18 +547,6 @@ footer {
     width: 100%;
     overflow-x: hidden;
   }
-  /*General headings for the breakpoint*/
-  h1 {
-    font-size: 3.5rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
 
   .grid-container {
     padding: 0;
@@ -904,10 +892,6 @@ footer {
 
   .response {
     width: 100%;
-  }
-
-  .response > h1 {
-    font-size: 2rem;
   }
 }
 
