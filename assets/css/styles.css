@@ -102,7 +102,8 @@ but primrily they belong to sections.*/
 
 /*Creates a container element which is 1200px wide (1920px * 0.625 = 1200px)*/
 .container {
-  width: 62.5%;
+  width: 100%;
+  padding: 0px 360px;
 }
 
 /*COLUMN STYLES*/
@@ -508,13 +509,21 @@ footer {
     overflow-x: hidden;
   }
 
+  .container {
+    padding: 0px 100px;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
   .headerbar {
     width: 100%;
   }
 
   /*Sets the container element (every section has one) to 85.72% or about 1200px (1200px/1400px = 1200.8px)*/
   .container {
-    width: 85.72%;
+    width: 100%;
   }
 
   .column-2 {
@@ -548,6 +557,14 @@ footer {
     overflow-x: hidden;
   }
 
+  .container {
+    padding: 0px 100px;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
   .grid-container {
     padding: 0;
     width: 100%;
@@ -564,6 +581,14 @@ footer {
   body {
     width: 100%;
     overflow-x: hidden;
+  }
+
+  .container {
+    padding: 0px 50px;
+  }
+
+  p {
+    font-size: 1.2rem;
   }
 
   .column-2-mobile {
@@ -619,6 +644,14 @@ footer {
   body {
     width: 100%;
     overflow-x: hidden;
+  }
+
+  .container {
+    padding: 0px 20px;
+  }
+
+  p {
+    font-size: 1.2rem;
   }
 
   .column-2__nav--mobile {
@@ -684,7 +717,7 @@ footer {
   }
 
   .form-wrapper {
-    width: 70%;
+    width: 75%;
   }
 
   .response {
@@ -694,6 +727,25 @@ footer {
   .flex-center-x-mobile {
     justify-content: center;
   }
+
+  .grid-container {
+    place-items: center;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 35px;
+    grid-row-gap: 35px;
+    padding-left: 145px;
+    padding-right: 145px;
+  }
+
+  .testimonial-card {
+    width: 75%;
+  }
+
+  label {
+    margin-left: 0;
+  }
 }
 
 /*MEDIA QUERIES FOR S SCREENS (576px)*/
@@ -702,6 +754,14 @@ footer {
   body {
     width: 100%;
     overflow-x: hidden;
+  }
+
+  .container {
+    padding: 0px 20px;
+  }
+
+  p {
+    font-size: 1.2rem;
   }
 
   .flex-column-reverse-mobile {
@@ -790,6 +850,14 @@ footer {
   body {
     width: 100%;
     overflow-x: hidden;
+  }
+
+  .container {
+    padding: 0px 20px;
+  }
+
+  p {
+    font-size: 1.2rem;
   }
 
   .headerbar {
