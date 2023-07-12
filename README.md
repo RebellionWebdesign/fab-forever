@@ -195,11 +195,6 @@ The JavaScript code for the responsive menu was changed and built upon to suit t
 
 [WebDevSimplified](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout) on YouTube.
 
-### KEEPING THE MOBILE BROWSER FROM SCROLLING HORIZONTAL
-The extra HTML and CSS declarations to do this were taken from the following source:
-
-[Klaas van der Weij](https://stackoverflow.com/a/16981485)
-
 ## IMAGES
 
 ### LANDING PAGE
@@ -213,7 +208,7 @@ The images for **MATERIALS** and **HELP** are made by me. Feel free to use them.
 
 **The license is in the /docs/licenses folder**
 
-The face of the testimonial is taken from Unsplash and have an attribution license:
+The face of the testimonial is taken from Unsplash and has an attribution license:
 
 [Shot by Cerqueira on Unsplash](https://unsplash.com/de/fotos/CWy7qOyv9ME)  
 
@@ -247,7 +242,7 @@ The images on the help page are taken from unsplash:
 
 **You can have a look at the unsplash license [here](https://unsplash.com/de/lizenz)**
 
-The social icons are from [FontAwesome](https://fontawesome.com/) in the free version, specifically these:
+The social icons, the hamburger icon and the close icon are from [FontAwesome](https://fontawesome.com/) in the free version, specifically these:
 
 [Instagram](https://fontawesome.com/icons/instagram?f=brands&s=solid)
 
@@ -256,6 +251,10 @@ The social icons are from [FontAwesome](https://fontawesome.com/) in the free ve
 [Twitter](https://fontawesome.com/icons/square-twitter?f=brands&s=solid)
 
 [Slack](https://fontawesome.com/icons/slack?f=brands&s=solid)
+
+[Bars](https://fontawesome.com/icons/bars?f=classic&s=solid)
+
+[Close](https://fontawesome.com/icons/xmark?f=classic&s=solid)
 
 ## FONTS  
 Fonts are hosted within the website to account for the GDPR laws in germany. However,
@@ -271,9 +270,10 @@ The fonts are released under the [SIL Open Font License](https://scripts.sil.org
 ## SAYING THANKS
 
 [Juliia Konovalova](https://github.com/IuliiaKonovalova) for being my mentor and helping through some of the issues I encountered on the project.
+The README.md and TESTING.md files were inspired by hers.
 
 My family for bearing with me and for keeping me grounded.
 
 [Code Institute](https://codeinstitute.net/de/) for letting me do this and for being a great school.
 
-[Kevin Powell](https://www.youtube.com/@KevinPowell) for being great.
+[Kevin Powell](https://www.youtube.com/@KevinPowell) for being such a great CSS teacher.
