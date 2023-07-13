@@ -291,7 +291,7 @@ The fonts are released under the [SIL Open Font License](https://scripts.sil.org
 - [Juliia Konovalova](https://github.com/IuliiaKonovalova) for being my mentor and helping through some of the issues I encountered on the project.
   The README.md and TESTING.md files were inspired by hers.
 
-My family for bearing with me and for keeping me grounded.
+- My family for bearing with me and for keeping me grounded.
 
 - [Code Institute](https://codeinstitute.net/de/) for letting me do this and for being a great school.
 
