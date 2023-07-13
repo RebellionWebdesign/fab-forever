@@ -1,10 +1,10 @@
-[readme-logo](docs/images/readme-images/readme-logo.png)
+[readme-logo](https://github.com/RebellionWebdesign/fab-forever/docs/images/readme-images/readme-logo.png)
 
 [[stability-wip](https://img.shields.io/badge/STABILITY-WIP-red.svg)](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#work-in-progress) [license](https://img.shields.io/badge/CC-BY--NC--SA--4.0-green.svg) [editor](https://img.shields.io/badge/VSCODE-blue.svg) [lang](https://img.shields.io/badge/CSS3-blue.svg) [lang](https://img.shields.io/badge/HTML5-orange.svg) [lang](https://img.shields.io/badge/JS-yellow.svg)
 
 Fab Forever is a fictional website aimed at persons interested in 3D Printing technology. By browsing the site visitors can learn about the basics of 3D printing covering printers, materials, models and first troubleshooting techniques. Visitors can also make contact to the website owner.
 
-Have a look at it [here](https://rebellionwebdesign.com.github.io/fab-forever).
+Have a look at it [here](https://rebellionwebdesign.github.io/fab-forever).
 
 ## LICENSE
 
@@ -38,7 +38,7 @@ The website has images which are released under different licenses than the CC l
 - The navbar is fixed to the top of the page
 - It contains a logo for the company on the left and a navigation on the right so visitors understand it easily
 
-  [The navbar on the desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/readme-images/readme-navbar-desktop.png)
+  [The navbar on the desktop](https://github.com/RebellionWebdesign/fab-forever/docs/images/readme-images/readme-navbar-desktop.png)
 
       * THE LOGO - It has a link which sends users to the home page
       * THE NAVIGATION:
@@ -50,8 +50,9 @@ The website has images which are released under different licenses than the CC l
 - The links have an animated effect for the hover state.
 - The Navbar is fully responsive and collapses the menu into a burger icon. It opens the sidebar menu when clicked:
 
-- [Closed nav on mobile](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/readme-images/readme-images/readme-navbar-closed.png)
-- [Open nav on mobile](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/readme-images/readme-navbar-opened.png)
+- [Closed nav on mobile](https://github.com/RebellionWebdesign/fab-forever/docs/images/readme-images/readme-navbar-closed.png)
+
+- [Open nav on mobile](https://github.com/RebellionWebdesign/fab-forever/docs/images/readme-images/readme-navbar-opened.png)
 
 ---
 
@@ -64,7 +65,7 @@ The website has images which are released under different licenses than the CC l
   - Providing feedback from users who have visited the site already
   - Giving the user the option to make contact to the website owner
 
-- [The homepage on the desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/readme-images/readme-homepage.png)
+- [The homepage on the desktop](https://github.com/RebellionWebdesign/fab-forever/docs/images/readme-images/readme-homepage.png)
 
 ---
 
@@ -74,7 +75,7 @@ The hero section has a tagline which speaks directly to interested people. In ad
 
 The CTA button can be hovered to change the color slightly.
 
-- [The hero section on desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/main/docs/images/readme-images/fab-forever-hero-section.png)
+- [The hero section on desktop](https://github.com/RebellionWebdesign/fab-foreverdocs/images/readme-images/fab-forever-hero-section.png)
 
 ---
 
@@ -82,7 +83,7 @@ The CTA button can be hovered to change the color slightly.
 
 The about section aims at clearing up what users can read on the website by presenting the main content categories as cards. This information is paired with the text to the left which extends the hero sections tagline by goind a step deeper into the covered topics.
 
-- [The about section on desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/main/docs/images/readme-images/fab-forever-about-section.png)
+- [The about section on desktop](https://github.com/RebellionWebdesign/fab-forever/docs/images/readme-images/fab-forever-about-section.png)
 
 ---
 
@@ -90,7 +91,7 @@ The about section aims at clearing up what users can read on the website by pres
 
 Website users often need third party validation (social proof) so they can decide if the website is trustable and if it has value to them. Social proof is given by displaying a testimonial from a fictive user who became the CTO of another fictive company.
 
-- [The testimonial on desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/readme-images/fab-forever-testimonial.png)
+- [The testimonial on desktop](https://github.com/RebellionWebdesign/fab-forever/docs/images/readme-images/fab-forever-testimonial.png)
 
 ---
 
@@ -100,7 +101,7 @@ While browsing the site the user might wants to contact the website owner for wh
 
 The form can be filled and "sent off" which results in being directed to a response page which redirects the user back to the homepage after 5 seconds.
 
-- [The contact on desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/readme-images/fab-forever-contact-section.png)
+- [The contact on desktop](https://github.com/RebellionWebdesign/fab-forever/docs/images/readme-images/fab-forever-contact-section.png)
 
 ---
 
@@ -110,7 +111,7 @@ The footer has the website logo and states that this website is an educational p
 
 The footer is fully responsive and collapses to the centered social icons only on mobiles.
 
-[The footer on desktop](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/readme-images/fab-forever-footer.png)
+[The footer on desktop](https://github.com/RebellionWebdesign/fab-forever/docs/images/readme-images/fab-forever-footer.png)
 
 ---
 
@@ -118,7 +119,7 @@ The footer is fully responsive and collapses to the centered social icons only o
 
 The content pages have the same design overall, so the basics page is an example. Content pages feature large images on desktop. On mobile they collapse to smaller versions of the images. They also have two buttons at the bottom. The next button sends the user to the next page and the back button sends the user to the pprevious page except for the button on the help page. It has a thank you message and sends the user back to the landing page.
 
-- [Example content page](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/readme-images/fab-forever-content.png)
+- [Example content page](https://github.com/RebellionWebdesign/fab-forever/docs/images/readme-images/fab-forever-content.png)
 
 ---
 
@@ -126,7 +127,7 @@ The content pages have the same design overall, so the basics page is an example
 
 The user gets redirected to the response page if the form is filled out and the button clicked. It congrats the user and says thanks for reaching out. After 5 seconds it redirects the user to the homepage.
 
-- [Response page](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/readme-images/fab-forever-response.png)
+- [Response page](https://github.com/RebellionWebdesign/fab-forever/docs/images/readme-images/fab-forever-response.png)
 
 ## DESIGN
 
@@ -134,7 +135,7 @@ The user gets redirected to the response page if the form is filled out and the 
 
 The chosen color scheme consists of the following colors:
 
-[color scheme](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/readme-images/fab-forever-color-scheme.png)
+[color scheme](https://github.com/RebellionWebdesign/fab-forever/docs/images/readme-images/fab-forever-color-scheme.png)
 
 - Purple and purple accent colors were chosen because it combines the energy of red and the stability/trustworthyness of blue
 
@@ -146,13 +147,13 @@ The chosen color scheme consists of the following colors:
 
 The font for the headings used is Montserrat (Google Fonts) regular, accompanied by Montserrat Extra Bold which is used to give emphasis to the first word of the headings.
 
-- [montserrat 400](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/readme-images/fab-forever-montserrat-regular.png)
+- [montserrat 400](https://github.com/RebellionWebdesign/fab-forever/docs/images/readme-images/fab-forever-montserrat-regular.png)
 
-- [montserrat 800](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/readme-images/fab-forever-montserrat-extra.png)
+- [montserrat 800](https://github.com/RebellionWebdesign/fab-forever/docs/images/readme-images/fab-forever-montserrat-extra.png)
 
 For the body text the font Poppins (also Google) was used. It is a clean sans serif font which means it improves readability.
 
-- [poppins 400](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/readme-images/fab-forever-poppins-regular.png)
+- [poppins 400](https://github.com/RebellionWebdesign/fab-forever/docs/images/readme-images/fab-forever-poppins-regular.png)
 
 In terms of design both fonts work together very well, as they are both clean and pleasing to the eye.
 
