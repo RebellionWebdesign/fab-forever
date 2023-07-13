@@ -199,6 +199,10 @@ span {
   transition: all 0.2s ease-in-out;
 }
 
+.page-button:hover {
+  background-color: var(--color-accent);
+}
+
 /*UTILITY CLASSES FOR USE PRIMARILY WITH FLEXBOX*/
 .flex {
   display: flex;
