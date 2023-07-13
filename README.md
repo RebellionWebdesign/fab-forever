@@ -211,7 +211,7 @@ The code was written in VSCODE using the following extensions:
 
 The JavaScript code for the responsive menu was changed and built upon to suit the needs of this website and taken from the following tutorial:
 
-- [WebDevSimplified](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout) on YouTube.
+- [WebDevSimplified](https://www.youtube.com/watch?v=At4B7A4GOPg) on YouTube.
 
 ## IMAGES
 
