@@ -16,7 +16,7 @@ This website is released under the Creative Commons BY-NC-SA 4.0 - this means yo
 
 ### LICENSE DISCLAIMER
 
-The website has images which are released under different licenses than the CC license. It is forbidden to use these images from this repo or the website. I have provided the licenses and the appropriate links so you can aquire the files on your own. It must be a fututre goal to change these proprietary images to images which can be used freely (like in free beer).
+The website has images which are released under different licenses than the CC license. It is forbidden to use these images from this repo or the website. I have provided the licenses and the appropriate links so you can aquire the files on your own. It must be a future goal to change these proprietary images to images which can be used freely (like in free beer).
 
 ## USER STORIES
 
@@ -75,7 +75,7 @@ The hero section has a tagline which speaks directly to interested people. In ad
 
 The CTA button can be hovered to change the color slightly.
 
-- [The hero section on desktop](https://github.com/RebellionWebdesign/fab-forevertree/main/docs/images/readme-images/fab-forever-hero-section.png)
+- [The hero section on desktop](https://github.com/RebellionWebdesign/fab-forever/tree/main/docs/images/readme-images/fab-forever-hero-section.png)
 
 ---
 
@@ -117,7 +117,7 @@ The footer is fully responsive and collapses to the centered social icons only o
 
 ### THE CONTENT PAGES
 
-The content pages have the same design overall, so the basics page is an example. Content pages feature large images on desktop. On mobile they collapse to smaller versions of the images. They also have two buttons at the bottom. The next button sends the user to the next page and the back button sends the user to the pprevious page except for the button on the help page. It has a thank you message and sends the user back to the landing page.
+The content pages have the same design overall, so the basics page is an example. Content pages feature large images on desktop. On mobile they collapse to smaller versions of the images. They also have two buttons at the bottom. The next button sends the user to the next page and the back button sends the user to the previous page except for the button on the help page. It has a thank you message and sends the user back to the landing page.
 
 - [Example content page](https://github.com/RebellionWebdesign/fab-forever/tree/main/docs/images/readme-images/fab-forever-content.png)
 
@@ -201,11 +201,11 @@ The code was written in VSCODE using the following extensions:
 ## OTHER TOOLS
 
 - Gradients were made with [cssgradient.io](https://cssgradient.io/)
-- Fluid Heading sizes were made with [Modern Typography Tool](https://modern-fluid-typography.vercel.app/)
+- Fluid Headings were made with [Modern Typography Tool](https://modern-fluid-typography.vercel.app/)
 
 ## TESTING
 
-- Please refer to the TESTING.md file for everything related to testing.
+- Please refer to the [TESTING.md](https://github.com/RebellionWebdesign/fab-forever/blob/main/TESTING.md) file for everything related to testing.
 
 ## CREDITS
 
@@ -282,19 +282,19 @@ Fonts are hosted within the website to account for the GDPR laws in germany. How
 the fonts used are Poppins and Montserrat. Two popular fonts provided by google. The CSS and the
 fonts come from here:
 
-- [[POPPINS - google webfont helper by Mario Ranftl](https://gwfh.mranftl.com/fonts/poppins?subsets=latin)
+- [POPPINS - google webfont helper by Mario Ranftl](https://gwfh.mranftl.com/fonts/poppins?subsets=latin)
 
-- [[MONTSERRAT - google webfont helper by Mario Ranftl](https://gwfh.mranftl.com/fonts/montserrat?subsets=latin)
+- [MONTSERRAT - google webfont helper by Mario Ranftl](https://gwfh.mranftl.com/fonts/montserrat?subsets=latin)
 
 The fonts are released under the [SIL Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
 
 ## SAYING THANKS
 
-- [[Juliia Konovalova](https://github.com/IuliiaKonovalova) for being my mentor and helping through some of the issues I encountered on the project.
+- [Juliia Konovalova](https://github.com/IuliiaKonovalova) for being my mentor and helping through some of the issues I encountered on the project.
   The README.md and TESTING.md files were inspired by hers.
 
 My family for bearing with me and for keeping me grounded.
 
-- [[Code Institute](https://codeinstitute.net/de/) for letting me do this and for being a great school.
+- [Code Institute](https://codeinstitute.net/de/) for letting me do this and for being a great school.
 
 - [Kevin Powell](https://www.youtube.com/@KevinPowell) for being such a great CSS teacher.
