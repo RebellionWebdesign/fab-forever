@@ -1,4 +1,4 @@
-![readme-logo](https://github.com/RebellionWebdesign/fab-forever/tree/main/docs/images/readme-images/readme-logo.png)
+![readme-logo](https://github.com/RebellionWebdesign/fab-forever/tree/blob/main/docs/images/readme-images/readme-logo.png)
 
 [stability-wip](https://img.shields.io/badge/STABILITY-WIP-red.svg)[test](https://github.com/mkenney/software-guides/blob/master/STABILITY-BADGES.md#work-in-progress) [license](https://img.shields.io/badge/CC-BY--NC--SA--4.0-green.svg) [editor](https://img.shields.io/badge/VSCODE-blue.svg) [lang](https://img.shields.io/badge/CSS3-blue.svg) [lang](https://img.shields.io/badge/HTML5-orange.svg) [lang](https://img.shields.io/badge/JS-yellow.svg)
 
@@ -38,14 +38,14 @@ The website has images which are released under different licenses than the CC l
 - The navbar is fixed to the top of the page
 - It contains a logo for the company on the left and a navigation on the right so visitors understand it easily
 
-  [The navbar on the desktop](https://github.com/RebellionWebdesign/fab-forever/tree/main/docs/images/readme-images/readme-navbar-desktop.png)
+- [The navbar on the desktop](https://github.com/RebellionWebdesign/fab-forever/tree/main/docs/images/readme-images/readme-navbar-desktop.png)
 
-      * THE LOGO - It has a link which sends users to the home page
-      * THE NAVIGATION:
-          * BASICS sends the user to basics content page. Visitors can learn basics about 3d printers  .
-          * MATERIALS sends the user to the materials content page. Visitors can learn about common material types.
-          * MODELS sends the visitor to the models content page. They can learn about creating and obtaining models here.
-          * HELP sends the visitor to the help page where they can have a look at the most common errors in 3D printing.
+  - THE LOGO - It has a link which sends users to the home page
+  - THE NAVIGATION:
+  - BASICS sends the user to basics content page. Visitors can learn basics about 3d printers .
+  - MATERIALS sends the user to the materials content page. Visitors can learn about common material types.
+  - MODELS sends the visitor to the models content page. They can learn about creating and obtaining models here.
+  - HELP sends the visitor to the help page where they can have a look at the most common errors in 3D printing.
 
 - The links have an animated effect for the hover state.
 - The Navbar is fully responsive and collapses the menu into a burger icon. It opens the sidebar menu when clicked:
