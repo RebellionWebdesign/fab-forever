@@ -109,7 +109,7 @@ The footer has the website logo and states that this website is an educational p
 
 The footer is fully responsive and collapses to the centered social icons only on mobiles.
 
-[The footer on desktop](https://github.com/RebellionWebdesign/fab-forever/tree/main/docs/images/readme-images/fab-forever-footer.png)
+- [The footer on desktop](https://github.com/RebellionWebdesign/fab-forever/tree/main/docs/images/readme-images/fab-forever-footer.png)
 
 ---
 
@@ -133,7 +133,7 @@ The user gets redirected to the response page if the form is filled out and the 
 
 The chosen color scheme consists of the following colors:
 
-[color scheme](https://github.com/RebellionWebdesign/fab-forever/tree/main/docs/images/readme-images/fab-forever-color-scheme.png)
+- [color scheme](https://github.com/RebellionWebdesign/fab-forever/tree/main/docs/images/readme-images/fab-forever-color-scheme.png)
 
 - Purple and purple accent colors were chosen because it combines the energy of red and the stability/trustworthyness of blue
 
