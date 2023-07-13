@@ -595,6 +595,10 @@ footer {
     font-size: 1.2rem;
   }
 
+  .column-2 {
+    width: 100%;
+  }
+
   .column-2-mobile {
     width: 100%;
   }
@@ -614,11 +618,10 @@ footer {
   .grid-container {
     margin-top: 3rem;
     place-items: center;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    padding: 0 230px;
   }
 
   .testimonial-card {
@@ -759,11 +762,10 @@ footer {
   .grid-container {
     place-items: center;
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 35px;
     grid-row-gap: 35px;
-    padding: 0 145px;
   }
 
   .testimonial-card {
@@ -781,10 +783,6 @@ footer {
   body {
     width: 100%;
     overflow-x: hidden;
-  }
-
-  .container {
-    padding: 0px 20px;
   }
 
   p {
@@ -878,11 +876,10 @@ footer {
   .grid-container {
     place-items: center;
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 35px;
     grid-row-gap: 35px;
-    padding: 0px 50px;
   }
 
   .form-wrapper {
