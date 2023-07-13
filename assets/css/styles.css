@@ -759,8 +759,7 @@ footer {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 35px;
     grid-row-gap: 35px;
-    padding-left: 145px;
-    padding-right: 145px;
+    padding: 0 145px;
   }
 
   .testimonial-card {
