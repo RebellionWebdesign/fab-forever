@@ -3,9 +3,9 @@
 * Define the variables mobileToggleOpen (the hamburger menu), mobileToggleClose (the close icon) and navBar (the complete navbar)
 * as constant values. The right side reads: in the document find the element which has (classname) assigned.
 */
-const mobileToggleOpen = document.getElementsByClassName("mobile--open")
-const mobileToggleClose = document.getElementsByClassName("mobile--close")
-const navBar = document.getElementsByClassName("column-2__nav--mobile")
+const mobileToggleOpen = document.getElementsByClassName("mobile--open")[0]
+const mobileToggleClose = document.getElementsByClassName("mobile--close")[0]
+const navBar = document.getElementsByClassName("column-2__nav--mobile")[0]
 /*
 * Here we add an event listener to the burger icon which gets triggered when the icon is clicked. Then it should run any function.
 * We have defined here that the script should get the class list of the navBar and that it must remove the closed class,
