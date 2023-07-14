@@ -5,7 +5,7 @@
 * 
 * 
 */
-const navItems = document.getElementsByClassName("nav-item")
+const navItems = document.getElementsByClassName("nav-item")[0]
 navItems.addEventListener("click", () => {
    navItems.classList.add("active")
 })
