@@ -9,7 +9,6 @@ const navLinks = document.getElementsByClassName("nav-item")
 
 navLinks.forEach(navLinks => {
    navLinks.addEventListener("click", () => {
-      document.getElementsByClassName("active")?.classList.remove("active")
       navLinks.classList.add("active")
    })
 })
