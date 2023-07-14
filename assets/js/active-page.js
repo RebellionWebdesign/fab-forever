@@ -5,11 +5,11 @@
 * 
 * 
 */
-const activePage = window.location.pathname
-const navLinks = querySelectorAll("nav a").
-forEach(link => {
-   if (link.href.includes(`${activePage}`)) {
-      link.classList.add("active")
-   }
-})
+const navLinks = document.querySelectorAll(".nav-item") 
 
+navLinks.forEach(navLinks => {
+   navLinks.addEventListener("click", () => {
+      document-querySelector(".active")?.classList.remove("active")
+      navLinks.classList.add("active")
+   })
+})
