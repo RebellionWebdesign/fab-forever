@@ -69,7 +69,9 @@ Manual tests were made by myself, friends and family and CI community members.
 |     Navigation Hover Effects     |    hover over navigation links     |     link changes color to accent color      |  yes   |  yes   |         |
 |            CTA Button            | click on button to skip to content |     sends user directly to basics page      |  yes   |  yes   |         |
 |     CTA Button Hover Effect      |         hover over button          |    button changes color to accent color     |  yes   |  yes   |         |
-|     Contact Form Validation      |     send form without content      | displays a warning because of empty fields  |  yes   |  yes   |         |
+| Contact Form First Name Validation      |     send form without First Name      | displays a warning because of empty field  |  yes   |  yes   |         |
+|  Contact Form Last Name Validation   |     send form without last name       | displays a warning because of empty field  |  yes   |  yes   |         |
+|     Contact Form eMail Validation      |     send form without email      | displays a warning because content isnt an email adress  |  yes   |  yes   |         |
 | Contact Form Button Hover Effect |       hover over form button       |    button changes color to accent color     |  yes   |  yes   |         |
 |   Contact Form Button Function   |  click button when form is filled  |         sends user to response page         |  yes   |  yes   |         |
 |   NEXT/BACK Button Hover Effect  |         hover over button          |    button changes color to accent color     |  yes   |  yes   |         |
@@ -145,3 +147,31 @@ The underlying code was validated with NU html checker, JIGSAW css checker and W
 
 ### RESPONSE PAGE
 ![lighthouse-response](https://github.com/RebellionWebdesign/fab-forever/assets/80954446/b2ddf436-e790-4e0e-b8bf-05617f0b93e9)
+
+## BUGS
+
+### PAGE SIDESCROLLING ON MOBILE DEVICES
+
+There was an issue with the page content scrolling sideways on mobile devices. The mobile menu is built as a hidden sidebar
+which widens the document body and therefore enables sidescrolling. The solution was to add the following:
+
+`body, html {
+    width: 100%;
+    overflow-x: hidden
+}`
+
+Which constrains the document to the viewport width and hides overflow in the x-direction.
+
+### WRONG RESPONSIVE BEHAVIOUR
+
+Another bug was related to responsiveness of the site where the shape dividers were overflowing and causing bad scaling on mobile devices.
+The solution was to add the following to the dividers:
+
+`.divider {
+    width: 100%;
+}`
+
+### WRONG BEHAVIOUR FOR THE GRID CARDS
+
+The last bug was due to the grid cards having a large padding to the left which caused the grid container to overflow before collapsing.
+The padding was inherited from the desktop viewport. The solution was to remove the padding from the media queries. 
