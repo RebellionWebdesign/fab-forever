@@ -5,11 +5,11 @@
 * 
 * 
 */
-const navLinks = document.querySelectorAll(".nav-item") 
+const navLinks = document.querySelectorAll("nav-item") 
 
 navLinks.forEach(navLinks => {
    navLinks.addEventListener("click", () => {
-      document.querySelector(".active")?.classList.remove("active")
+      document.querySelector("active")?.classList.remove("active")
       navLinks.classList.add("active")
    })
 })
