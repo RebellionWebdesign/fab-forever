@@ -5,7 +5,7 @@
 * 
 * 
 */
-document.querySelector('.nav-link').addEventListener('click', function(event) {
+document.querySelectorAll('.nav-link').addEventListener('click', function(event) {
    event.preventDefault();
    var target = document.querySelector('.nav-link');
    if (target.classList.contains('active')) {
