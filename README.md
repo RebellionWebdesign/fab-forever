@@ -213,6 +213,12 @@ The JavaScript code for the responsive menu was changed and built upon to suit t
 
 - [WebDevSimplified](https://www.youtube.com/watch?v=At4B7A4GOPg) on YouTube.
 
+### ACTIVE NAV LINKS
+
+The JavaScript code for the active nav links was taken from the following tutorial:
+
+- [Tutorials Point](https://www.tutorialspoint.com/how-to-make-active-tab-in-navigation-menu-using-html-css-and-javascript) on YouTube.
+
 ## IMAGES
 
 ### LANDING PAGE
