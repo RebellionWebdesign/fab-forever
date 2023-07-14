@@ -5,8 +5,11 @@
 * 
 * 
 */
-const navItems = document.getElementsByClassName("nav-item")[0]
-navItems.addEventListener("click", () => {
-   navItems.classList.add("active")
+const activePage = window.location.pathname
+const navLinks = querySelectorAll("nav a").
+forEach(link => {
+   if (link.href.includes(`${activePage}`)) {
+      link.classList.add("active")
+   }
 })
 
