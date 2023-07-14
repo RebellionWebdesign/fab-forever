@@ -205,6 +205,28 @@ The code was written in VSCODE using the following extensions:
 
 - Please refer to the [TESTING.md](https://github.com/RebellionWebdesign/fab-forever/blob/main/TESTING.md) file for everything related to testing.
 
+## DEPLOYMENT
+
+The website was deployed using GitHub Pages using these steps:
+
+- In the [repository](https://github.com/RebellionWebdesign/fab-forever) go to settings and navigate to "Pages"
+- In "Pages" select "Deploy from branch" and choose the branch "main"
+- Click save and the website will be deployed
+
+## LOCAL DEPLOYMENT
+
+For local deployment follow these steps:
+
+- Go to your GitHub folder on your local machine and execute this command from a git shell:
+`git clone https://github.com/RebellionWebdesign/fab-forever.git`
+
+## FUTURE IMPROVEMENTS
+
+- Make the media queries DRY (some of them are quite messy, i know that i have to improve on this)
+- Better git commit messages
+- Add an active marker to the currently visited page (there is none right now because I couldnt get the code to work)
+- Make the contact form fully functional if I can access a server backend
+
 ## CREDITS
 
 ### RESPONSIVE NAVIGATION
