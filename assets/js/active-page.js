@@ -5,7 +5,7 @@
 * is greater than i=0 i should be increased by one until it is the same. The last step is to add the event listener click which adds
 * the active class to the selected element.
 */
-var navItems = document.querySelectorAll("nav-item");
+var navItems = document.getElementsByClassName("nav-item");
 for (var i = 0; i < navItems.length; i++) {
    navItems[i].addEventListener("click", function() {
       this.classList.add("active");
