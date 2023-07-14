@@ -9,7 +9,7 @@ var navLinks = document.getElementsByClassName("nav-item");
 
 for (var i = 0; i < navLinks.length; i++) {
    navLinks[i].addEventListener("click", function() {
-     var current = document.getElementsByClassName("active");
+     var current = document.getElementsByClassName("nav-item");
      current[0].className = current[0].className.replace(" active", "");
      this.className += " active";
    });
