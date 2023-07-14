@@ -359,6 +359,10 @@ ul > li > a:hover {
   color: var(--color-accent);
 }
 
+.active {
+  border-bottom: 3px solid var(--color-accent);
+}
+
 ul > li:nth-child(5) {
   padding-right: 0;
 }
