@@ -6,8 +6,7 @@
 * 
 */
  document.addEventListener("DOMContentLoaded", () => {
-   document.querySelectorAll('.nav-link').addEventListener('click', function(event) {
-      event.preventDefault();
+   document.querySelectorAll('.nav-link').addEventListener('click', () => {
       var target = document.querySelector('.nav-link');
       if (target.classList.contains('active')) {
         target.classList.remove('active');
