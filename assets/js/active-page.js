@@ -5,17 +5,12 @@
 * 
 * 
 */
-var navContainer = document.getElementsByClassName("nav-item");
-var navLinks = document.getElementsByClassName("nav-link");
-
-for (var i = 0; i < navLinks.length; i++) {
-   navLinks[i].addEventListener("click", function() {
-     var current = document.getElementsByClassName("active");
-
-     if (current.length > 0) {
-      current[0].className = current[0].className.replace(" active", "");
-    }
-
-    this.className += " active";
-   });
- }
+document.querySelector('.nav-link').addEventListener('click', function(event) {
+   event.preventDefault();
+   var target = document.querySelector('.nav-link');
+   if (target.classList.contains('active')) {
+     target.classList.remove('active');
+   } else {
+     target.classList.add('active');
+   }
+ });
