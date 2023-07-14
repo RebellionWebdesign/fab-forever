@@ -5,12 +5,14 @@
 * 
 * 
 */
-document.querySelectorAll('.nav-link').addEventListener('click', function(event) {
-   event.preventDefault();
-   var target = document.querySelector('.nav-link');
-   if (target.classList.contains('active')) {
-     target.classList.remove('active');
-   } else {
-     target.classList.add('active');
-   }
+ document.addEventListener("DOMContentLoaded", () => {
+   document.querySelectorAll('.nav-link').addEventListener('click', function(event) {
+      event.preventDefault();
+      var target = document.querySelector('.nav-link');
+      if (target.classList.contains('active')) {
+        target.classList.remove('active');
+      } else {
+        target.classList.add('active');
+      }
+    });
  });
