@@ -104,7 +104,7 @@ The underlying code was validated with NU html checker, JIGSAW css checker and W
 
 ### JIGSAW CSS CHECKER
 
-![jigsaw result](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/nu-images/jigs-css.png)
+![jigsaw result](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/jigsaw-images/jigs-css.png)
 
 ### WAVE ACCESSIBILITY CHECKER
 
