@@ -93,14 +93,14 @@ The underlying code was validated with NU html checker, JIGSAW css checker and W
 
 #### CONTENT PAGES
 
-![nu basics result](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/nu-images/NU-basics.png)
-![nu materials result](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/nu-images/NU-materials.png)
-![nu models result](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/nu-images/NU-models.png)
-![nu help result](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/nu-images/NU-help.png)
+![nu basics result](https://github.com/RebellionWebdesign/fab-forever/docs/images/nu-images/nu-basics.png)  
+![nu materials result](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/nu-images/NU-materials.png)  
+![nu models result](https://github.com/RebellionWebdesign/fab-forever/docs/images/nu-images/nu-models.png)  
+![nu help result](https://github.com/RebellionWebdesign/fab-forever/docs/images/nu-images/nu-help.png)
 
 #### RESPONSE PAGE
 
-![nu response result](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/nu-images/NU-response.png)
+![nu response result](https://github.com/RebellionWebdesign/fab-forever/docs/images/nu-images/nu-response.png)
 
 ### JIGSAW CSS CHECKER
 
