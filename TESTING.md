@@ -152,19 +152,19 @@ The underlying code was validated with NU html checker, JIGSAW css checker and W
 
 ### PAGE SIDESCROLLING ON MOBILE DEVICES
 
-There was an issue with the page content scrolling sideways on mobile devices. The mobile menu is built as a hidden sidebar
-which widens the document body and therefore enables sidescrolling. The solution was to add the following:
+- There was an issue with the page content scrolling sideways on mobile devices. The mobile menu is built as a hidden sidebar
+which widens the document body and therefore enables sidescrolling. The solution was to add the following, which constrains the document to the viewport width and hides overflow in the x-direction.
 
 `body, html {
     width: 100%;
     overflow-x: hidden
 }`
 
-Which constrains the document to the viewport width and hides overflow in the x-direction.
+
 
 ### WRONG RESPONSIVE BEHAVIOUR
 
-Another bug was related to responsiveness of the site where the shape dividers were overflowing and causing bad scaling on mobile devices.
+- Another bug was related to responsiveness of the site where the shape dividers were overflowing and causing bad scaling on mobile devices.
 The solution was to add the following to the dividers:
 
 `.divider {
@@ -173,5 +173,5 @@ The solution was to add the following to the dividers:
 
 ### WRONG BEHAVIOUR FOR THE GRID CARDS
 
-The last bug was due to the grid cards having a large padding to the left which caused the grid container to overflow before collapsing.
+- The last bug was due to the grid cards having a large padding to the left which caused the grid container to overflow before collapsing.
 The padding was inherited from the desktop viewport. The solution was to remove the padding from the media queries. 
