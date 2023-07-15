@@ -16,6 +16,8 @@ This website is released under the Creative Commons BY-NC-SA 4.0 - this means yo
 
 The website has images which are released under different licenses than the CC license. It is forbidden to use these images from this repo or the website. I have provided the licenses and the appropriate links so you can aquire the files on your own. It must be a future goal to change these proprietary images to images which can be used freely (like in free beer).
 
+![readme-mockup](docs/images/readme-images/amiresponsive-mockup.jpg)
+
 ## USER STORIES
 
 ### FIRST TIME VISITOR GOALS (US1-PP1):
