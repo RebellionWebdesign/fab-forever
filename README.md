@@ -217,7 +217,7 @@ The website was deployed using GitHub Pages using these steps:
 
 For local deployment follow these steps:
 
-- Go to your GitHub folder on your local machine and execute this command from a git shell:
+- Go to your GitHub folder on your local machine and execute this command from a git shell:  
 `git clone https://github.com/RebellionWebdesign/fab-forever.git`
 
 ## FUTURE IMPROVEMENTS
