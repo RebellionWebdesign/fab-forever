@@ -100,11 +100,11 @@ The underlying code was validated with NU html checker, JIGSAW css checker and W
 
 #### RESPONSE PAGE
 
-![nu response result](https://github.com/RebellionWebdesign/fab-forever/docs/images/nu-images/nu-response.png)
+![nu response result](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/nu-images/nu-response.png)
 
 ### JIGSAW CSS CHECKER
 
-![jigsaw result](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/jigsaw-images/JIGS-css.png)
+![jigsaw result](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/nu-images/jigs-css.png)
 
 ### WAVE ACCESSIBILITY CHECKER
 
