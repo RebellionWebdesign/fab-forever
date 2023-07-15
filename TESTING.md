@@ -89,12 +89,12 @@ The underlying code was validated with NU html checker, JIGSAW css checker and W
 
 #### HOMEPAGE
 
-![nu homepage result](https://github.com/RebellionWebdesign/fab-forever/blob/main/assets/img/nu-images/NU-homepage.png)
+![nu homepage result](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/nu-images/nu-homepage.png)
 
 #### CONTENT PAGES
 
 ![nu basics result](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/nu-images/nu-basics.png)  
-![nu materials result](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/nu-images/NU-materials.png)  
+![nu materials result](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/nu-images/nu-materials.png)  
 ![nu models result](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/nu-images/nu-models.png)  
 ![nu help result](https://github.com/RebellionWebdesign/fab-forever/blob/main/docs/images/nu-images/nu-help.png)
 
